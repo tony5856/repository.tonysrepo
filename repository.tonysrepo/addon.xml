@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.tonysrepo" name="Tonys Repo" version="0.0.1" provider-name="TonyH">
+	<extension point="xbmc.addon.repository" name="Tonys Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/tony5856/repository.tonysrepo/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/tony5856/repository.tonysrepo/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/tony5856/repository.tonysrepo/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Repository with my addons and builds</summary>
+		<description lang="en">Contains my builds, my wizard, and my addons</description>
+		<genre>devtools,documentary,movies,space,sports,tvshows,wizard,uk,usa</genre>
+	</extension>
+</addon>
