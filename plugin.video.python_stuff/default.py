@@ -64,6 +64,9 @@ BASE  = "plugin://plugin.video.youtube/playlist/"
 BASE2 = "plugin://plugin.video.youtube/channel/"
 
 # Set each of your YouTube playlist id's
+
+
+YOUTUBE_CHANNEL_ID_4 = "UCAu4RLzCTbhfEe3fh3KxnWQ"
 YOUTUBE_CHANNEL_ID_5 = "PLv9sxo3G1kdQ-_HNcbwfcWCZAvDKpx3TQ"
 YOUTUBE_CHANNEL_ID_6 = "PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_"
 YOUTUBE_CHANNEL_ID_7 = "UCTj-2nCE8B_3AvEGAKVyn1g"
@@ -120,6 +123,10 @@ def Main_Menu():
     Add_Dir( 
         name="Total Revolution", url=BASE2+YOUTUBE_CHANNEL_ID_7+"/", folder=True,
         icon="http://www.totalrevolution.tv/img/tr_small_black_bg.jpg")
+    Add_Dir( 
+        name="MBMantech, aftermath wizard tutrorials", url=BASE2+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
+        icon="http://www.totalrevolution.tv/img/tr_small_black_bg.jpg")
+
 
 #----------------------------------------------------------------
 # A basic OK Dialog
