@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.program.Crackerwizard" name="Cracker Wizard" version="0.0.1" provider-name="TonyH">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Cracker Wizard</summary>
+    <description lang="en">Big Crackers wizard for maintenance and installing builds</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.python_stuff" name="Python Stuff" version="0.0.2" provider-name="Tony H">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -42,21 +57,6 @@
 		<video_guide>movies,usa</video_guide>
 		<video_preview></video_preview>
 	</extension>
-</addon>
-
-<addon id="plugin.video.tonyh" name="TonyH" version="1.0.1" provider-name="TonyH">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Wizard to install THC Build</summary>
-    <description lang="en">Wizard to install THC Build</description>
-	<website>http://tonyh.net</website>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="repository.tonysrepo" name="Tonys Repo" version="0.0.2" provider-name="TonyH">
