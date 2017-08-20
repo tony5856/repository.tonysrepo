@@ -99,20 +99,20 @@ def Main_Menu():
     if debug == 'true':
         Add_Dir ( '[COLOR=lime]Koding Tutorials[/COLOR]', '', "tutorials", True, '', '', '' )
     else:
-        Add_Dir ( '[COLOR=lime]Enable debug mode for some cool dev tools![/COLOR]', '', "koding_settings", False, '', '', '' )
+        Add_Dir ( '[COLOR=lime]Watch these videos to learn how to use the features[/COLOR]', '', "koding_settings", False, '', '', '' )
     
 # An example title/message we're going to send through to a popup dialog in the first Add_Dir item
     my_message= "{'title' : 'Support & Suggestions', 'msg' : \"If you come across any online content you'd like to get added please use the support thread at noobsandnerds.com and I'll be happy to look into it for you.\"}"
 
-    Add_Dir(
-        name="Support/Suggestions", url=my_message, mode="simple_dialog", folder=False,
-        icon="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-087_info-512.png")
+#    Add_Dir(
+ #       name="Support/Suggestions", url=my_message, mode="simple_dialog", folder=False,
+  #      icon="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-087_info-512.png")
         
 # Add some YT Playlists (see we're using BASE as the url)
 
-    Add_Dir( 
-        name="Pipcan, kodi coding", url=BASE+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
-        icon="http://www.aftvnews.com/wp-content/uploads/2016/01/kodi_firetv_512x512.png")
+#    Add_Dir( 
+ #       name="Pipcan, kodi coding", url=BASE+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
+  #      icon="http://www.aftvnews.com/wp-content/uploads/2016/01/kodi_firetv_512x512.png")
     Add_Dir( 
         name="Metalliq how to", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
         icon="http://www.desinerd.co.in/wp-content/uploads/2017/06/Metalliq.jpg")    
