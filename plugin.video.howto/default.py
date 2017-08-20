@@ -113,16 +113,19 @@ def Main_Menu():
     Add_Dir( 
         name="Pipcan, kodi coding", url=BASE+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
         icon="http://www.aftvnews.com/wp-content/uploads/2016/01/kodi_firetv_512x512.png")
-    
+    Add_Dir( 
+        name="Metalliq how to", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
+        icon="http://www.desinerd.co.in/wp-content/uploads/2017/06/Metalliq.jpg")    
+
    
 
 # Add some YT channels (see we're using BASE2 as the url for this one)
 
 
 
-    Add_Dir( 
-        name="Metalliq", url=BASE2+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
-        icon="http://www.desinerd.co.in/wp-content/uploads/2017/06/Metalliq.jpg")
+#    Add_Dir( 
+ #       name="Metalliq", url=BASE2+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
+  #      icon="http://www.desinerd.co.in/wp-content/uploads/2017/06/Metalliq.jpg")
 
 
 
