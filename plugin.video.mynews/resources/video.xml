@@ -1,0 +1,67 @@
+<items>
+        <item>
+        <title>[COLOR=white]~~~~~~~~~~~~~~News Channels~~~~~~~~~~~~~~[/COLOR]</title>
+        <link>none</link>
+        <thumbnail>https://image.freepik.com/free-icon/news-logo_318-38132.jpg</thumbnail>
+        </item>
+
+        <item>
+        <title>[COLOR=blue]KABC Los Angeles SD[/COLOR]</title>
+        <link>http://newson-vsms.trafficmanager.net/KABC/1/0/8/50/1504331471/d590638708ca1d004cb92bf01d1bd05b38837c8a95b2e6e9e329f65344b4f197.m3u8?idps=true&version=5</link>
+        <thumbnail>http://www.newscaststudio.com/wp-content/uploads/2015/11/ncs_kabc-graphics_03.jpg</thumbnail>
+        </item>
+
+        <item>
+        <title>[COLOR=blue]MSNBC HD[/COLOR]</title>
+        <link>http://tvemsnbc-lh.akamaihd.net/i/nbcmsnbc_1@122532/index_2596_av-b.m3u8?sd=10&rebase;=on</link>
+        <thumbnail>http://www.msnbc.com/sites/msnbc/themes/leanforward/images/site-header/msnbc-logo-card-twitter.png</thumbnail>
+        </item>
+
+        <item>
+        <title>[COLOR=blue]ABC News HD[/COLOR]</title>
+        <link>http://abclive.abcnews.com/i/abc_live4@136330/index_4000_av-p.m3u8?sd=10&rebase=on</link>
+        <thumbnail>http://pacinst.org/wp-content/uploads/2012/10/abc-news-logo.jpg</thumbnail>
+        </item>
+
+        <item>
+        <title>[COLOR=blue]BNN HD[/COLOR]</title>
+        <link>http://midnightiptvstreams.ddns.net:5050/live/marian/marian/60154.ts</link>
+        <thumbnail>https://media.licdn.com/media/p/3/005/06a/27a/3644ae1.png</thumbnail>
+        </item>
+        
+        <item>
+        <title>[COLOR=blue]BBC News[/COLOR]</title>
+        <link>http://midnightiptvstreams.ddns.net:5050/live/marian/marian/47002.ts</link>
+        <thumbnail>http://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/1.2.0/bbc_news_logo.png?cb=1</thumbnail>
+        </item>
+        
+        <item>
+        <title>[COLOR=blue]ESPN News HD[/COLOR]</title>
+        <link>http://midnightiptvstreams.ddns.net:5050/live/marian/marian/62071.ts</link>
+        <thumbnail>http://www.blogcdn.com/www.engadget.com/media/2008/04/espnewshd_logo_032008.jpg</thumbnail>
+        </item>
+
+        <item>
+        <title>[COLOR=blue]Fox News HD[/COLOR]</title>
+        <link>http://midnightiptvstreams.ddns.net:5050/live/marian/marian/62032.ts</link>
+        <thumbnail>http://data.en.yibada.com/data/images/full/15057/fox-news-logo.jpg</thumbnail>
+        </item>
+
+        <item>
+        <title>[COLOR=blue]CNN HD[/COLOR]</title>
+        <link>http://midnightiptvstreams.ddns.net:5050/live/marian/marian/62049.ts</link>
+        <thumbnail>http://logos-download.com/wp-content/uploads/2016/02/CNN-Travel-logo.png</thumbnail>
+        </item>
+
+        <item>
+        <title>[COLOR=blue]Channel 4 HD[/COLOR]</title>
+        <link>http://midnightiptvstreams.ddns.net:5050/live/marian/marian/57307.ts</link>
+        <thumbnail>http://s3.eu-central-1.amazonaws.com/centaur-wp/designweek/prod/content/uploads/2015/09/Screen-Shot-2015-09-30-at-09.43.55-1002x551.png</thumbnail>
+        </item>
+        
+		
+		
+		
+		
+		 
+</items>
