@@ -68,7 +68,10 @@ YOUTUBE_CHANNEL_ID_1 = "PLZxWJ6CTr63bBO4j-q1eYT6pTPT-OLyUb"
 YOUTUBE_CHANNEL_ID_2 = "PLZxWJ6CTr63ZYobFiIbWvRUEdzsrWVxEO"
 YOUTUBE_CHANNEL_ID_3 = "PLZxWJ6CTr63ZDZ7OWCqPfUHrFoTfffETD"
 YOUTUBE_CHANNEL_ID_4 = "PLZxWJ6CTr63YbqQAiQ4B5DQTk5sbo6n-O"
-# YOUTUBE_CHANNEL_ID_5 = "UCBDT-Kl4nHgEvpwYfLb315w"
+YOUTUBE_CHANNEL_ID_5 = "PL0NKqMNJejKjNDFxHx81P3uGwJNANfVcF"
+YOUTUBE_CHANNEL_ID_6 = "PLZxWJ6CTr63Z1imTZyROqVQnjFOPxso0D"
+YOUTUBE_CHANNEL_ID_7 = "PLAoFLEmiupTdb3n0teoy7oYsq_9KoIjLm"
+
 
 #----------------------------------------------------------------
 
@@ -109,24 +112,40 @@ def Main_Menu():
         
 # Add some YT Playlists (see we're using BASE as the url)
     Add_Dir( 
-        name="Q's funniest moments", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
+        name="Q's Funniest Moments", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
         icon="http://articlebio.com/uploads/bio/2016/11/22/brian-quinn.jpg")
 
     Add_Dir( 
-        name="Sal's funniest moments", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
+        name="Sal's Funniest Moments", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
         icon="https://www.famousbirthdays.com/headshots/sal-vulcano-2.jpg")
 
     Add_Dir( 
-        name="Joe's funniest moments", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
+        name="Joe's Funniest Moments", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
         icon="https://www.famousbirthdays.com/faces/gatto-joe-image.jpg")
 
     Add_Dir( 
-        name="Murr's funniest moments", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
+        name="Murr's Funniest Moments", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
         icon="https://www.famousbirthdays.com/faces/murr-james-image.jpg")
+
+    Add_Dir( 
+        name="-------Punishments-------", url=BASE+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
+        icon="https://orig01.deviantart.net/0701/f/2015/097/4/0/impractical_jokers_folder_icon_by_ex6-d8otewo.png")
+
+    Add_Dir( 
+        name="-------Deleted Scenes-------", url=BASE+YOUTUBE_CHANNEL_ID_6+"/", folder=True,
+        icon="http://cdn.movieweb.com/img.news.tops/NEdmR3IHPoeEgm_1_b/Exclusive-Impractical-Jokers-Season-1-Dvd-Clip-Food.jpg")
+
+    Add_Dir( 
+        name="-------Behind the Scenes-------", url=BASE+YOUTUBE_CHANNEL_ID_7+"/", folder=True,
+        icon="http://www.dailydoseofemuna.com/wp-content/uploads/2017/03/behind-the-scenes.gif")
+
+
+
+
 
 # Add some YT channels (see we're using BASE2 as the url for this one)
 #    Add_Dir( 
-#        name="Uncut Angling Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
+#        name="Uncut Angling Channel", url=BASE2+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
 #        icon="https://yt3.ggpht.com/-8Rt7LjDZrtU/AAAAAAAAAAI/AAAAAAAAAAA/-0-9PLOJWXM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
 #----------------------------------------------------------------
 # A basic OK Dialog
