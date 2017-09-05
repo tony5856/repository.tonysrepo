@@ -92,10 +92,13 @@ YOUTUBE_CHANNEL_ID_13 = "PLyRss2jWg0xUrTDiP-xP6a8V0p3gbzAXZ"
 YOUTUBE_CHANNEL_ID_14 = "PLplqGmqDeEOjZhij_Ao7uZgS34ivKUTdz"
 YOUTUBE_CHANNEL_ID_15 = "PLMUtS78ZxryNYFe-Z4jV_KxQ2sQaevrUz"
 YOUTUBE_CHANNEL_ID_16 = "PLgRb6yZYwVwtlLbKxx0lkw1r9RTOmigqb"
-YOUTUBE_CHANNEL_ID_17 = ""
-YOUTUBE_CHANNEL_ID_18 = ""
-
-
+YOUTUBE_CHANNEL_ID_17 = "PLcAQ0Ggu3vX7YFB8wYnxl1_fxelPo9L_0"
+YOUTUBE_CHANNEL_ID_18 = "PLVB84gy7xLgps5DLLvwWqTwAESyUVYsdH"
+YOUTUBE_CHANNEL_ID_19 = "PLt9EEb18Gpa1KrDxdH-LHddplbbGqcPMo"
+YOUTUBE_CHANNEL_ID_20 = "PLV0B7A11Iz73DKi5jRltdtjV6ywwrE-dL"
+YOUTUBE_CHANNEL_ID_21 = "PLd7_5iapCCKNlpRsT7rd-flK_HcYvwel5"
+YOUTUBE_CHANNEL_ID_22 = "PLNL0GGBxaNGEUkvyYKuFGJ6N2NsRdAi2s"
+YOUTUBE_CHANNEL_ID_23 = ""
 
 #----------------------------------------------------------------
 """
@@ -133,6 +136,7 @@ def Main_Menu():
     Add_Dir(name='Traing Videos', url='', mode='open_folder', folder=True, icon="http://tonyh.net/backgrounds/hema%20images/icon3.png", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
     Add_Dir(name='Fighting Videos', url='', mode='open_folder2', folder=True, icon="http://tonyh.net/backgrounds/hema%20images/icon12.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
     Add_Dir(name='Equipment', url='', mode='open_folder3', folder=True, icon="http://tonyh.net/backgrounds/hema%20images/icon12.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
+    Add_Dir(name='M1 Medieval Fighting', url='', mode='open_folder4', folder=True, icon="http://tonyh.net/backgrounds/hema%20images/icon12.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
     # Add_Dir(name='OPEN FOLDER - NO URL', url='', mode='open_folder', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
     # Add_Dir(name='VIDEO EXAMPLES', url='', mode='video_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'), description='A couple of test videos for you to look at.', content_type='video')
     # Add_Dir(name='MUSIC EXAMPLE', url='', mode='music_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'),content_type='song')
@@ -233,6 +237,37 @@ def Test_Folder(url):
         Add_Dir( 
         name="Equipment Reviews", url=BASE+YOUTUBE_CHANNEL_ID_16+"/", folder=True,
         icon="https://cdn.shopify.com/s/files/1/0860/2834/collections/Rawlings_HEMA_Swords_grande.jpg?v=1434929549", fanart="http://tonyh.net/backgrounds/hema%20images/offhand.jpg")
+
+@route(mode="open_folder4", args=["url"])
+def Test_Folder(url):
+    if url == 'test_mode':
+        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
+    else:
+        
+        Add_Dir( 
+        name="M1 Medieval Combat", url=BASE+YOUTUBE_CHANNEL_ID_17+"/", folder=True,
+        icon="https://pbs.twimg.com/profile_images/592392752446312448/NwUVIpcM.png", fanart="https://i.ytimg.com/vi/_DLLFx013QU/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="M1 Global", url=BASE+YOUTUBE_CHANNEL_ID_18+"/", folder=True,
+        icon="https://pbs.twimg.com/profile_images/592392752446312448/NwUVIpcM.png", fanart="https://i.ytimg.com/vi/_DLLFx013QU/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="Medieval Combat", url=BASE+YOUTUBE_CHANNEL_ID_19+"/", folder=True,
+        icon="https://pbs.twimg.com/profile_images/592392752446312448/NwUVIpcM.png", fanart="https://i.ytimg.com/vi/_DLLFx013QU/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="World Championship 2015 plus other", url=BASE+YOUTUBE_CHANNEL_ID_20+"/", folder=True,
+        icon="https://pbs.twimg.com/profile_images/592392752446312448/NwUVIpcM.png", fanart="https://i.ytimg.com/vi/_DLLFx013QU/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="World Championship 2014 plus other", url=BASE+YOUTUBE_CHANNEL_ID_21+"/", folder=True,
+        icon="https://pbs.twimg.com/profile_images/592392752446312448/NwUVIpcM.png", fanart="https://i.ytimg.com/vi/_DLLFx013QU/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="2015-2017 Many Matches!", url=BASE+YOUTUBE_CHANNEL_ID_22+"/", folder=True,
+        icon="https://pbs.twimg.com/profile_images/592392752446312448/NwUVIpcM.png", fanart="https://i.ytimg.com/vi/_DLLFx013QU/maxresdefault.jpg")
+
 
 
 
