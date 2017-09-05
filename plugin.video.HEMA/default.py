@@ -84,10 +84,16 @@ YOUTUBE_CHANNEL_ID_5 = "PL83FE40331F44D000"
 YOUTUBE_CHANNEL_ID_6 = "PLdWDeIG3CteI22hccYUlxJ4zbnf4mofhh"
 YOUTUBE_CHANNEL_ID_7 = "PL0rZ1wLYkmlA0U8iEWuuMhuRAXAcCLkmH"
 YOUTUBE_CHANNEL_ID_8 = "PL2209B3BD07634DAE"
-YOUTUBE_CHANNEL_ID_9 = "UCBDT-Kl4nHgEvpwYfLb315w"
-YOUTUBE_CHANNEL_ID_10 = "UCBDT-Kl4nHgEvpwYfLb315w"
-
-
+YOUTUBE_CHANNEL_ID_9 = "PLvRHYcOclO35UIqjjmVbBpS0paGM97XTf"
+YOUTUBE_CHANNEL_ID_10 = "PLd2h238qtqK0AM1h8655rRADSNHuh9Gnw"
+YOUTUBE_CHANNEL_ID_11 = "PL5084576A549E4F11"
+YOUTUBE_CHANNEL_ID_12 = "PLfy02e1QKKX1XMeXDVXexl5dTSNXnnr78"
+YOUTUBE_CHANNEL_ID_13 = "PLyRss2jWg0xUrTDiP-xP6a8V0p3gbzAXZ"
+YOUTUBE_CHANNEL_ID_14 = "PLplqGmqDeEOjZhij_Ao7uZgS34ivKUTdz"
+YOUTUBE_CHANNEL_ID_15 = "PLMUtS78ZxryNYFe-Z4jV_KxQ2sQaevrUz"
+YOUTUBE_CHANNEL_ID_16 = "PLgRb6yZYwVwtlLbKxx0lkw1r9RTOmigqb"
+YOUTUBE_CHANNEL_ID_17 = ""
+YOUTUBE_CHANNEL_ID_18 = ""
 
 
 
@@ -118,7 +124,7 @@ def Main_Menu():
 # Only show koding tutorials if debug mode is enabled in addon settings
 #    if debug=='true':
 #        Add_Dir(name='KODING TUTORIALS', url='', mode='tutorials', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
-
+#http://weaponskills.org.uk/img/photos/gear.jpg
 #    Add_Dir(name='TEST DIALOG', url='{"my_text":"My First Add-on[CR]Woohooo!!!","my_desc":"test description"}', mode='testing', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
 
 # Once you've played with the above try uncommenting each of the following lines one by one.
@@ -126,6 +132,7 @@ def Main_Menu():
 
     Add_Dir(name='Traing Videos', url='', mode='open_folder', folder=True, icon="http://tonyh.net/backgrounds/hema%20images/icon3.png", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
     Add_Dir(name='Fighting Videos', url='', mode='open_folder2', folder=True, icon="http://tonyh.net/backgrounds/hema%20images/icon12.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
+    Add_Dir(name='Equipment', url='', mode='open_folder3', folder=True, icon="http://tonyh.net/backgrounds/hema%20images/icon12.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
     # Add_Dir(name='OPEN FOLDER - NO URL', url='', mode='open_folder', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
     # Add_Dir(name='VIDEO EXAMPLES', url='', mode='video_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'), description='A couple of test videos for you to look at.', content_type='video')
     # Add_Dir(name='MUSIC EXAMPLE', url='', mode='music_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'),content_type='song')
@@ -167,6 +174,11 @@ def Test_Folder(url):
         name="More Training Exercises 2", url=BASE+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
         icon="http://tonyh.net/backgrounds/hema%20images/icon7.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
 
+        Add_Dir( 
+        name="Sword and Shield sparring", url=BASE+YOUTUBE_CHANNEL_ID_13+"/", folder=True,
+        icon="http://tonyh.net/backgrounds/hema%20images/icon7.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/be3c602b82ff4db87f6317a8794a7777.jpg")
+
+
 
 
 
@@ -187,6 +199,43 @@ def Test_Folder(url):
         Add_Dir( 
         name="Tournament Fights", url=BASE+YOUTUBE_CHANNEL_ID_8+"/", folder=True,
         icon="http://tonyh.net/backgrounds/hema%20images/icon11.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="War in the West 2016", url=BASE+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
+        icon="http://tonyh.net/backgrounds/hema%20images/icon11.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="ILHG 2017 Tournament", url=BASE+YOUTUBE_CHANNEL_ID_10+"/", folder=True,
+        icon="http://tonyh.net/backgrounds/hema%20images/icon11.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="PNWG12 Longsword", url=BASE+YOUTUBE_CHANNEL_ID_11+"/", folder=True,
+        icon="http://tonyh.net/backgrounds/hema%20images/icon11.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/maxresdefault.jpg")
+
+        Add_Dir( 
+        name="Sonora Celtic Faire 2014", url=BASE+YOUTUBE_CHANNEL_ID_12+"/", folder=True,
+        icon="http://tonyh.net/backgrounds/hema%20images/icon11.png.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/maxresdefault.jpg")
+
+@route(mode="open_folder3", args=["url"])
+def Test_Folder(url):
+    if url == 'test_mode':
+        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
+    else:
+        
+        Add_Dir( 
+        name="HEMA Equipment", url=BASE+YOUTUBE_CHANNEL_ID_14+"/", folder=True,
+        icon="https://pbs.twimg.com/profile_images/744534448327143424/28bfiuHP.jpg", fanart="http://tonyh.net/backgrounds/hema%20images/offhand.jpg")
+
+        Add_Dir( 
+        name="HEMA Weapons and equipment", url=BASE+YOUTUBE_CHANNEL_ID_15+"/", folder=True,
+        icon="https://cdn.shopify.com/s/files/1/0860/2834/collections/Rawlings_HEMA_Swords_grande.jpg?v=1434929549", fanart="http://tonyh.net/backgrounds/hema%20images/offhand.jpg")
+
+        Add_Dir( 
+        name="Equipment Reviews", url=BASE+YOUTUBE_CHANNEL_ID_16+"/", folder=True,
+        icon="https://cdn.shopify.com/s/files/1/0860/2834/collections/Rawlings_HEMA_Swords_grande.jpg?v=1434929549", fanart="http://tonyh.net/backgrounds/hema%20images/offhand.jpg")
+
+
+
 
 
 #-----------------------------
