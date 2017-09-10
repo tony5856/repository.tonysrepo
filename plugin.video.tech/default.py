@@ -97,13 +97,13 @@ YOUTUBE_CHANNEL_ID_16 = "UCuSlFJbBUIj1zfJLRnGXSow"
 YOUTUBE_CHANNEL_ID_17 = "UCp68_FLety0O-n9QU6phsgw"
 YOUTUBE_CHANNEL_ID_18 = "UCkCuSXCy9PzV2XDl5dE1iPg"
 YOUTUBE_CHANNEL_ID_19 = "UC6H07z6zAwbHRl4Lbl0GSsw"
-YOUTUBE_CHANNEL_ID_20 = ""
-YOUTUBE_CHANNEL_ID_21 = ""
-YOUTUBE_CHANNEL_ID_22 = ""
-YOUTUBE_CHANNEL_ID_23 = ""
-YOUTUBE_CHANNEL_ID_24 = ""
-YOUTUBE_CHANNEL_ID_25 = ""
-YOUTUBE_CHANNEL_ID_26 = ""
+YOUTUBE_CHANNEL_ID_20 = "UCkEKLTfO0PP_Y9tYBTAoRuQ"
+YOUTUBE_CHANNEL_ID_21 = "UCtcsKTmGKo1UCT24OaGxEtw"
+YOUTUBE_CHANNEL_ID_22 = "UCWrXlzhIENTJrAuKVuPgdEA"
+YOUTUBE_CHANNEL_ID_23 = "UCrX_2JCBvW6k2KKjSV7dIdQ"
+YOUTUBE_CHANNEL_ID_24 = "UC1mIxTEk1Q9IMIPwV67JSdQ"
+YOUTUBE_CHANNEL_ID_25 = "UC_OVsoKcD3jxHgxjQirLq-A"
+YOUTUBE_CHANNEL_ID_26 = "UC4QZ_LsYcvcq7qOsOhpAX4A"
 YOUTUBE_CHANNEL_ID_27 = ""
 
 
@@ -149,6 +149,8 @@ def Main_Menu():
     Add_Dir(name='Hubble Space Telescope', url='', mode='open_folder5', folder=True, icon="https://universegrowth.files.wordpress.com/2010/12/hubble.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
     Add_Dir(name='Fusion Power', url='', mode='open_folder6', folder=True, icon="https://cdn4.iconfinder.com/data/icons/iron-man-icons/512/Reactor.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
     Add_Dir(name='Inventions', url='', mode='open_folder7', folder=True, icon="https://inventionaday.com/wp-content/uploads/2016/09/Invention_a_day_logo.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
+    Add_Dir(name='Space in General', url='', mode='open_folder8', folder=True, icon="http://www.santeriaytarot.com/images/jupiter.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
+    Add_Dir(name='Documentaries', url='', mode='open_folder9', folder=True, icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
     # Add_Dir(name='OPEN FOLDER - NO URL', url='', mode='open_folder', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
     # Add_Dir(name='VIDEO EXAMPLES', url='', mode='video_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'), description='A couple of test videos for you to look at.', content_type='video')
     # Add_Dir(name='MUSIC EXAMPLE', url='', mode='music_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'),content_type='song')
@@ -324,6 +326,50 @@ def Test_Folder(url):
         Add_Dir( 
         name="Tech Zone", url=BASE2+YOUTUBE_CHANNEL_ID_19+"/", folder=True,
         icon="https://inventionaday.com/wp-content/uploads/2016/09/Invention_a_day_logo.png", fanart="https://images3.alphacoders.com/278/27877.jpg")
+#-----------------------------
+@route(mode="open_folder8", args=["url"])
+def Test_Folder(url):
+    if url == 'test_mode':
+        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
+    else:
+
+        Add_Dir( 
+        name="Aerospace Engineering", url=BASE2+YOUTUBE_CHANNEL_ID_20+"/", folder=True,
+        icon="http://www.santeriaytarot.com/images/jupiter.png", fanart="http://www.worldroom.org/wp-content/uploads/2017/07/Space-Background-1GK-room.jpg")
+
+#-----------------------------
+
+@route(mode="open_folder9", args=["url"])
+def Test_Folder(url):
+    if url == 'test_mode':
+        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
+    else:
+
+        Add_Dir( 
+        name="Advexon TV", url=BASE2+YOUTUBE_CHANNEL_ID_21+"/", folder=True,
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="Wired UK", url=BASE2+YOUTUBE_CHANNEL_ID_22+"/", folder=True,
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="HD Documentaries", url=BASE2+YOUTUBE_CHANNEL_ID_23+"/", folder=True,
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+       
+        Add_Dir( 
+        name="Natgeo Documentary HD", url=BASE2+YOUTUBE_CHANNEL_ID_24+"/", folder=True,
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="Discovery Channel", url=BASE2+YOUTUBE_CHANNEL_ID_25+"/", folder=True,
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="Cold Fusion TV", url=BASE2+YOUTUBE_CHANNEL_ID_26+"/", folder=True,
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+
 
 
 
