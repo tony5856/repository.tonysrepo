@@ -79,7 +79,7 @@ BASE3 = "play/?video_id="
 
 # Set each of your YouTube playlist id's
 YOUTUBE_CHANNEL_ID_1 = "UC67f2Qf7FYhtoUIF4Sf29cA"
-YOUTUBE_CHANNEL_ID_2 = ""
+YOUTUBE_CHANNEL_ID_2 = "UCZ30YNIcUWuSz8eVJZtLEjw"
 YOUTUBE_CHANNEL_ID_3 = ""
 YOUTUBE_CHANNEL_ID_4 = ""
 YOUTUBE_CHANNEL_ID_5 = ""
@@ -155,6 +155,11 @@ def Test_Folder(url):
         Add_Dir( 
         name="Bad Lip Reading Channel", url=BASE2+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
         icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
+
+        Add_Dir( 
+        name="Jaboody Dubs Channel", url=BASE2+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
+        icon="https://pbs.twimg.com/profile_images/3567275418/997d6030558d12e18c9f5cd64fefe8bf_400x400.jpeg", fanart="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/504490/2b9e8527b861652126a4b7261f43fd197bff8974.jpg")
+
 
 
 
