@@ -80,9 +80,9 @@ BASE3 = "play/?video_id="
 # Set each of your YouTube playlist id's
 YOUTUBE_CHANNEL_ID_1 = "UC67f2Qf7FYhtoUIF4Sf29cA"
 YOUTUBE_CHANNEL_ID_2 = "UCZ30YNIcUWuSz8eVJZtLEjw"
-YOUTUBE_CHANNEL_ID_3 = ""
-YOUTUBE_CHANNEL_ID_4 = ""
-YOUTUBE_CHANNEL_ID_5 = ""
+YOUTUBE_CHANNEL_ID_3 = "90rMGa5WjCc"
+YOUTUBE_CHANNEL_ID_4 = "y60wDzZt8yg"
+YOUTUBE_CHANNEL_ID_5 = "K_6mqVcUwzg"
 YOUTUBE_CHANNEL_ID_6 = ""
 YOUTUBE_CHANNEL_ID_7 = "LL67f2Qf7FYhtoUIF4Sf29cA"
 YOUTUBE_CHANNEL_ID_8 = "PLjncHZSg0GNGVX7LatYAz4EZXzGbkorTk"
@@ -139,6 +139,8 @@ def Main_Menu():
     Add_Dir(name='Fail Videos', url='', mode='open_folder5', folder=True, icon="http://matthewhopkinsnews.com/wp-content/uploads/2014/06/FailStamp.jpg", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
     Add_Dir(name='My Collection', url='', mode='open_folder6', folder=True, icon="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-blue-and-white-square-icons-sports-hobbies/118110-matte-blue-and-white-square-icon-sports-hobbies-film-clapper1-sc44.png", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
     Add_Dir(name='Funny Pet Videos', url='', mode='open_folder7', folder=True, icon="https://i.pinimg.com/236x/fa/3a/0f/fa3a0f6344d2ca877482e358dee55516--video-chat-photo-cat.jpg", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
+    Add_Dir(name='News Channels', url='', mode='open_folder8', folder=True, icon="http://tonyh.net/backgrounds/funny%20addon/icon.png", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
+
 
 #-----------------------------
 @route(mode="test_function", args=["test1","test2","test3"])
@@ -254,9 +256,7 @@ def Test_Folder(url):
         name="Hulk Purple Pants", url=BASE3+YOUTUBE_CHANNEL_ID_26, folder=False, mode='play_yt',
         icon="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-blue-and-white-square-icons-sports-hobbies/118110-matte-blue-and-white-square-icon-sports-hobbies-film-clapper1-sc44.png", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/vfPFP3W/movie-theater-film-reel-background-in-seamless-loop_xk6ivnb9__F0000.png")
 
-        Add_Dir( 
-        name="CNN Live", url=BASE3+YOUTUBE_CHANNEL_ID_27, folder=False, mode='play_yt',
-        icon="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-blue-and-white-square-icons-sports-hobbies/118110-matte-blue-and-white-square-icon-sports-hobbies-film-clapper1-sc44.png", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/vfPFP3W/movie-theater-film-reel-background-in-seamless-loop_xk6ivnb9__F0000.png")
+
 
 
 #-----------------------------
@@ -271,6 +271,30 @@ def Test_Folder(url):
         Add_Dir( 
         name="Funny Pet Videos", url=BASE2+YOUTUBE_CHANNEL_ID_25+"/", folder=True,
         icon="https://68.media.tumblr.com/eda338f26d06d5f4138094f3176929b8/tumblr_ou8hsigeJ21vs9ch6o1_400.png", fanart="http://funnypicture.org/wallpaper/2015/04/funny-animals-clips-3-background-wallpaper.jpg")
+#----------------------------
+@route(mode="open_folder8", args=["url"])
+def Test_Folder(url):
+
+           
+        Add_Dir( 
+        name="CNN Live", url=BASE3+YOUTUBE_CHANNEL_ID_27, folder=False, mode='play_yt',
+        icon="https://lh4.ggpht.com/m05SBF4omSJbBy-EnPClGH_yAVvgAn6wr6KQwdtXhn6ATylzMYYJb6WaW-pNbtmqg5I=w300", fanart="https://1x5xwy14hylj3ylgel358cb1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/THUMBNAIL_BG_01.jpg")
+
+        Add_Dir( 
+        name="Fox News Live", url=BASE3+YOUTUBE_CHANNEL_ID_3, folder=False, mode='play_yt',
+        icon="https://lh3.googleusercontent.com/l8woCU1YmtyKlkNOh2TNvQJj8P78Rm56JljLDUj-83YzD3OU6UCvqM-vzqpBOkOrW2Q=w300", fanart="https://1x5xwy14hylj3ylgel358cb1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/THUMBNAIL_BG_01.jpg")
+
+        Add_Dir( 
+        name="Sky News Live", url=BASE3+YOUTUBE_CHANNEL_ID_4, folder=False, mode='play_yt',
+        icon="http://hollirubin.com/wp-content/uploads/2017/05/sky-news-logo.png", fanart="https://1x5xwy14hylj3ylgel358cb1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/THUMBNAIL_BG_01.jpg")
+
+        Add_Dir( 
+        name="Euro News Live", url=BASE3+YOUTUBE_CHANNEL_ID_5, folder=False, mode='play_yt',
+        icon="http://s.apptoko.com/a//uploads/thumbnails/122015/euronews-live_icon.png", fanart="https://1x5xwy14hylj3ylgel358cb1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/THUMBNAIL_BG_01.jpg")
+
+#----------------------------
+
+
 
 
 
