@@ -24,8 +24,8 @@
     you choose to use their work as a base for your own.
 """
 # License: GPL (http://www.gnu.org/licenses/gpl-3.0.html)
-# Addon: My Python Koding Add-on
-# Author: Add your name here
+# Addon: Funny Addon
+# Author: TonyH
 
 #----------------------------------------------------------------
 
@@ -74,16 +74,16 @@ debug        = koding.Addon_Setting('debug')        # Grab the setting of our de
 # Set the base plugin url you want to hook into
 BASE  = "plugin://plugin.video.youtube/playlist/"
 BASE2 = "plugin://plugin.video.youtube/channel/"
-
+BASE3 = "play/?video_id="
 
 
 # Set each of your YouTube playlist id's
-YOUTUBE_CHANNEL_ID_1 = "PLDWOaLX7rvz24oFMa2yH3EUjszFvYGzoK"
-YOUTUBE_CHANNEL_ID_2 = "PLDWOaLX7rvz2lwPUfg0bfs9qGqOVEV4P2"
-YOUTUBE_CHANNEL_ID_3 = "PL801E403FE41FCAB1"
-YOUTUBE_CHANNEL_ID_4 = "PLDWOaLX7rvz1T05FEs5gl9onVZXiMRi3u"
-YOUTUBE_CHANNEL_ID_5 = "PLF396D3CEF0169A35"
-YOUTUBE_CHANNEL_ID_6 = "PLDWOaLX7rvz2c9FovuAIFcocP--3o2oI7"
+YOUTUBE_CHANNEL_ID_1 = "UC67f2Qf7FYhtoUIF4Sf29cA"
+YOUTUBE_CHANNEL_ID_2 = ""
+YOUTUBE_CHANNEL_ID_3 = ""
+YOUTUBE_CHANNEL_ID_4 = ""
+YOUTUBE_CHANNEL_ID_5 = ""
+YOUTUBE_CHANNEL_ID_6 = ""
 YOUTUBE_CHANNEL_ID_7 = "LL67f2Qf7FYhtoUIF4Sf29cA"
 YOUTUBE_CHANNEL_ID_8 = "PLjncHZSg0GNGVX7LatYAz4EZXzGbkorTk"
 YOUTUBE_CHANNEL_ID_9 = "PLKMjqoaBW16XWbIyJxb8DDDZnj6fP1MZV"
@@ -103,8 +103,8 @@ YOUTUBE_CHANNEL_ID_22 = "UCONQ53-nTMwqiRhj3sRaiAQ"
 YOUTUBE_CHANNEL_ID_23 = "PLcLKHnbDqCOafKc2h6ryuXP8__fGZx7wW"
 YOUTUBE_CHANNEL_ID_24 = "UCeZe0VwwhEf8KTI2FHfJtTg"
 YOUTUBE_CHANNEL_ID_25 = "UCYK1TyKyMxyDQU8c6zF8ltg"
-YOUTUBE_CHANNEL_ID_26 = ""
-YOUTUBE_CHANNEL_ID_27 = ""
+YOUTUBE_CHANNEL_ID_26 = "ZBvG9hd5kQA"
+YOUTUBE_CHANNEL_ID_27 = "Iwvfig-fXk0"
 
 
 
@@ -128,19 +128,9 @@ YOUTUBE_CHANNEL_ID_27 = ""
 """
 
 #-----------------------------------------------------------
-# EDIT THIS MAIN_MENU() FUNCTION - THIS IS FUN TO PLAY WITH!
-#-----------------------------------------------------------
 @route(mode="main")
 def Main_Menu():
 
-# Only show koding tutorials if debug mode is enabled in addon settings
-#    if debug=='true':
-#        Add_Dir(name='KODING TUTORIALS', url='', mode='tutorials', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
-
-#    Add_Dir(name='TEST DIALOG', url='{"my_text":"My First Add-on[CR]Woohooo!!!","my_desc":"test description"}', mode='testing', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
-
-# Once you've played with the above try uncommenting each of the following lines one by one.
-# After uncommenting a line re-run the add-on to see your changes take place.
 
     Add_Dir(name='Bad Lip Reading', url='', mode='open_folder', folder=True, icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
     Add_Dir(name='Commercials', url='', mode='open_folder2', folder=True, icon="http://www.arffinancial.com/wp-content/uploads/2014/04/tv.png", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
@@ -149,12 +139,7 @@ def Main_Menu():
     Add_Dir(name='Fail Videos', url='', mode='open_folder5', folder=True, icon="http://matthewhopkinsnews.com/wp-content/uploads/2014/06/FailStamp.jpg", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
     Add_Dir(name='My Collection', url='', mode='open_folder6', folder=True, icon="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-blue-and-white-square-icons-sports-hobbies/118110-matte-blue-and-white-square-icon-sports-hobbies-film-clapper1-sc44.png", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
     Add_Dir(name='Funny Pet Videos', url='', mode='open_folder7', folder=True, icon="https://i.pinimg.com/236x/fa/3a/0f/fa3a0f6344d2ca877482e358dee55516--video-chat-photo-cat.jpg", fanart="http://tonyh.net/backgrounds/funny%20addon/stand-up-comedy-video-wall.jpg")
-    # Add_Dir(name='OPEN FOLDER - NO URL', url='', mode='open_folder', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
-    # Add_Dir(name='VIDEO EXAMPLES', url='', mode='video_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'), description='A couple of test videos for you to look at.', content_type='video')
-    # Add_Dir(name='MUSIC EXAMPLE', url='', mode='music_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'),content_type='song')
 
-# This is our test zone, this just calls the Test_Function mode so feel free to play with the code in that function.
-    # Add_Dir(name='TESTING ZONE', url='{"test1":"this is","test2":"some example","test3":"text"}', mode='test_function', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
 #-----------------------------
 @route(mode="test_function", args=["test1","test2","test3"])
 def Test_Function(test1, test2, test3):
@@ -166,48 +151,17 @@ def Test_Function(test1, test2, test3):
 #-----------------------------
 @route(mode="open_folder", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
-        
-        Add_Dir( 
-        name="Mayweather vs McGregor", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
-        icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
-       
-        Add_Dir( 
-        name="NFL", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
-        icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
-       
-        Add_Dir( 
-        name="BLR Music Videos", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
-        icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
 
         Add_Dir( 
-        name="Movie and TV", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
+        name="Bad Lip Reading Channel", url=BASE2+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
         icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
-
-        Add_Dir( 
-        name="Political Soundbites", url=BASE+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
-        icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
-
-        Add_Dir( 
-        name="Star Wars", url=BASE+YOUTUBE_CHANNEL_ID_6+"/", folder=True,
-        icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
-
-        Add_Dir( 
-        name="Liked Videos", url=BASE+YOUTUBE_CHANNEL_ID_7+"/", folder=True,
-        icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
-
-
 
 
 
 #-----------------------------
 @route(mode="open_folder2", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
+
         
         Add_Dir( 
         name="2015 Super Bowl Commercials", url=BASE+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
@@ -240,9 +194,7 @@ def Test_Folder(url):
 #-----------------------------
 @route(mode="open_folder3", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
+
         
         Add_Dir( 
         name="Real Life Lore", url=BASE+YOUTUBE_CHANNEL_ID_15+"/", folder=True,
@@ -250,9 +202,6 @@ def Test_Folder(url):
 #-----------------------------
 @route(mode="open_folder4", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
 
         Add_Dir( 
         name="Movie Trailers 199", url=BASE2+YOUTUBE_CHANNEL_ID_16+"/", folder=True,
@@ -273,9 +222,7 @@ def Test_Folder(url):
 #-----------------------------
 @route(mode="open_folder5", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
+
 
         Add_Dir( 
         name="Fail Army", url=BASE2+YOUTUBE_CHANNEL_ID_20+"/", folder=True,
@@ -292,20 +239,25 @@ def Test_Folder(url):
 #----------------------------
 @route(mode="open_folder6", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
+
 
         Add_Dir( 
         name="Family Guy Star Wars", url=BASE+YOUTUBE_CHANNEL_ID_23+"/", folder=True,
         icon="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-blue-and-white-square-icons-sports-hobbies/118110-matte-blue-and-white-square-icon-sports-hobbies-film-clapper1-sc44.png", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/vfPFP3W/movie-theater-film-reel-background-in-seamless-loop_xk6ivnb9__F0000.png")
 
+        Add_Dir( 
+        name="Hulk Purple Pants", url=BASE3+YOUTUBE_CHANNEL_ID_26, folder=False, mode='play_yt',
+        icon="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-blue-and-white-square-icons-sports-hobbies/118110-matte-blue-and-white-square-icon-sports-hobbies-film-clapper1-sc44.png", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/vfPFP3W/movie-theater-film-reel-background-in-seamless-loop_xk6ivnb9__F0000.png")
+
+        Add_Dir( 
+        name="CNN Live", url=BASE3+YOUTUBE_CHANNEL_ID_27, folder=False, mode='play_yt',
+        icon="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-blue-and-white-square-icons-sports-hobbies/118110-matte-blue-and-white-square-icon-sports-hobbies-film-clapper1-sc44.png", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/vfPFP3W/movie-theater-film-reel-background-in-seamless-loop_xk6ivnb9__F0000.png")
+
+
 #-----------------------------
 @route(mode="open_folder7", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
+
            
         Add_Dir( 
         name="Funny Pets", url=BASE2+YOUTUBE_CHANNEL_ID_24+"/", folder=True,
@@ -326,72 +278,10 @@ def Bad_Function():
         dialog.ok('SET DEBUG TO TRUE','Go into your add-on settings and set debug mode to True then run this again. If debug is set to true we have proper error reporting in place to help your add-on development.')
         koding.Open_Settings(focus='1.1')
     xbmc.log(this_should_error)
+
 #-----------------------------
-@route(mode='testing', args=["my_text","my_desc"])
-def Testing(my_text,my_desc):
-    dialog.ok('TEST','Here are the params we recieved in Testing() function:', 'my_text: [COLOR=dodgerblue]%s[/COLOR]' % my_text,'my_desc: [COLOR=dodgerblue]%s[/COLOR]'%my_desc)
-#-----------------------------
-@route(mode="video_examples")
-def Video_Examples():
-    """
-Below are some examples showing Add_Dir() with some artwork and infolabels sent through including trailer link for a movie
-You would obviously use some sort of automated loop to auto-generate this info for large lists but hopefully this example may help
-    """
-    Add_Dir(name='[COLOR=dodgerblue][TV][/COLOR] Fraggle Rock S03E21', url='episode_dialog', mode='scrape_sites', folder=False, content_type='Video',
-        icon='https://images-na.ssl-images-amazon.com/images/M/MV5BNzg0MzQwODY3N15BMl5BanBnXkFtZTgwMjA2OTEwMjE@._V1_SY1000_CR0,0,789,1000_AL_.jpg',
-        fanart='https://images-na.ssl-images-amazon.com/images/M/MV5BMjI0MjI4NTEwNV5BMl5BanBnXkFtZTgwMzA4NTQ2MjE@._V1_.jpg',
-        info_labels={"season":"03", "episode":"21", "genre":"Kids", "plot":"Get your cares away, worries for another day...", "mpaa":"U"})
 
-    Add_Dir(name='[COLOR=dodgerblue][MOVIE][/COLOR] Trainspotting', url='movie_dialog', mode='scrape_sites', folder=False, content_type='Video',
-        icon='https://images-na.ssl-images-amazon.com/images/M/MV5BMzA5Zjc3ZTMtMmU5YS00YTMwLWI4MWUtYTU0YTVmNjVmODZhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg',
-        fanart='https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNjE3NzU2Nl5BMl5BanBnXkFtZTcwMzI0OTAyNg@@._V1_.jpg',
-        info_labels={"originaltitle":"Trainspotting","genre":"crime,british", "plot":"Trainspotting is an awesome movie!", "mpaa":"18", "trailer":"plugin://plugin.video.youtube/play/?video_id=nBKWnAdmJJ8"})
-    dialog.ok('CLICK INFO','Try bringing up the info for these items, you should see our artwork and other metadata has been populated.')
-#-----------------------------
-@route(mode="music_examples")
-def Music_Examples():
-    """
-This is an example of adding a song, there's a good chance the scaper will find no results for this song,
-it's only here as an example to show how to set things like artwork.
-    """
-    Add_Dir(name='Sally Cinnamon - Stone Roses', url='song_dialog', mode='scrape_sites', folder=False,
-        icon='http://images.rapgenius.com/7929026cc89ab0c77669dee5cc323da9.530x528x1.jpg',
-        fanart='http://www.flickofthefinger.co.uk/wp-content/uploads/2016/03/the-stone-roses-1.jpg',
-        info_labels={"genre":"Rock,Inde,British", "artist":"Stone Roses", "title":"Sally Cinnamon"})
-#-----------------------------
-@route(mode="scrape_sites", args=["url"])
-def Scrape_Sites(list_type):
-    """
-This is just a very rough example showing how simple it is to make use of the NaN Scrapers module.
-We send through details of what we want to find and NaN Scrapers will search multiple websites for this content.
-    """
-    content = ''
-    if list_type == 'movie_dialog':
-        content = nanscrapers.scrape_movie_with_dialog(title='Trainspotting', year='1996', imdb='tt0117951', host=None, include_disabled=False, timeout=30)
-    elif list_type == 'episode_dialog':
-        content = nanscrapers.scrape_episode_with_dialog(title='Fraggle Rock', show_year='1983', year='1985', season='3', episode='4', imdb='tt0085017', tvdb=None, host=None, include_disabled=False, timeout=30)
-    elif list_type == 'song_dialog':
-        content = nanscrapers.scrape_song_with_dialog(title='Fools Gold', artist='Stone Roses', host=None, include_disabled=False, timeout=30)
 
-# If the item returned is a dictionary that's great we know we have a list to work with
-    if koding.Data_Type(content) == 'dict':
-        xbmc.log(repr(content),2)
-        playback = koding.Play_Video(video=content["url"], showbusy=True)
- 
-# It may be a plugin or direct url has been sent through, if so lets use the list_type variable
-    elif not list_type.endswith('_dialog'):
-        playback = koding.Play_Video(video=list_type, showbusy=True)
-
-# Nothing useful has been found, lets exit back to the list
-    else:
-        return
-
-# If the playback returned as True then it was successful but if it was False we know we need to try again for another source
-    if not playback:
-        if dialog.yesno('PLAYBACK FAILED','The video may have been removed, the web host may have altered their code or this video may not be available in your region. [COLOR=dodgerblue]Would you like to try another source?[/COLOR]'):
-            Scrape_Sites(list_type)
-
-#----------------------------------------------------------------
 
 """
     SECTION 6:
@@ -400,6 +290,19 @@ We send through details of what we want to find and NaN Scrapers will search mul
     whatever route you want to open into, in this example the 'main' route which opens the
     Main_Menu() function up at the top.
 """
+#-----------------------------------
+#Play a youtube video
+@route(mode="play_yt", args=["url"])
+def Play_YT(url):
+    
+    xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/%s)'%url)
+
+#-----------------------------------
+
+
 if __name__ == "__main__":
     Run(default='main')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
+
+  
