@@ -70,12 +70,12 @@ home_folder  = xbmc.translatePath('special://home/')# Convert the special path o
 addon_folder = os.path.join(home_folder,'addons')   # Join our folder above with 'addons' so we have a link to our addons folder
 art_path     = os.path.join(addon_folder,addon_id)  # Join addons folder with the addon_id, we'll use this as a basic art folder
 debug        = koding.Addon_Setting('debug')        # Grab the setting of our debug mode in add-on settings
-
+#------------------------------------------------
 # Set the base plugin url you want to hook into
 BASE  = "plugin://plugin.video.youtube/playlist/"
 BASE2 = "plugin://plugin.video.youtube/channel/"
-
-
+BASE3 = "play/?video_id="
+#------------------------------------------------
 
 # Set each of your YouTube playlist id's
 YOUTUBE_CHANNEL_ID_1 = "UCuuTGIE9NAeYuwDbpmSm4eg"
@@ -104,9 +104,21 @@ YOUTUBE_CHANNEL_ID_23 = "UCrX_2JCBvW6k2KKjSV7dIdQ"
 YOUTUBE_CHANNEL_ID_24 = "UC1mIxTEk1Q9IMIPwV67JSdQ"
 YOUTUBE_CHANNEL_ID_25 = "UC_OVsoKcD3jxHgxjQirLq-A"
 YOUTUBE_CHANNEL_ID_26 = "UC4QZ_LsYcvcq7qOsOhpAX4A"
-YOUTUBE_CHANNEL_ID_27 = ""
-
-
+YOUTUBE_CHANNEL_ID_27 = "DtRrvraDkLI"
+YOUTUBE_CHANNEL_ID_28 = "-FHbf8-lywc"
+YOUTUBE_CHANNEL_ID_29 = "5OeerYNLV5A"
+YOUTUBE_CHANNEL_ID_30 = "ZidPzP0wchg"
+YOUTUBE_CHANNEL_ID_31 = "0iVpUpn6I6U"
+YOUTUBE_CHANNEL_ID_32 = "8QSWP56J8DA"
+YOUTUBE_CHANNEL_ID_33 = "aEbxdE-QDhY"
+YOUTUBE_CHANNEL_ID_34 = "v983wZ-yNyo"
+YOUTUBE_CHANNEL_ID_35 = "x2pvvvook34"
+YOUTUBE_CHANNEL_ID_36 = "T27q1Z6D4ko"
+YOUTUBE_CHANNEL_ID_37 = "i5U1io0PB88"
+YOUTUBE_CHANNEL_ID_38 = "jEORjBWY-t4"
+YOUTUBE_CHANNEL_ID_39 = "WWllXaMod1c"
+YOUTUBE_CHANNEL_ID_40 = ""
+YOUTUBE_CHANNEL_ID_41 = ""
 
 
 #----------------------------------------------------------------
@@ -133,14 +145,6 @@ YOUTUBE_CHANNEL_ID_27 = ""
 @route(mode="main")
 def Main_Menu():
 
-# Only show koding tutorials if debug mode is enabled in addon settings
-#    if debug=='true':
-#        Add_Dir(name='KODING TUTORIALS', url='', mode='tutorials', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
-
-#    Add_Dir(name='TEST DIALOG', url='{"my_text":"My First Add-on[CR]Woohooo!!!","my_desc":"test description"}', mode='testing', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
-
-# Once you've played with the above try uncommenting each of the following lines one by one.
-# After uncommenting a line re-run the add-on to see your changes take place.
 
     Add_Dir(name='Space Travel', url='', mode='open_folder', folder=True, icon="http://icons.iconarchive.com/icons/aha-soft/space/256/Galaxy-icon.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
     Add_Dir(name='Quantum Physics', url='', mode='open_folder2', folder=True, icon="https://cf3e497594.site.internapcdn.net/tmpl/v5/img/phys_308px.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
@@ -150,13 +154,12 @@ def Main_Menu():
     Add_Dir(name='Fusion Power', url='', mode='open_folder6', folder=True, icon="https://cdn4.iconfinder.com/data/icons/iron-man-icons/512/Reactor.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
     Add_Dir(name='Inventions', url='', mode='open_folder7', folder=True, icon="https://inventionaday.com/wp-content/uploads/2016/09/Invention_a_day_logo.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
     Add_Dir(name='Space in General', url='', mode='open_folder8', folder=True, icon="http://www.santeriaytarot.com/images/jupiter.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
-    Add_Dir(name='Documentaries', url='', mode='open_folder9', folder=True, icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
-    # Add_Dir(name='OPEN FOLDER - NO URL', url='', mode='open_folder', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
-    # Add_Dir(name='VIDEO EXAMPLES', url='', mode='video_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'), description='A couple of test videos for you to look at.', content_type='video')
-    # Add_Dir(name='MUSIC EXAMPLE', url='', mode='music_examples', folder=True, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'),content_type='song')
+    Add_Dir(name='Documentary Channels/Playlists', url='', mode='open_folder9', folder=True, icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
+    Add_Dir(name='Single Documentaries', url='', mode='open_folder10', folder=True, icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
+    Add_Dir(name='Plants', url='', mode='open_folder11', folder=True, icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="http://tonyh.net/backgrounds/tech/tech2.jpg.png")
 
-# This is our test zone, this just calls the Test_Function mode so feel free to play with the code in that function.
-    # Add_Dir(name='TESTING ZONE', url='{"test1":"this is","test2":"some example","test3":"text"}', mode='test_function', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
+
+
 #-----------------------------
 @route(mode="test_function", args=["test1","test2","test3"])
 def Test_Function(test1, test2, test3):
@@ -168,9 +171,6 @@ def Test_Function(test1, test2, test3):
 #-----------------------------
 @route(mode="open_folder", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
         
         Add_Dir( 
         name="Warp Drive", url=BASE2+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
@@ -196,55 +196,25 @@ def Test_Folder(url):
         name="Space Travel", url=BASE+YOUTUBE_CHANNEL_ID_6+"/", folder=True,
         icon="http://www.dailygalaxy.com/photos/uncategorized/2008/07/29/warp_drive_2.jpg", fanart="http://tonyh.net/backgrounds/tech/wallpapers%20authors%20ps3%20space%20themes%20desktop%20backgrounds%20....jpg")
 
-        #Add_Dir( 
-        #name="Liked Videos", url=BASE+YOUTUBE_CHANNEL_ID_7+"/", folder=True,
-        #icon="http://cdn.marketplaceimages.windowsphone.com/v8/images/b1d4b19a-8711-41d0-8885-01bc32b4c701?imageType=ws_icon_medium", fanart="http://tonyh.net/backgrounds/hema%20images/bad_lip_reading.jpg")
-
-
 
 
 
 #-----------------------------
 @route(mode="open_folder2", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
         
         Add_Dir( 
-        name="Quantum Physics Course", url=BASE+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
+        name="Quantum Physics Course", url=BASE+YOUTUBE_CHANNEL_ID_7+"/", folder=True,
         icon="https://cf3e497594.site.internapcdn.net/tmpl/v5/img/phys_308px.png", fanart="http://www.thejohnniechair.com/wp-content/uploads/2016/04/QuantumPhysics.jpg")
 
         Add_Dir( 
         name="Michio Kaku", url=BASE+YOUTUBE_CHANNEL_ID_8+"/", folder=True,
         icon="https://cf3e497594.site.internapcdn.net/tmpl/v5/img/phys_308px.png", fanart="http://www.thejohnniechair.com/wp-content/uploads/2016/04/QuantumPhysics.jpg")
 
-        #Add_Dir( 
-        #name="2017 Super Bowl Commercials", url=BASE+YOUTUBE_CHANNEL_ID_10+"/", folder=True,
-        #icon="http://www.bestappspoint.com/wp-content/uploads/2012/02/Super-Ads-Super-Bowl-Commercials.jpg", fanart="https://www.ventureiconmedia.com/wp-content/uploads/2017/02/2.png")
-
-        #Add_Dir( 
-        #name="50 Best Super Bowl Commercials of all time", url=BASE+YOUTUBE_CHANNEL_ID_11+"/", folder=True,
-        #icon="http://www.bestappspoint.com/wp-content/uploads/2012/02/Super-Ads-Super-Bowl-Commercials.jpg", fanart="https://www.ventureiconmedia.com/wp-content/uploads/2017/02/2.png")
-
-        #Add_Dir( 
-        #name="Funny Commercials 1", url=BASE+YOUTUBE_CHANNEL_ID_12+"/", folder=True,
-        #icon="http://static.superbowlcommercials.co/2016/01/Emotional-chart-720x415.gif", fanart="https://www.ventureiconmedia.com/wp-content/uploads/2017/02/2.png")
-
-        #Add_Dir( 
-        #name="Funny Commercials 2", url=BASE+YOUTUBE_CHANNEL_ID_13+"/", folder=True,
-        #icon="http://static.superbowlcommercials.co/2016/01/Emotional-chart-720x415.gif", fanart="https://www.ventureiconmedia.com/wp-content/uploads/2017/02/2.png")
-
-        #Add_Dir( 
-        #name="Funny Commercials 3", url=BASE+YOUTUBE_CHANNEL_ID_14+"/", folder=True,
-        #icon="http://static.superbowlcommercials.co/2016/01/Emotional-chart-720x415.gif", fanart="https://www.ventureiconmedia.com/wp-content/uploads/2017/02/2.png")
 
 #-----------------------------
 @route(mode="open_folder3", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
         
         Add_Dir( 
         name="Real Life Lore", url=BASE2+YOUTUBE_CHANNEL_ID_15+"/", folder=True,
@@ -252,9 +222,6 @@ def Test_Folder(url):
 #-----------------------------
 @route(mode="open_folder4", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
 
         Add_Dir( 
         name="Theory of Relativity", url=BASE+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
@@ -268,16 +235,10 @@ def Test_Folder(url):
         name="Theory of Relativity 3", url=BASE+YOUTUBE_CHANNEL_ID_11+"/", folder=True,
         icon="https://cdn4.iconfinder.com/data/icons/education-volume-7/48/329-512.png", fanart="https://previews.123rf.com/images/paulfleet/paulfleet0911/paulfleet091100011/5884777-Original-illustration-showing-the-link-between-space-time-and-gravity-Stock-Illustration.jpg")
 
-        #Add_Dir( 
-        #name="Movieclips Coming soon", url=BASE2+YOUTUBE_CHANNEL_ID_19+"/", folder=True,
-        #icon="https://lh4.ggpht.com/YU-xk1IG8ZfG_4GSX2LUrfC7keaLC1ilxcV5maHxWBPSSYmhda7BJAAehaiTyHDvWbH-=w300", fanart="http://az616578.vo.msecnd.net/files/2016/10/30/636134414566099044185438682_635950754841194176761107736_Movie_Trailer_Preview_Screen.jpg")
 
 #-----------------------------
 @route(mode="open_folder5", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
 
         Add_Dir( 
         name="Hubble Space Telescope", url=BASE+YOUTUBE_CHANNEL_ID_12+"/", folder=True,
@@ -287,16 +248,10 @@ def Test_Folder(url):
         name="Deep Space TV", url=BASE+YOUTUBE_CHANNEL_ID_13+"/", folder=True,
         icon="https://universegrowth.files.wordpress.com/2010/12/hubble.png", fanart="https://thefulldomeblog.files.wordpress.com/2015/10/hubblemodule1.jpg")
 
-        #Add_Dir( 
-        #name="Fail Blog", url=BASE2+YOUTUBE_CHANNEL_ID_22+"/", folder=True,
-        #icon="http://matthewhopkinsnews.com/wp-content/uploads/2014/06/FailStamp.jpg", fanart="http://ak6.picdn.net/shutterstock/videos/9455603/thumb/5.jpg")
 
 #----------------------------
 @route(mode="open_folder6", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
 
         Add_Dir( 
         name="MIT Plasma Science and Fusion Center", url=BASE2+YOUTUBE_CHANNEL_ID_14+"/", folder=True,
@@ -311,9 +266,6 @@ def Test_Folder(url):
 #-----------------------------
 @route(mode="open_folder7", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
            
         Add_Dir( 
         name="Colinfurze", url=BASE2+YOUTUBE_CHANNEL_ID_17+"/", folder=True,
@@ -329,9 +281,6 @@ def Test_Folder(url):
 #-----------------------------
 @route(mode="open_folder8", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
 
         Add_Dir( 
         name="Aerospace Engineering", url=BASE2+YOUTUBE_CHANNEL_ID_20+"/", folder=True,
@@ -341,9 +290,6 @@ def Test_Folder(url):
 
 @route(mode="open_folder9", args=["url"])
 def Test_Folder(url):
-    if url == 'test_mode':
-        dialog.ok('Test Mode','open_folder has been called with the url being "test_mode". When you click OK you should open into and empty folder - this is because folder=True in our Add_Dir()')
-    else:
 
         Add_Dir( 
         name="Advexon TV", url=BASE2+YOUTUBE_CHANNEL_ID_21+"/", folder=True,
@@ -371,6 +317,65 @@ def Test_Folder(url):
 
 
 
+#----------------------------
+@route(mode="open_folder10", args=["url"])
+def Test_Folder(url):
+
+        Add_Dir( 
+        name="National Geographic | Bioluminescent Creatures", url=BASE3+YOUTUBE_CHANNEL_ID_27, folder=False, mode='play_yt',
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="National Geographic | Gravity - Documentary", url=BASE3+YOUTUBE_CHANNEL_ID_28, folder=False, mode='play_yt',
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="David Attenborough's - Natural History Museum Alive ", url=BASE3+YOUTUBE_CHANNEL_ID_29, folder=False, mode='play_yt',
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="National Geographic | Colonizing Space", url=BASE3+YOUTUBE_CHANNEL_ID_30, folder=False, mode='play_yt',
+        icon="http://www.thehtpc.net/wp-content/gallery/imagesbyname/xz_genre_preview.png", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+#-----------------------------
+@route(mode="open_folder11", args=["url"])
+def Test_Folder(url):
+
+        Add_Dir( 
+        name="The Secret Language Of Plants - National Geographic Documentary", url=BASE3+YOUTUBE_CHANNEL_ID_31, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="The Secret World of the Plants", url=BASE3+YOUTUBE_CHANNEL_ID_32, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="Top 10 Strangest Plants On Earth", url=BASE3+YOUTUBE_CHANNEL_ID_33, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="10 Plants That Could Kill You", url=BASE3+YOUTUBE_CHANNEL_ID_34, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="15 Georgeous Agave Plants", url=BASE3+YOUTUBE_CHANNEL_ID_35, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="Attila's Garden", url=BASE3+YOUTUBE_CHANNEL_ID_36, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="Collection at the National Botanic Gardens of Ireland", url=BASE3+YOUTUBE_CHANNEL_ID_37, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="Some Rare and Unusual Cacti and Succulents", url=BASE3+YOUTUBE_CHANNEL_ID_38, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="Arid Garden at the Royal Botanic Gardens Melbourne", url=BASE3+YOUTUBE_CHANNEL_ID_39, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
 
 
 #-----------------------------
@@ -381,71 +386,6 @@ def Bad_Function():
         koding.Open_Settings(focus='1.1')
     xbmc.log(this_should_error)
 #-----------------------------
-@route(mode='testing', args=["my_text","my_desc"])
-def Testing(my_text,my_desc):
-    dialog.ok('TEST','Here are the params we recieved in Testing() function:', 'my_text: [COLOR=dodgerblue]%s[/COLOR]' % my_text,'my_desc: [COLOR=dodgerblue]%s[/COLOR]'%my_desc)
-#-----------------------------
-@route(mode="video_examples")
-def Video_Examples():
-    """
-Below are some examples showing Add_Dir() with some artwork and infolabels sent through including trailer link for a movie
-You would obviously use some sort of automated loop to auto-generate this info for large lists but hopefully this example may help
-    """
-    Add_Dir(name='[COLOR=dodgerblue][TV][/COLOR] Fraggle Rock S03E21', url='episode_dialog', mode='scrape_sites', folder=False, content_type='Video',
-        icon='https://images-na.ssl-images-amazon.com/images/M/MV5BNzg0MzQwODY3N15BMl5BanBnXkFtZTgwMjA2OTEwMjE@._V1_SY1000_CR0,0,789,1000_AL_.jpg',
-        fanart='https://images-na.ssl-images-amazon.com/images/M/MV5BMjI0MjI4NTEwNV5BMl5BanBnXkFtZTgwMzA4NTQ2MjE@._V1_.jpg',
-        info_labels={"season":"03", "episode":"21", "genre":"Kids", "plot":"Get your cares away, worries for another day...", "mpaa":"U"})
-
-    Add_Dir(name='[COLOR=dodgerblue][MOVIE][/COLOR] Trainspotting', url='movie_dialog', mode='scrape_sites', folder=False, content_type='Video',
-        icon='https://images-na.ssl-images-amazon.com/images/M/MV5BMzA5Zjc3ZTMtMmU5YS00YTMwLWI4MWUtYTU0YTVmNjVmODZhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg',
-        fanart='https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNjE3NzU2Nl5BMl5BanBnXkFtZTcwMzI0OTAyNg@@._V1_.jpg',
-        info_labels={"originaltitle":"Trainspotting","genre":"crime,british", "plot":"Trainspotting is an awesome movie!", "mpaa":"18", "trailer":"plugin://plugin.video.youtube/play/?video_id=nBKWnAdmJJ8"})
-    dialog.ok('CLICK INFO','Try bringing up the info for these items, you should see our artwork and other metadata has been populated.')
-#-----------------------------
-@route(mode="music_examples")
-def Music_Examples():
-    """
-This is an example of adding a song, there's a good chance the scaper will find no results for this song,
-it's only here as an example to show how to set things like artwork.
-    """
-    Add_Dir(name='Sally Cinnamon - Stone Roses', url='song_dialog', mode='scrape_sites', folder=False,
-        icon='http://images.rapgenius.com/7929026cc89ab0c77669dee5cc323da9.530x528x1.jpg',
-        fanart='http://www.flickofthefinger.co.uk/wp-content/uploads/2016/03/the-stone-roses-1.jpg',
-        info_labels={"genre":"Rock,Inde,British", "artist":"Stone Roses", "title":"Sally Cinnamon"})
-#-----------------------------
-@route(mode="scrape_sites", args=["url"])
-def Scrape_Sites(list_type):
-    """
-This is just a very rough example showing how simple it is to make use of the NaN Scrapers module.
-We send through details of what we want to find and NaN Scrapers will search multiple websites for this content.
-    """
-    content = ''
-    if list_type == 'movie_dialog':
-        content = nanscrapers.scrape_movie_with_dialog(title='Trainspotting', year='1996', imdb='tt0117951', host=None, include_disabled=False, timeout=30)
-    elif list_type == 'episode_dialog':
-        content = nanscrapers.scrape_episode_with_dialog(title='Fraggle Rock', show_year='1983', year='1985', season='3', episode='4', imdb='tt0085017', tvdb=None, host=None, include_disabled=False, timeout=30)
-    elif list_type == 'song_dialog':
-        content = nanscrapers.scrape_song_with_dialog(title='Fools Gold', artist='Stone Roses', host=None, include_disabled=False, timeout=30)
-
-# If the item returned is a dictionary that's great we know we have a list to work with
-    if koding.Data_Type(content) == 'dict':
-        xbmc.log(repr(content),2)
-        playback = koding.Play_Video(video=content["url"], showbusy=True)
- 
-# It may be a plugin or direct url has been sent through, if so lets use the list_type variable
-    elif not list_type.endswith('_dialog'):
-        playback = koding.Play_Video(video=list_type, showbusy=True)
-
-# Nothing useful has been found, lets exit back to the list
-    else:
-        return
-
-# If the playback returned as True then it was successful but if it was False we know we need to try again for another source
-    if not playback:
-        if dialog.yesno('PLAYBACK FAILED','The video may have been removed, the web host may have altered their code or this video may not be available in your region. [COLOR=dodgerblue]Would you like to try another source?[/COLOR]'):
-            Scrape_Sites(list_type)
-
-#----------------------------------------------------------------
 
 """
     SECTION 6:
@@ -454,6 +394,16 @@ We send through details of what we want to find and NaN Scrapers will search mul
     whatever route you want to open into, in this example the 'main' route which opens the
     Main_Menu() function up at the top.
 """
+#-----------------------------------
+#Play a youtube video
+@route(mode="play_yt", args=["url"])
+def Play_YT(url):
+    
+    xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/%s)'%url)
+
+#-----------------------------------
+
+
 if __name__ == "__main__":
     Run(default='main')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
