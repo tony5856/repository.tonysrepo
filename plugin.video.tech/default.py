@@ -75,6 +75,8 @@ debug        = koding.Addon_Setting('debug')        # Grab the setting of our de
 BASE  = "plugin://plugin.video.youtube/playlist/"
 BASE2 = "plugin://plugin.video.youtube/channel/"
 BASE3 = "play/?video_id="
+
+
 #------------------------------------------------
 
 # Set each of your YouTube playlist id's
@@ -117,9 +119,16 @@ YOUTUBE_CHANNEL_ID_36 = "T27q1Z6D4ko"
 YOUTUBE_CHANNEL_ID_37 = "i5U1io0PB88"
 YOUTUBE_CHANNEL_ID_38 = "jEORjBWY-t4"
 YOUTUBE_CHANNEL_ID_39 = "WWllXaMod1c"
-YOUTUBE_CHANNEL_ID_40 = ""
-YOUTUBE_CHANNEL_ID_41 = ""
-
+YOUTUBE_CHANNEL_ID_40 = "MlbKlRGlyCQ"
+YOUTUBE_CHANNEL_ID_41 = "2RAJFS5namo"
+YOUTUBE_CHANNEL_ID_42 = "PLyNTTx_4gF9smBxRsJA-YDjHDIfPo0RCQ"
+YOUTUBE_CHANNEL_ID_43 = "x-sf19f_QRE"
+YOUTUBE_CHANNEL_ID_44 = ""
+YOUTUBE_CHANNEL_ID_45 = ""
+YOUTUBE_CHANNEL_ID_46 = ""
+YOUTUBE_CHANNEL_ID_47 = ""
+YOUTUBE_CHANNEL_ID_48 = ""
+YOUTUBE_CHANNEL_ID_49 = ""
 
 #----------------------------------------------------------------
 """
@@ -340,6 +349,11 @@ def Test_Folder(url):
 @route(mode="open_folder11", args=["url"])
 def Test_Folder(url):
 
+
+        Add_Dir( 
+        name="Lotusland [COLOR blue]Playlist[/COLOR]", url=BASE+YOUTUBE_CHANNEL_ID_42+"/", folder=True,
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
         Add_Dir( 
         name="The Secret Language Of Plants - National Geographic Documentary", url=BASE3+YOUTUBE_CHANNEL_ID_31, folder=False, mode='play_yt',
         icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
@@ -376,7 +390,17 @@ def Test_Folder(url):
         name="Arid Garden at the Royal Botanic Gardens Melbourne", url=BASE3+YOUTUBE_CHANNEL_ID_39, folder=False, mode='play_yt',
         icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
 
+        Add_Dir( 
+        name="Flying through Lotusland", url=BASE3+YOUTUBE_CHANNEL_ID_40, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
 
+        Add_Dir( 
+        name="Mysterious Lotusland", url=BASE3+YOUTUBE_CHANNEL_ID_41, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
+
+        Add_Dir( 
+        name="World's Most Famous Botanical Gardens", url=BASE3+YOUTUBE_CHANNEL_ID_43, folder=False, mode='play_yt',
+        icon="https://i.pinimg.com/736x/7c/77/8e/7c778e14faa71ef6838cd81ec02196c5--succulent-terrarium-terrariums.jpg", fanart="https://wallpaperscraft.com/image/succulents_flowers_plant_110695_1920x1080.jpg")
 
 #-----------------------------
 @route(mode="bad_function")
@@ -400,6 +424,12 @@ def Bad_Function():
 def Play_YT(url):
     
     xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/%s)'%url)
+
+#-----------------------------------
+@route(mode="video", args=["url"])
+def Play_Video(url):
+    
+    xbmc.executebuiltin('PlayMedia(plugin://plugin.video.vimeo/video%s)'%url)
 
 #-----------------------------------
 
