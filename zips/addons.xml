@@ -103,26 +103,33 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.mynews" name="My News" version="0.0.2" provider-name="TonyH">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.nanscrapers" version="0.5.5" />
-        <import addon="script.module.python.koding.aio" version="0.0.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">My News channels</summary>
-		<description lang="en">My local and national news channels.</description>
-		<platform>all</platform>
-		<forum>http://www.noobsandnerds.com/support</forum>
-		<website>www.noobsandnerds.com</website>
-		<news></news>
-		<genre></genre>
-		<video_guide></video_guide>
-		<video_preview></video_preview>
-	</extension>
+<addon id="plugin.video.mynews" name="My News addon" version="1.0.0" provider-name="TonyH">
+        <requires>
+                <import addon="xbmc.python" version="2.19.0" />
+                <import addon="script.module.nanscrapers" version="0.5.5" />
+                <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
+                <import addon="script.module.liveresolver" version="0.1.47" />
+                <import addon="script.module.beautifulsoup" version="3.2.1"/>
+                <import addon="script.module.requests" version="2.9.1" />
+                <import addon="script.module.addon.common" version="2.0.0" />
+                <import addon="script.module.xmltodict" version="0.9.0"/>
+                <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+                <import addon="script.module.urlresolver" version="1.2.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+                <provides>audio video</provides>
+        </extension>
+        <extension point="xbmc.service" library="service.py" start="[login|startup]">
+              </extension>
+        <extension point="xbmc.addon.metadata">
+          <summary lang="en">My News feeds</summary>
+          <description lang="en">Local and national news channels</description>
+          <platform>all</platform>
+          <forum></forum>
+          <website></website>
+          <video_guide>y0w8zIH4lOY</video_guide>
+          <video_preview>WdKIzajiBBI</video_preview>
+        </extension>
 </addon>
 
 <addon id="plugin.video.python_stuff" name="Python Stuff" version="0.0.2" provider-name="Tony H">

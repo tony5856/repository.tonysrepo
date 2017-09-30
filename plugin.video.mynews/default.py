@@ -1,209 +1,175 @@
 # -*- coding: utf-8 -*-
-
-""" ^ SECTION 1:
-    This should be at the top of your code to declare the type of text
-    format you're using. Without this you may find some text editors save
-    it in an incompatible format and this can make bug tracking extremely
-    confusing! More info here: https://www.python.org/dev/peps/pep-0263/
 """
+    default.py --- Jen Addon entry point
+    Copyright (C) 2017, Midraal
 
-#----------------------------------------------------------------
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-    SECTION 2:
-    This is where you'd put your license details, the GPL3 license 
-    is the most common to use as it makes it easy for others to fork
-    and improve upon your code. If you're re-using others code ALWAYS
-    check the license first, removal of licenses is NOT allowed and you
-    generally have to keep to the same license used in the original work
-    (check license details as some do differ).
+import __builtin__
 
-    Although not all licenses require it (some do, some don't),
-    you should always give credit to the original author(s). Someone may have spent
-    months if not years on the code so really it's the very least you can do if
-    you choose to use their work as a base for your own.
-"""
-# License: GPL (http://www.gnu.org/licenses/gpl-3.0.html)
-# Add-on: My Playlist Add-on
-# Author: Add your name here
+# CONFIGURATION VARIABLES
+# -----------------------
+# change these to suit your addons
+root_xml_url = "http://tonyh.net/xml%20files/video.xml"  # url of the root xml file
+__builtin__.tvdb_api_key = ""  # tvdb api key
+__builtin__.tmdb_api_key = ""  # tmdb api key
+__builtin__.trakt_client_id = ""  # trakt client id
+__builtin__.trakt_client_secret = ""  # trakt client secret
 
-#----------------------------------------------------------------
 
-"""
-    SECTION 3:
-    This is your global imports, any modules you need to import code from
-    are added here. You'll see a handful of the more common imports below.
-"""
-import os           # access operating system commands
-import xbmc         # the base xbmc functions, pretty much every add-on is going to need at least one function from here
-import xbmcaddon    # pull addon specific information such as settings, id, fanart etc.
-import xbmcplugin   # contains functions required for creating directory structure style add-ons (plugins)
+import os
+import sys
 
-# The following are often used, we are not using them in this particular file so they are commented out
+import koding
+import koding.router as router
+import resources.lib.sources
+import resources.lib.testings
+import resources.lib.util.info
+import xbmc
+import xbmcaddon
+import xbmcplugin
+from koding import route
+from resources.lib.util.xml import JenList, display_list
+import resources.lib.util.views
 
-# import re           # allows use of regex commands, if you're intending on scraping you'll need this
-# import xbmcgui      # gui based functions, contains things like creating dialog pop-up windows
+# Addon Variables
+addon_id = xbmcaddon.Addon().getAddonInfo('id')
+addon_name = xbmcaddon.Addon().getAddonInfo('name')
+home_folder = xbmc.translatePath('special://home/')
+addon_folder = os.path.join(home_folder, 'addons')
+art_path = os.path.join(addon_folder, addon_id)
+content_type = "files"
 
-from koding import route, Add_Dir, Addon_Setting, Data_Type, Find_In_Text
-from koding import Open_URL, OK_Dialog, Open_Settings, Play_Video, Run, Text_File
 
-#----------------------------------------------------------------
-"""
-    SECTION 4:
-    These are our global variables, anything we set here can be accessed by any of
-    our functions later on. Please bare in mind though that if you change the value
-    of a global variable from inside a function the value will revert back to the
-    value set here once that function has completed.
-"""
-debug        = Addon_Setting(setting='debug')       # Grab the setting of our debug mode in add-on settings
-addon_id     = xbmcaddon.Addon().getAddonInfo('id') # Grab our add-on id
-home         = xbmc.translatePath('special://home') # Set the path of the home Kodi folder
+@route("main")
+def root():
+    """root menu of the addon"""
+    base = root_xml_url
+    if not get_list(base):
+        koding.Add_Dir(
+            name="Message",
+            url="Sorry, server is down",
+            mode="message",
+            folder=True,
+            icon=xbmcaddon.Addon().getAddonInfo("icon"),
+            fanart=xbmcaddon.Addon().getAddonInfo("fanart"),
+            content_type="")
+        koding.Add_Dir(
+            name="Testings",
+            url='{"file_name":"testings.xml"}',
+            mode="Testings",
+            folder=True,
+            icon=xbmcaddon.Addon().getAddonInfo("icon"),
+            fanart=xbmcaddon.Addon().getAddonInfo("fanart"),
+            content_type="")
 
-# Our master XML we want to load up
-main_xml     = 'http://tonyh.net/xml%20files/video.xml'
 
-# Alternatively you could set a local XML but online obviously means less add-on updates to push
-# main_xml     = os.path.join(home,'addons',addon_id,'resources','video.xml')
+@route(mode="get_list", args=["url"])
+def get_list(url):
+    """display jen list"""
+    global content_type
+    jen_list = JenList(url)
+    items = jen_list.get_list()
+    content = jen_list.get_content_type()
+    if items == []:
+        return False
+    if content:
+        content_type = content
+    display_list(items, content_type)
+    return True
 
-#----------------------------------------------------------------
 
-"""
-    SECTION 5:
-    Add our custom functions in here, it's VERY important these go in this section
-    as the code in section 6 relies on these functions. If that code tries to run
-    before these functions are declared the add-on will fail.
+@route(mode="all_episodes", args=["url"])
+def all_episodes(url):
+    global content_type
+    import pickle
+    import xbmcgui
+    season_urls = pickle.loads(url)
+    result_items = []
+    dialog = xbmcgui.DialogProgress()
+    dialog.create(addon_name, "Loading items")
+    num_urls = len(season_urls)
+    for index, season_url in enumerate(season_urls):
+        if dialog.iscanceled():
+            break
+        percent = ((index + 1) * 100) / num_urls
+        dialog.update(percent, "processing lists", "%s of %s" % (index + 1,
+                                                                 num_urls))
 
-    You'll notice each function in here has a decorator above it (an @route() line of code),
-    this assigns a mode to the function so it can be called with Add_Dir and it also tells
-    the code what paramaters to send through. For example you'll notice the Start() function
-    we've assigned to the mode "start" - this means if we ever want to get Add_Dir to open that
-    function we just use the mode "start". This particular function does not require any extra
-    params to be sent through but if you look at the Simple_Dialog() function you'll see we send through
-    2 different paramaters (title and msg). If you look at the commented out section (lines 105-109)
-    you'll see we send these params through as a dictionary. Using that same format you can send through
-    as many different params as you wish.
-"""
+        jen_list = JenList(season_url)
+        result_items.extend(jen_list.get_list(skip_dialog=True))
+    content_type = "episodes"
+    display_list(result_items, "episodes")
 
-#----------------------------------------------------------------
-@route(mode='start')
-def Start():
-    Main_Menu(main_xml)
-#----------------------------------------------------------------
-@route(mode='main_menu',args=['url'])
-def Main_Menu(url=main_xml):
 
-# If debug mode is enabled show the koding tutorials
-    if debug == 'true':
-        Add_Dir ( '[COLOR=lime]Koding Tutorials[/COLOR]', '', "tutorials", True, '', '', '' )
+@route(mode="Settings")
+def settings():
+    xbmcaddon.Addon().openSettings()
 
-#############################################################
-# COMMENT OUT THE FOLLOWING 2 LINES WHEN READY FOR RELEASE!!!
-#    else:
-#        Add_Dir ( '[COLOR=lime]Enable debug mode for some cool dev tools![/COLOR]', '', "koding_settings", False, '', '', '' )
-#############################################################
 
-# An optional example title/message, however in our example we're going to do one via our online xml so we've commented this out
-    # my_message= "{'title' : 'Support & Suggestions', 'msg' : \"If you come across any online content you'd like to get added please use the support thread at noobsandnerds.com and I'll be happy to look into it for you.\"}"
-    # Add_Dir(
-    #     name="Support/Suggestions", url=my_message, mode="simple_dialog", folder=False,
-    #     icon="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-087_info-512.png")
+@route(mode="ScraperSettings")
+def scraper_settings():
+    xbmcaddon.Addon('script.module.nanscrapers').openSettings()
 
-# Read the contents of our file into memory
-    if url.startswith('http'):
-        contents  = Open_URL(url)
+
+@route(mode="ResolverSettings")
+def resolver_settings():
+    xbmcaddon.Addon('script.module.urlresolver').openSettings()
+
+
+@route(mode="message", args=["url"])
+def show_message(message):
+    import xbmcgui
+    if len(message) > 80:
+        koding.Text_Box(addon_name, message)
     else:
-        contents  = Text_File(url,'r')
+        xbmcgui.Dialog().ok(addon_name, message)
 
-# This isn't essential but we'll replace all linebreaks (\n) and tabs (\t) with an empty string.
-# This removes them and just makes it a smaller file to work with and easier to debug.
-    contents = contents.replace('\n','').replace('\t','')
 
-# Split the contents up into sections - we're finding every instance of <item> and </item> and everything inbetween
-    raw_links = Find_In_Text(content=contents, start='<item>', end=r'</item>')
-    xbmc.log(repr(raw_links),2)
-    counter = 1
-# Now loop through each of those matches and pull out the relevant data
-    for item in raw_links:
-        xbmc.log('# Checking link %s'%counter,2)
-        counter += 1
-        title  = Find_In_Text(content=item, start='<title>', end=r'</title>')
-        title  = title[0] if (title!=None) else 'Unknown Video'
-        thumb  = Find_In_Text(content=item, start='<thumbnail>', end=r'</thumbnail>')
-        thumb  = thumb[0] if (thumb!=None) else ''
-        fanart = Find_In_Text(content=item, start='<thumbnail>', end=r'</thumbnail>')
-        fanart = fanart[0] if (fanart!=None) else ''
+@route('clearCache')
+def clear_cache():
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    if dialog.yesno(addon_name, "Clear Metadata?"):
+        koding.Remove_Table("meta")
+        koding.Remove_Table("episode_meta")
+    if dialog.yesno(addon_name, "Clear Scraper Cache?"):
+        import nanscrapers
+        nanscrapers.clear_cache()
+    if dialog.yesno(addon_name, "Clear GIF Cache?"):
+        dest_folder = os.path.join(
+            xbmc.translatePath(xbmcaddon.Addon().getSetting("cache_folder")),
+            "artcache")
+        koding.Delete_Folders(dest_folder)
 
-    # If this contains sublinks grab all of them
-        if not '<sublink>' in item:
-            links  = Find_In_Text(content=item, start='<link>', end=r'</link>')
 
-    # Otherwise just grab the link tag
-        else:
-            links  = Find_In_Text(content=item, start='<sublink>', end=r'</sublink>')
+def get_addon_url(mode, url=""):
+    import urllib
+    result = sys.argv[0] + "?mode=%s" % mode
 
-    # If it's an xml file then we set the link to the xml path rather than a list of links
-        if links[0].endswith('.xml') or links[0]=='none' or links[0] == '' or links[0].startswith('msg~'):
-            links = links[0]
+    if url:
+        result += "&url=%s" % urllib.quote_plus(url)
+    return result
 
-    # If link is none we presume it's a folder
-        if links == 'none' or links == '':
-            Add_Dir( name=title, url='', mode='', folder=False, icon=thumb, fanart=fanart )
 
-    # If link is a string it's either another menu or a message
-        elif Data_Type(links)=='str':
+if xbmc.getInfoLabel("Container.FolderName") == "":
+    __builtin__.JEN_WIDGET = True
+else:
+    __builtin__.JEN_WIDGET = False
 
-        # If it's a message clean up the string and load up the simple_dialog function
-            if links.startswith('msg~'):
-                links = links.replace('msg~','')
-                Add_Dir( name=title, url="{%s}"%links, mode='simple_dialog', folder=False, icon=thumb, fanart=fanart )
+router.Run()
 
-        # Otherwise we presume it's a menu
-            else:
-                Add_Dir( name=title, url=links, mode='main_menu', folder=True, icon=thumb, fanart=fanart )
-
-    # Otherwise send through our list of links to the Play_Link function
-        else:
-            Add_Dir( name=title, url="{'url':%s}"%links, mode='play_link', folder=False, icon=thumb, fanart=fanart )
-#----------------------------------------------------------------
-# Simple function to check playback, it will return true or false if playback successful
-@route(mode='play_link',args=['url'])
-def Play_Link(url):
-# If only one item in the list we try and play automatically
-    if len(url)==1:
-        if not Play_Video(url[0]):
-            OK_Dialog( 'PLAYBACK FAILED','This stream is currently offline.' )
-
-# If more than one link then we give a choice of which link to play
-    elif len(url)>1:
-        link_list   = []
-        counter     = 1
-        for item in url:
-            link_list.append( 'Link '+str(counter) )
-            counter += 1
-        choice = Select_Dialog( 'CHOOSE STREAM', link_list )
-        if choice >= 0:
-            if not Play_Video( url[choice] ):
-                OK_Dialog( 'PLAYBACK FAILED','This stream is currently offline.' )
-                Play_Link(url)
-#----------------------------------------------------------------
-# A basic OK Dialog
-@route(mode='koding_settings')
-def Koding_Settings():
-    Open_Settings()
-#----------------------------------------------------------------
-# A basic OK Dialog
-@route(mode='simple_dialog', args=['title','msg'])
-def Simple_Dialog(title,msg):
-    OK_Dialog(title, msg)
-#----------------------------------------------------------------
-
-"""
-    SECTION 6:
-    Essential if creating list items, this tells kodi we're done creating our list items.
-    The list will not populate without this. In the run command you need to set default to
-    whatever route you want to open into, in this example the 'start' route which opens the
-    Start() function up at the top.
-"""
-if __name__ == "__main__":
-    Run(default='start')
-    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+xbmcplugin.endOfDirectory(int(sys.argv[1]), cacheToDisc=False)
+if not xbmcaddon.Addon().getSetting("first_run") == "true":
+    resources.lib.util.views.set_list_view_mode(content_type)

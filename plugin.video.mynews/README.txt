@@ -1,42 +1,207 @@
-For this to import the necessary modules you must make sure you have the
-modules4all repo source added into your very own repo. If you've already
-the <a href="http://totalrevolution.tv/create_repo.php" target="_blank">repository creator</a> on this site then it will already be setup, if not
-then use it to create a repo and copy the modules4all section into your own repo addon.xml.
+Table of Contents
+_________________
 
-If you just want to test locally by installing from zip without having to
-commit to your repo then you can just install the noobsandnerds repo as
-that has contains all the relevant modules, if you have that installed then
-you'll be able to install from zip without missing dependency errors.
-The source for the NaN repo is http://noobsandnerds.com/portal
-
-<h3>ONCE ADD-ON IS INSTALLED:</h3>
-Go through the default.py and read the comments for each section.
-You'll see this is linked to a test XML file which is online but
-there is also a locally stored XML file in the resources folder
-and in the default.py you can use this if you prefer.
-
-The comments in the Main_Menu() function are slightly more advanced and if
-you have no interest in understanding how or why the code does what it does then
-you can skip all of this and literally just start creating your XML files online.
-This add-on is good to go straight out of the box, the only thing you need to edit
-is the line 58 in default.py where the main_xml url is set - just set that to your
-own URL and you have yourself a fully functional playlist add-on!
-
-Basically if you don't have access to a server or don't have internet
-access then you can set the local file to be your master xml file (for testing)
-but when you push your add-on live you'll most likely want to have your files online
-as it will make it very easy to update content. The add-on should never need updating
-(unless you want to add new features), the only thing you'd need to update is your
-online xml files.
+1 Steps needed to get a working addon
+.. 1.1 change addon.xml
+.. 1.2 change the jen folder name
+.. 1.3 fill out variables
+.. 1.4 OPTIONAL if your xmls don't end in xml change resources/lib/util/xml.py
+.. 1.5 OPTIONAL change the replace_url function in resources/lib/util/url.py
+2 XML Formats for Jen
+.. 2.1 Main Directories
+.. 2.2 Movies
+.. 2.3 TV Directories
+.. 2.4 TV Seasons
+.. 2.5 TV Episodes
+.. 2.6 Youtube Channels
 
 
-<h3>Frequently Asked Questions:</h3>
-I want to develop an add-on and make it publicly available, what are my options?
--- You really have 2 options...
+1 Steps needed to get a working addon
+=====================================
 
-   1: Create your own repository and host on somewhere like github (it's free). If you contact the team at noobsandnerds they will happily add your repository to the daily Add-on Portal scan so your add-on can be accessed by the whole Kodi community. If you want them to add your repository zip to their http://noobsandnerds.com/portal source then they will be happy to do so but they only add repos to this source on request (they don't randomly re-upload without consent) so you will have to ask a member of the team. They also offer a great support forum and if you choose to have your add-on officially supported on there you can also join the NaN developer telegram chat where great minds can share ideas and collaborate together on projects. Again if interested please contact a member of the team via the forum.
+1.1 change addon.xml
+~~~~~~~~~~~~~~~~~~~~
 
-   2: Just upload this zip file to your own server and add details to the Add-on Portal at http://noobsandnerds.com/addons. Their system allows for standalone zips which do not reside on repositories. This will allow the add-on to be installed via Community Portal but we would recommend using option 1 rather than this method - if you want to be able to push updates then you're really going to want it on a repository. Dealing with support when you only have standalone zips can be extremely hard work as you're never quite sure which version the user has installed, this was a big problem the XBMC foundation resolved a decade ago when they created the repository framework in Kodi (or XBMC as it was then).
+  change the addon id and name and anything else you need to suit your
+  addon
 
-Can I use this code commercially?
--- Please look at our TRMC system for commercial options: http://totalrevolution.tv
+
+1.2 change the jen folder name
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  change it to reflect the addon id you assigned in step 1. not really
+  needed while developing, but important before doing the first release
+  so you don't overwrite any other addons using Jen
+
+
+1.3 fill out variables
+~~~~~~~~~~~~~~~~~~~~~~
+
+  fill out these lines in default.py
+  ,----
+  | root_xml_url = "http://"  # url of the root xml file
+  | __builtin__.tvdb_api_key = ""  # tvdb api key
+  | __builtin__.tmdb_api_key = ""  # tmdb api key
+  | __builtin__.trakt_client_id = ""  # trakt client id
+  | __builtin__.trakt_client_secret = ""  # trakt client secret
+  `----
+
+
+1.4 OPTIONAL if your xmls don't end in xml change resources/lib/util/xml.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  change the following code in __init__
+  ,----
+  | if url.endswith(".xml"):
+  |     request = urllib2.Request(replace_url(url))
+  |     response = urllib2.urlopen(request)
+  |     xml = response.read()
+  |     response.close()
+  | else:
+  |     xml = url
+  `----
+  to
+  ,----
+  | request = urllib2.Request(replace_url(url))
+  | response = urllib2.urlopen(request)
+  | xml = response.read()
+  | response.close()
+  `----
+
+
+1.5 OPTIONAL change the replace_url function in resources/lib/util/url.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  add any url replacing functions here. this shouldn't usualy be
+  necesary
+
+
+2 XML Formats for Jen
+=====================
+
+2.1 Main Directories
+~~~~~~~~~~~~~~~~~~~~
+
+  ,----
+  | <dir>
+  |         <name></name>
+  |         <link></link>
+  |         <animated_thumbnail></animated_thumbnail>
+  |         <thumbnail></thumbnail>
+  |         <animated_fanart></animated_fanart>
+  |         <fanart></fanart>
+  | </dir>
+  `----
+
+
+2.2 Movies
+~~~~~~~~~~
+
+  ,----
+  | <item>
+  |         <title></title>
+  |         <meta>
+  |                 <content>movie</content>
+  |                 <imdb></imdb>
+  |                 <title></title>
+  |                 <year></year>
+  |         </meta>
+  |         <link>
+  |                 <sublink>search</sublink>
+  |                 <sublink>searchsd</sublink>
+  |         </link>
+  |         <animated_thumbnail></animated_thumbnail>
+  |         <thumbnail></thumbnail>
+  |         <animated_fanart></animated_fanart>
+  |         <fanart></fanart>
+  | </item>
+  `----
+
+
+2.3 TV Directories
+~~~~~~~~~~~~~~~~~~
+
+  ,----
+  | <dir>
+  |         <title></title>
+  |         <meta>
+  |                 <content>tvshow</content>
+  |                 <imdb></imdb>
+  |                 <tvdb></tvdb>
+  |                 <tvshowtitle></tvshowtitle>
+  |                 <year></year>
+  |         </meta>
+  |         <link></link>
+  |         <animated_thumbnail></animated_thumbnail>
+  |         <thumbnail></thumbnail>
+  |         <animated_fanart></animated_fanart>
+  |         <fanart></fanart>
+  | </dir>
+  `----
+
+
+2.4 TV Seasons
+~~~~~~~~~~~~~~
+
+  ,----
+  | <dir>
+  |         <name></name>
+  |         <meta>
+  |                 <content>season</content>
+  |                 <imdb></imdb>
+  |                 <tvdb></tvdb>
+  |                 <tvshowtitle></tvshowtitle>
+  |                 <year></year>
+  |                 <season></season>
+  |         </meta>
+  |         <link></link>
+  |         <animated_thumbnail></animated_thumbnail>
+  |         <thumbnail></thumbnail>
+  |         <animated_fanart></animated_fanart>
+  |         <fanart></fanart>
+  | </dir>
+  `----
+
+
+2.5 TV Episodes
+~~~~~~~~~~~~~~~
+
+  ,----
+  | <item>
+  |         <title></title>
+  |         <meta>
+  |                 <content>episode</content>
+  |                 <imdb></imdb>
+  |                 <tvdb></tvdb>
+  |                 <tvshowtitle></tvshowtitle>
+  |                 <year></year>
+  |                 <title></title>
+  |                 <premiered></premiered>
+  |                 <season></season>
+  |                 <episode></episode>
+  |         </meta>
+  |         <link>
+  |                 <sublink>search</sublink>
+  |                 <sublink>searchsd</sublink>
+  |         </link>
+  |         <animated_thumbnail></animated_thumbnail>
+  |         <thumbnail></thumbnail>
+  |         <animated_fanart></animated_fanart>
+  |         <fanart></fanart>
+  | </item>
+  `----
+
+
+2.6 Youtube Channels
+~~~~~~~~~~~~~~~~~~~~
+
+  ,----
+  | <plugin>
+  |   <title></title>
+  |   <link>plugin://plugin.video.youtube/channel/***CHANNEL NUMBER HERE***/playlists/</link>
+  |   <animated_thumbnail></animated_thumbnail>
+  |   <thumbnail></thumbnail>
+  |   <animated_fanart></animated_fanart>
+  |   <fanart></fanart>
+  | </plugin>
+  `----
