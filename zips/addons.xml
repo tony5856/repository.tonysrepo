@@ -29,7 +29,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.funny" name="Funny addon" version="1.0.2" provider-name="TonyH">
+<addon id="plugin.video.funny" name="Funny addon" version="1.0.3" provider-name="TonyH">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -51,7 +51,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.HEMA" name="HEMA addon" version="0.0.3" provider-name="TonyH">
+<addon id="plugin.video.HEMA" name="HEMA addon" version="1.0.0" provider-name="TonyH">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -73,7 +73,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.howto" name="How to" version="0.0.2" provider-name="Tony H">
+<addon id="plugin.video.howto" name="How to" version="1.0.0" provider-name="Tony H">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -95,7 +95,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.jokers" name="Impractical Jokers" version="0.0.4" provider-name="TonyH">
+<addon id="plugin.video.jokers" name="Impractical Jokers" version="1.0.0" provider-name="TonyH">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -146,7 +146,7 @@
         </extension>
 </addon>
 
-<addon id="plugin.video.python_stuff" name="Python Stuff" version="0.0.2" provider-name="Tony H">
+<addon id="plugin.video.python_stuff" name="Python Stuff" version="1.0.0" provider-name="Tony H">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -168,7 +168,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tech" name="Tech stuff" version="0.0.4" provider-name="TonyH">
+<addon id="plugin.video.tech" name="Tech stuff" version="1.0.0" provider-name="TonyH">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
