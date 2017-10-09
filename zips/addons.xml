@@ -146,6 +146,28 @@
         </extension>
 </addon>
 
+<addon id="plugin.video.National_Geographic" name="National Geographic addon" version="0.0.1" provider-name="TonyH">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">National Geographic Channel</summary>
+		<description lang="en">National Geographic documantaries and playlists from youtube</description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+		<news></news>
+		<genre></genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
 <addon id="plugin.video.python_stuff" name="Python Stuff" version="1.0.0" provider-name="Tony H">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -277,7 +299,7 @@
   </extension>
 </addon>
 
-<addon id="repository.tonysrepo" name="Tonys Repo" version="1.0.0" provider-name="TonyH">
+<addon id="repository.tonysrepo" name="Tonys Repo" version="1.0.1" provider-name="TonyH">
 	<extension point="xbmc.addon.repository" name="Tonys Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
