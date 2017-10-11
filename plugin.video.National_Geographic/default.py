@@ -56,13 +56,13 @@ YOUTUBE_CHANNEL_ID_17 = "ULMw5ritC3M"
 YOUTUBE_CHANNEL_ID_18 = "vPFK54f6_CU"
 YOUTUBE_CHANNEL_ID_19 = "0iVpUpn6I6U"
 YOUTUBE_CHANNEL_ID_20 = "ps9jq6XS5Sc"
-YOUTUBE_CHANNEL_ID_21 = "XeEYaX82jSE"
-YOUTUBE_CHANNEL_ID_22 = "vG17Mw0HGbI"
+YOUTUBE_CHANNEL_ID_21 = "g_1oiJqE3OI"
+YOUTUBE_CHANNEL_ID_22 = "XVG8exRLJJk"
 YOUTUBE_CHANNEL_ID_23 = "NQQi_OH7m08"
 YOUTUBE_CHANNEL_ID_24 = "WcPljgtrlNE"
-YOUTUBE_CHANNEL_ID_25 = ""
-YOUTUBE_CHANNEL_ID_26 = ""
-YOUTUBE_CHANNEL_ID_27 = ""
+YOUTUBE_CHANNEL_ID_25 = "Z-URygHoE_o"
+YOUTUBE_CHANNEL_ID_26 = "oEorCX1I8CM"
+YOUTUBE_CHANNEL_ID_27 = "SRrG9WC0Ebo"
 YOUTUBE_CHANNEL_ID_28 = ""
 YOUTUBE_CHANNEL_ID_29 = ""
 YOUTUBE_CHANNEL_ID_30 = ""
@@ -169,7 +169,19 @@ def Test_Folder(url):
         icon="http://www.zincnyx.com/wp-content/uploads/2015/05/ThinkstockPhotos-482461333-Globe-Hand.jpg", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/videoblocks-seamless-loop-of-a-3d-human-brain-being-formed-by-points-brain-neuron-and-dna-chain-being-scanned-by-hud-interface-medical-futuristic-science-and-technology-motion-background-3d-rendering_seqh3a60e_thumbnail-full01.png")
 
         Add_Dir( 
-        name="Quantum Physics Theory Time", url=BASE3+YOUTUBE_CHANNEL_ID_22, folder=False, mode='play_yt',
+        name="Fabric of the Cosmos - What is Space", url=BASE3+YOUTUBE_CHANNEL_ID_22, folder=False, mode='play_yt',
+        icon="http://www.zincnyx.com/wp-content/uploads/2015/05/ThinkstockPhotos-482461333-Globe-Hand.jpg", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/videoblocks-seamless-loop-of-a-3d-human-brain-being-formed-by-points-brain-neuron-and-dna-chain-being-scanned-by-hud-interface-medical-futuristic-science-and-technology-motion-background-3d-rendering_seqh3a60e_thumbnail-full01.png")
+
+        Add_Dir( 
+        name="Fabric of the Cosmos - The Illusion of Time", url=BASE3+YOUTUBE_CHANNEL_ID_25, folder=False, mode='play_yt',
+        icon="http://www.zincnyx.com/wp-content/uploads/2015/05/ThinkstockPhotos-482461333-Globe-Hand.jpg", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/videoblocks-seamless-loop-of-a-3d-human-brain-being-formed-by-points-brain-neuron-and-dna-chain-being-scanned-by-hud-interface-medical-futuristic-science-and-technology-motion-background-3d-rendering_seqh3a60e_thumbnail-full01.png")
+
+        Add_Dir( 
+        name="Fabric of the Cosmos - Quantum Leap", url=BASE3+YOUTUBE_CHANNEL_ID_26, folder=False, mode='play_yt',
+        icon="http://www.zincnyx.com/wp-content/uploads/2015/05/ThinkstockPhotos-482461333-Globe-Hand.jpg", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/videoblocks-seamless-loop-of-a-3d-human-brain-being-formed-by-points-brain-neuron-and-dna-chain-being-scanned-by-hud-interface-medical-futuristic-science-and-technology-motion-background-3d-rendering_seqh3a60e_thumbnail-full01.png")
+
+        Add_Dir( 
+        name="Fabric of the Cosmos - Universe or Multiverse", url=BASE3+YOUTUBE_CHANNEL_ID_27, folder=False, mode='play_yt',
         icon="http://www.zincnyx.com/wp-content/uploads/2015/05/ThinkstockPhotos-482461333-Globe-Hand.jpg", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/videoblocks-seamless-loop-of-a-3d-human-brain-being-formed-by-points-brain-neuron-and-dna-chain-being-scanned-by-hud-interface-medical-futuristic-science-and-technology-motion-background-3d-rendering_seqh3a60e_thumbnail-full01.png")
 
 #------------------------------
