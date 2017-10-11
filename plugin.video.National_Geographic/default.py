@@ -45,18 +45,29 @@ YOUTUBE_CHANNEL_ID_6 = "PLivjPDlt6ApS90YoAu-T8VIj6awyflIym"
 YOUTUBE_CHANNEL_ID_7 = "PLivjPDlt6ApQSSkIRRlEkpxMj-6V7Z5VM"
 YOUTUBE_CHANNEL_ID_8 = "PLivjPDlt6ApTD6p2dgWr44nFi-J8xbIGe"
 YOUTUBE_CHANNEL_ID_9 = "PLivjPDlt6ApRfrpHJMdcrhYjAEwa02AhY"
-YOUTUBE_CHANNEL_ID_10 = ""
-YOUTUBE_CHANNEL_ID_11 = ""
-YOUTUBE_CHANNEL_ID_12 = ""
-YOUTUBE_CHANNEL_ID_13 = ""
-YOUTUBE_CHANNEL_ID_14 = ""
-YOUTUBE_CHANNEL_ID_15 = ""
-YOUTUBE_CHANNEL_ID_16 = ""
-YOUTUBE_CHANNEL_ID_17 = ""
-YOUTUBE_CHANNEL_ID_18 = ""
-YOUTUBE_CHANNEL_ID_19 = ""
-YOUTUBE_CHANNEL_ID_20 = ""
-
+YOUTUBE_CHANNEL_ID_10 = "-FHbf8-lywc"
+YOUTUBE_CHANNEL_ID_11 = "ncw4ISEU5ik"
+YOUTUBE_CHANNEL_ID_12 = "XLBwToelXSM"
+YOUTUBE_CHANNEL_ID_13 = "JZf9TUDYmME"
+YOUTUBE_CHANNEL_ID_14 = "6ZPGT0rN9bI"
+YOUTUBE_CHANNEL_ID_15 = "V4_9j9SAoLA"
+YOUTUBE_CHANNEL_ID_16 = "tmWV5ZnKOAg"
+YOUTUBE_CHANNEL_ID_17 = "ULMw5ritC3M"
+YOUTUBE_CHANNEL_ID_18 = "vPFK54f6_CU"
+YOUTUBE_CHANNEL_ID_19 = "0iVpUpn6I6U"
+YOUTUBE_CHANNEL_ID_20 = "ps9jq6XS5Sc"
+YOUTUBE_CHANNEL_ID_21 = "XeEYaX82jSE"
+YOUTUBE_CHANNEL_ID_22 = "vG17Mw0HGbI"
+YOUTUBE_CHANNEL_ID_23 = "NQQi_OH7m08"
+YOUTUBE_CHANNEL_ID_24 = "WcPljgtrlNE"
+YOUTUBE_CHANNEL_ID_25 = ""
+YOUTUBE_CHANNEL_ID_26 = ""
+YOUTUBE_CHANNEL_ID_27 = ""
+YOUTUBE_CHANNEL_ID_28 = ""
+YOUTUBE_CHANNEL_ID_29 = ""
+YOUTUBE_CHANNEL_ID_30 = ""
+YOUTUBE_CHANNEL_ID_31 = ""
+YOUTUBE_CHANNEL_ID_32 = ""
 
 
 #-----------------------------------------------------------
@@ -65,8 +76,11 @@ YOUTUBE_CHANNEL_ID_20 = ""
 def Main_Menu():
 
 
-    Add_Dir(name='Huge Playlists updated Daily', url='', mode='open_folder', folder=True, icon="http://www.thegsa.co.za/images/directory/national_geographic_explorer/nationalgeographiclogo_resized.png", fanart="https://i.ytimg.com/vi/Fs3IQXKGC5o/maxresdefault.jpg")
-    Add_Dir(name='Special Playlists', url='', mode='open_folder2', folder=True, icon="http://the-door.net/cinema/wp-content/uploads/2012/12/National-Geographic-Live-Main-Image1.png", fanart="https://i.ytimg.com/vi/Fs3IQXKGC5o/maxresdefault.jpg")
+    Add_Dir(name='Short Clip Playlists updated Daily', url='', mode='open_folder', folder=True, icon="http://tonyh.net/icons/nat%20geo/short%20clips.png", fanart="https://i.ytimg.com/vi/Fs3IQXKGC5o/maxresdefault.jpg")
+    Add_Dir(name='Special Playlists', url='', mode='open_folder2', folder=True, icon="http://tonyh.net/icons/nat%20geo/live.png", fanart="https://i.ytimg.com/vi/Fs3IQXKGC5o/maxresdefault.jpg")
+    Add_Dir(name='Space Documentaries', url='', mode='open_folder3', folder=True, icon="http://tonyh.net/icons/nat%20geo/space.png", fanart="https://i.ytimg.com/vi/Fs3IQXKGC5o/maxresdefault.jpg")
+    Add_Dir(name='Science and Tech Documentaries', url='', mode='open_folder4', folder=True, icon="http://tonyh.net/icons/nat%20geo/science%20and%20tech.png", fanart="https://i.ytimg.com/vi/Fs3IQXKGC5o/maxresdefault.jpg")
+    Add_Dir(name='Nature and Enviroment Documentaries', url='', mode='open_folder5', folder=True, icon="http://tonyh.net/icons/nat%20geo/nature.png", fanart="https://i.ytimg.com/vi/Fs3IQXKGC5o/maxresdefault.jpg")
 
 
 
@@ -118,6 +132,80 @@ def Test_Folder(url):
 
 #-----------------------------
 
+@route(mode="open_folder3", args=["url"])
+def Test_Folder(url):
+        
+        Add_Dir( 
+        name="Gravity", url=BASE3+YOUTUBE_CHANNEL_ID_10, folder=False, mode='play_yt',
+        icon="http://www.fondos7.net/thumbs/1189_2.jpg", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="How the Universe Works", url=BASE3+YOUTUBE_CHANNEL_ID_15, folder=False, mode='play_yt',
+        icon="http://www.fondos7.net/thumbs/1189_2.jpg", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="Journey to the edge of the Universe", url=BASE3+YOUTUBE_CHANNEL_ID_16, folder=False, mode='play_yt',
+        icon="http://www.fondos7.net/thumbs/1189_2.jpg", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="Found the second Earth", url=BASE3+YOUTUBE_CHANNEL_ID_17, folder=False, mode='play_yt',
+        icon="http://www.fondos7.net/thumbs/1189_2.jpg", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+        Add_Dir( 
+        name="Astrobiology & Space Travel", url=BASE3+YOUTUBE_CHANNEL_ID_24, folder=False, mode='play_yt',
+        icon="http://www.fondos7.net/thumbs/1189_2.jpg", fanart="https://i.pinimg.com/originals/5c/e1/44/5ce144f88cc4c2327279b97f14a5b486.jpg")
+
+#-----------------------------        
+
+@route(mode="open_folder4", args=["url"])
+def Test_Folder(url):
+        
+        Add_Dir( 
+        name="Tesla Motors", url=BASE3+YOUTUBE_CHANNEL_ID_11, folder=False, mode='play_yt',
+        icon="http://www.zincnyx.com/wp-content/uploads/2015/05/ThinkstockPhotos-482461333-Globe-Hand.jpg", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/videoblocks-seamless-loop-of-a-3d-human-brain-being-formed-by-points-brain-neuron-and-dna-chain-being-scanned-by-hud-interface-medical-futuristic-science-and-technology-motion-background-3d-rendering_seqh3a60e_thumbnail-full01.png")
+
+        Add_Dir( 
+        name="The World in 2050", url=BASE3+YOUTUBE_CHANNEL_ID_21, folder=False, mode='play_yt',
+        icon="http://www.zincnyx.com/wp-content/uploads/2015/05/ThinkstockPhotos-482461333-Globe-Hand.jpg", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/videoblocks-seamless-loop-of-a-3d-human-brain-being-formed-by-points-brain-neuron-and-dna-chain-being-scanned-by-hud-interface-medical-futuristic-science-and-technology-motion-background-3d-rendering_seqh3a60e_thumbnail-full01.png")
+
+        Add_Dir( 
+        name="Quantum Physics Theory Time", url=BASE3+YOUTUBE_CHANNEL_ID_22, folder=False, mode='play_yt',
+        icon="http://www.zincnyx.com/wp-content/uploads/2015/05/ThinkstockPhotos-482461333-Globe-Hand.jpg", fanart="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/videoblocks-seamless-loop-of-a-3d-human-brain-being-formed-by-points-brain-neuron-and-dna-chain-being-scanned-by-hud-interface-medical-futuristic-science-and-technology-motion-background-3d-rendering_seqh3a60e_thumbnail-full01.png")
+
+#------------------------------
+
+@route(mode="open_folder5", args=["url"])
+def Test_Folder(url):
+        
+        Add_Dir( 
+        name="Wild Amazon - The Perfect Paradise", url=BASE3+YOUTUBE_CHANNEL_ID_12, folder=False, mode='play_yt',
+        icon="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Recycling.png", fanart="https://userscontent2.emaze.com/images/2219d736-6961-455b-bf1d-a32ab63950b0/977fabcded9eb4946dbf747ab8cd4dd4.jpg")
+
+        Add_Dir( 
+        name="Rare and Exotic Animalsy", url=BASE3+YOUTUBE_CHANNEL_ID_13, folder=False, mode='play_yt',
+        icon="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Recycling.png", fanart="https://userscontent2.emaze.com/images/2219d736-6961-455b-bf1d-a32ab63950b0/977fabcded9eb4946dbf747ab8cd4dd4.jpg")
+
+        Add_Dir( 
+        name="Ocean of Giants", url=BASE3+YOUTUBE_CHANNEL_ID_14, folder=False, mode='play_yt',
+        icon="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Recycling.png", fanart="https://userscontent2.emaze.com/images/2219d736-6961-455b-bf1d-a32ab63950b0/977fabcded9eb4946dbf747ab8cd4dd4.jpg")
+
+        Add_Dir( 
+        name="War of Insects", url=BASE3+YOUTUBE_CHANNEL_ID_18, folder=False, mode='play_yt',
+        icon="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Recycling.png", fanart="https://userscontent2.emaze.com/images/2219d736-6961-455b-bf1d-a32ab63950b0/977fabcded9eb4946dbf747ab8cd4dd4.jpg")
+
+        Add_Dir( 
+        name="The Secret language of Plants", url=BASE3+YOUTUBE_CHANNEL_ID_19, folder=False, mode='play_yt',
+        icon="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Recycling.png", fanart="https://userscontent2.emaze.com/images/2219d736-6961-455b-bf1d-a32ab63950b0/977fabcded9eb4946dbf747ab8cd4dd4.jpg")
+
+        Add_Dir( 
+        name="Top Ten Natural Disasters", url=BASE3+YOUTUBE_CHANNEL_ID_20, folder=False, mode='play_yt',
+        icon="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Recycling.png", fanart="https://userscontent2.emaze.com/images/2219d736-6961-455b-bf1d-a32ab63950b0/977fabcded9eb4946dbf747ab8cd4dd4.jpg")
+
+        Add_Dir( 
+        name="Deadliest Diseases In Human History", url=BASE3+YOUTUBE_CHANNEL_ID_23, folder=False, mode='play_yt',
+        icon="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Recycling.png", fanart="https://userscontent2.emaze.com/images/2219d736-6961-455b-bf1d-a32ab63950b0/977fabcded9eb4946dbf747ab8cd4dd4.jpg")
+
+#-----------------------------                
 @route(mode="bad_function")
 def Bad_Function():
     if debug != 'true':
