@@ -18,6 +18,12 @@ flint_fanart = "http://rcartoons.com/wp-content/uploads/2017/09/The-Flintstones-
 flint_icon = "https://orig00.deviantart.net/0a02/f/2015/161/c/8/the_flintstones_folder_icon_2_by_gterritory-d8wqbei.png"
 main_fanart = "https://images4.alphacoders.com/194/thumb-1920-194984.jpg"
 main_icon = "https://orig00.deviantart.net/4b17/f/2016/040/8/8/cartoon_icon_folder_by_mohandor-d9r5mry.png"
+bugs_icon = ""
+bugs_fanart = ""
+
+
+
+
 #-----------------------------
 
 addon_handle = int(sys.argv[1])
@@ -47,6 +53,33 @@ def addDir(dir_type, mode, url, name, iconimage, fanart):
 
 #-----------------------------
 
+def Bugs_Bunny():
+    
+    _url_ = 'the-bugs-bunny-show/season/1'
+    show = ('http://www.cartoonson.com/cartoons/view/id/' + (_url_))
+    page = urllib2.urlopen(show)
+    soup = BeautifulSoup(page)
+    page.close()
+    containers = soup.findAll("div", {"class":"col-sm-9 col-xs-10"})
+    container = containers[0]
+    links = container.findAll("a", {"class":"pull-right play-episode-btn btn btn-default"})
+
+
+    for link in links:
+        href = link["href"]
+        final_href = href.replace('-preview', '')
+        
+
+    Links = container.findAll("a")
+
+    for link in Links:
+        name = link.text
+        final_name = name.replace('&#039;', '')
+        
+    
+    addDir('', '', final_href, final_name, bugs_icon, bugs_fanart)
+#-----------------------------
+
 def Flintstones():
 
     pre = "http://archive.org"
@@ -59,21 +92,32 @@ def Flintstones():
 
     for link in links:
         href = link["href"]
+        fix_link = href.replace('+', '%20')
+        final_link = (pre + fix_link)
         name = link.text
-        final_name = name.replace('.mp4download', '') 
-        final_link = (pre + href)
+        fix_name = name.replace('.mp4download', '') 
+        final_name = fix_name.replace('+', ' ')
+        
 
 
 
         addDir('', '', final_link, final_name, flint_icon, flint_fanart)
 
 
-
+#-----------------------------
 
 def Main_Menu():
     addDir('folder', 'flintstones', '', 'The Flintstones', main_icon, main_fanart)
+    addDir('folder', 'bugs_bunny', '', 'The Bugs Bunny Show', main_icon, main_fanart)
 
 #-----------------------------
+
+# def _show_(_url_):
+#     show = ('http://www.cartoonson.com/cartoons/view/id/' + (_url_))
+#     page = urllib2.urlopen(show)
+#     soup = BeautifulSoup(page)
+#     page.close()
+#-----------------------------    
 
 mode = None
 
@@ -86,7 +130,7 @@ if len(args) > 0:
 
 if mode == None : Main_Menu()
 elif mode == 'flintstones' : Flintstones()
-
+elif mode == 'bugs_bunny' : Bugs_Bunny()
 
 xbmcplugin.endOfDirectory(addon_handle)
 
