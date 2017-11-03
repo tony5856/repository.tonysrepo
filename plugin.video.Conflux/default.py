@@ -21,9 +21,9 @@ import __builtin__
 # CONFIGURATION VARIABLES
 # -----------------------
 # change these to suit your addons
-root_xml_url = "http://tonyh.net/xml%20files/conflux/movies.xml"  # url of the root xml file
-__builtin__.tvdb_api_key = ""  # tvdb api key
-__builtin__.tmdb_api_key = ""  # tmdb api key
+root_xml_url = "http://tonyh.net/xml%20files/conflux/main_page.xml"  # url of the root xml file
+__builtin__.tvdb_api_key = "34f84dc5c1ab8842"  # tvdb api key
+__builtin__.tmdb_api_key = "586aa0e416c8d3350aee09a2ebc178ac"  # tmdb api key
 __builtin__.trakt_client_id = ""  # trakt client id
 __builtin__.trakt_client_secret = ""  # trakt client secret
 
