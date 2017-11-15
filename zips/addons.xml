@@ -29,33 +29,29 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Conflux" name="Conflux" version="1.0.2" provider-name="TonyH">
-        <requires>
-                <import addon="xbmc.python" version="2.19.0" />
-                <import addon="script.module.nanscrapers" version="0.5.5" />
-                <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
-                <import addon="script.module.liveresolver" version="0.1.47" />
-                <import addon="script.module.beautifulsoup" version="3.2.1"/>
-                <import addon="script.module.requests" version="2.9.1" />
-                <import addon="script.module.addon.common" version="2.0.0" />
-                <import addon="script.module.xmltodict" version="0.9.0"/>
-                <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-                <import addon="script.module.urlresolver" version="1.2.0"/>
-        </requires>
-        <extension point="xbmc.python.pluginsource" library="default.py">
-                <provides>video</provides>
-        </extension>
-        <extension point="xbmc.service" library="service.py" start="[login|startup]">
-              </extension>
-        <extension point="xbmc.addon.metadata">
-          <summary lang="en">Conflux Addon</summary>
-          <description lang="en">Collection of movies, toons, ect..</description>
-          <platform>all</platform>
-          <forum></forum>
-          <website></website>
-          <video_guide></video_guide>
-          <video_preview></video_preview>
-        </extension>
+<addon id="plugin.video.Conflux" name="Conflux Addon" version="1.0.3" provider-name="TonyH - midraal">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.urlresolver" version="1.2.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">All in one addon</summary>
+        <description lang="en">Movies, TV Shows, Documentaries, Cartoons, ect...</description>
+        <platform>all</platform>
+        <website>www.noobsandnerds.com</website>
+        <video_guide></video_guide>
+    </extension>
 </addon>
 
 <addon id="plugin.video.funny" name="Funny addon" version="1.0.3" provider-name="TonyH">
