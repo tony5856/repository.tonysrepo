@@ -24,8 +24,8 @@ import __builtin__
 root_xml_url = "http://tonyh.net/xml%20files/conflux/main_page.xml"  # url of the root xml file
 __builtin__.tvdb_api_key = "34f84dc5c1ab8842"  # tvdb api key
 __builtin__.tmdb_api_key = "586aa0e416c8d3350aee09a2ebc178ac"  # tmdb api key
-__builtin__.trakt_client_id = "b6c71cb8ce6ac615fa786405aa63c6c0055a245f8ab50b3c6ab23f3dee5d7058"  # trakt client id
-__builtin__.trakt_client_secret = "8ae2d99a46e82bbcf5414c545bf442be185c5015c8cd86271b4bcc63247d5815"  # trakt client secret
+__builtin__.trakt_client_id = "948c4e2514db4f2cca33e737f5e73ae213e537d344b9916983e53e3cc2a1b21c"  # trakt client id
+__builtin__.trakt_client_secret = "140369c2c981732a7b183db2e9300065629b8b7417a149a0c4e098ebee8f692e"  # trakt client secret
 __builtin__.search_db_location = ""  # location of search db
 
 import os
@@ -213,6 +213,10 @@ else:
 router.Run()
 
 xbmcplugin.endOfDirectory(int(sys.argv[1]), cacheToDisc=False)
+try:
+    content_type = __builtin__.content_type
+except:
+    pass
 if not xbmcaddon.Addon().getSetting("first_run") == "true":
     if content_type == "files":
         content_type = "other"
