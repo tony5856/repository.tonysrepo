@@ -1,3 +1,88 @@
+"""
+    tmdb.py --- Jen Plugin for accessing tmdb data
+    Copyright (C) 2017, Midraal
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+    Usage Examples:
+    <dir>
+      <title>TMDB Popular</title>
+      <tmdb>movies/popular</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB Now Playing</title>
+      <tmdb>movies/now_playing</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB Top Rated</title>
+      <tmdb>movies/top_rated</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB Action Movies</title>
+      <tmdb>genre/movies/28</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB Star Wars Collection</title>
+      <tmdb>collection/10</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB Popular</title>
+      <tmdb>tv/popular</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB Top Rated</title>
+      <tmdb>tv/top_rated</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB Airing Today</title>
+      <tmdb>tv/today</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB Animation Shows</title>
+      <tmdb>genre/shows/16</tmdb>
+    </dir>
+
+    <dir>
+      <title>TMDB List: Animal Kingdom</title>
+      <tmdb>list/13488</tmdb>
+    </dir>
+
+    <dir>
+      <title>Bryan Cranston Shows TMDB</title>
+      <tmdb>person/shows/17419</tmdb>
+    </dir>
+
+    <dir>
+      <title>Bryan Cranston Movies TMDB</title>
+      <tmdb>person/movies/17419</tmdb>
+    </dir>
+
+    <dir>
+      <title>Search TMDB</title>
+      <tmdb>search</tmdb>
+    </dir>
+"""
+
 import pickle
 import time
 
@@ -56,6 +141,7 @@ class TMDB(Plugin):
                 'season': "0",
                 'episode': "0",
                 'info': {},
+                "imdb": item.get("imdb", "0"),
                 'year': item.get("year", ""),
                 'context': get_context_items(item),
                 "summary": item.get("summary", None)
@@ -78,6 +164,7 @@ class TMDB(Plugin):
                 'season': str(season),
                 'episode': "0",
                 'info': {},
+                "imdb": item.get("imdb", "0"),
                 'year': item.get("year", ""),
                 'context': {},
                 "summary": item.get("summary", None)
@@ -121,13 +208,18 @@ def tmdb(url):
                 page = int(last)
             if not response:
                 response = tmdbsimple.TV().popular(page=page)
-        if url.startswith("tv/top_rated"):
+        elif url.startswith("tv/top_rated"):
             last = url.split("/")[-1]
             if last.isdigit():
                 page = int(last)
             if not response:
                 response = tmdbsimple.TV().top_rated(page=page)
-
+        elif url.startswith("tv/today"):
+            last = url.split("/")[-1]
+            if last.isdigit():
+                page = int(last)
+            if not response:
+                response = tmdbsimple.TV().airing_today(page=page)
         for item in response["results"]:
             xml += get_show_xml(item)
     elif url.startswith("list"):
@@ -188,6 +280,42 @@ def tmdb(url):
 
         for item in response["parts"]:
             xml += get_movie_xml(item)
+    elif url.startswith("search"):
+        if url == "search":
+            term = koding.Keyboard("Search For")
+            url = "search/%s" % term
+        split_url = url.split("/")
+        if len(split_url) == 2:
+            url += "/1"
+            split_url.append(1)
+        page = int(split_url[-1])
+        term = split_url[-2]
+        response = tmdbsimple.Search().multi(query=term, page=page)
+
+        for item in response["results"]:
+            if item["media_type"] == "movie":
+                xml += get_movie_xml(item)
+            elif item["media_type"] == "tv":
+                xml += get_show_xml(item)
+            elif item["media_type"] == "person":
+                name = item["name"]
+                person_id = item["id"]
+                thumbnail = "https://image.tmdb.org/t/p/w1280/" + item["profile_path"]
+                xml += "<dir>\n"\
+                       "\t<title>%s Shows TMDB</title>\n"\
+                       "\t<tmdb>person/shows/%s</tmdb>\n"\
+                       "\t<thumbnail>%s</thumbnail>\n"\
+                       "</dir>\n\n" % (name.capitalize(),
+                                       person_id,
+                                       thumbnail)
+
+                xml += "<dir>\n"\
+                       "\t<title>%s Movies TMDB</title>\n"\
+                       "\t<tmdb>person/movies/%s</tmdb>\n"\
+                       "\t<thumbnail>%s</thumbnail>\n"\
+                       "\t</dir>\n\n" % (name.capitalize(),
+                                         person_id,
+                                         thumbnail)
 
     save_to_db(response, url)
     if page < response.get("total_pages", 0):
@@ -207,20 +335,26 @@ def tmdb(url):
 def get_movie_xml(item):
     title = remove_non_ascii(item["title"])
     year = item["release_date"].split("-")[0]
-    summary = item.get("overview", "")
-    if summary:
-        summary = remove_non_ascii(summary)
+    tmdb_id = item["id"]
+    url = "tmdb_imdb({0})".format(tmdb_id)
+    imdb = fetch_from_db(url)
+    if not imdb:
+        imdb = item.get("imdb_id", "")
+        if not imdb:
+            imdb = tmdbsimple.Movies(tmdb_id).info()["imdb_id"]
+        save_to_db(imdb, url)
     if item["poster_path"]:
-        thumbnail = "https://image.tmdb.org/t/p/w342/" + item["poster_path"]
+        thumbnail = "https://image.tmdb.org/t/p/w1280/" + item["poster_path"]
     else:
         thumbnail = ""
     if item.get("backdrop_path", ""):
-        fanart = "https://image.tmdb.org/t/p/w342/" + item["backdrop_path"]
+        fanart = "https://image.tmdb.org/t/p/w1280/" + item["backdrop_path"]
     else:
         fanart = ""
     xml = "<item>" \
           "<title>%s</title>" \
           "<meta>" \
+          "<imdb>%s</imdb>"\
           "<content>movie</content>" \
           "<title>%s</title>" \
           "<year>%s</year>" \
@@ -231,8 +365,7 @@ def get_movie_xml(item):
           "</link>" \
           "<thumbnail>%s</thumbnail>" \
           "<fanart>%s</fanart>" \
-          "<summary>%s</summary>"\
-          "</item>" % (title, title, year, thumbnail, fanart, summary)
+          "</item>" % (title, imdb, title, year, thumbnail, fanart)
     return xml
 
 
@@ -240,18 +373,27 @@ def get_show_xml(item):
     title = remove_non_ascii(item["name"])
     year = item["first_air_date"].split("-")[0]
     tmdb_id = item["id"]
-    summary = remove_non_ascii(item["overview"])
     if item["poster_path"]:
-        thumbnail = "https://image.tmdb.org/t/p/w342/" + item["poster_path"]
+        thumbnail = "https://image.tmdb.org/t/p/w1280/" + item["poster_path"]
     else:
         thumbnail = ""
     if item.get("backdrop_path", ""):
-        fanart = "https://image.tmdb.org/t/p/w342/" + item["backdrop_path"]
+        fanart = "https://image.tmdb.org/t/p/w1280/" + item["backdrop_path"]
     else:
         fanart = ""
+    if tmdb_id:
+        url = "tmdb_imdb({0})".format(tmdb_id)
+        imdb = fetch_from_db(url)
+        if not imdb:
+            imdb = tmdbsimple.TV(tmdb_id).external_ids()['imdb_id']
+            save_to_db(imdb, url)
+    else:
+        imdb = "0"
+
     xml = "<dir>"\
           "<title>%s</title>"\
           "<meta>"\
+          "<imdb>%s</imdb>"\
           "<content>tvshow</content>"\
           "<tvshowtitle>%s</tvshowtitle>"\
           "<year>%s</year>"\
@@ -259,33 +401,42 @@ def get_show_xml(item):
           "<link>tmdb_tv_show(%s, %s, %s)</link>"\
           "<thumbnail>%s</thumbnail>" \
           "<fanart>%s</fanart>"\
-          "<summary>%s</summary>"\
-          "</dir>" % (title, title, year, tmdb_id, year, title,
-                      thumbnail, fanart, summary)
+          "</dir>" % (title, imdb, title, year, tmdb_id, year, title,
+                      thumbnail, fanart)
     return xml
 
 
 def get_season_xml(item, tmdb_id, year, tvtitle):
     season = item["season_number"]
     if item["poster_path"]:
-        thumbnail = "https://image.tmdb.org/t/p/w342/" + item["poster_path"]
+        thumbnail = "https://image.tmdb.org/t/p/w1280/" + item["poster_path"]
     else:
         thumbnail = ""
     if item.get("backdrop_path", ""):
-        fanart = "https://image.tmdb.org/t/p/w342/" + item["backdrop_path"]
+        fanart = "https://image.tmdb.org/t/p/w1280/" + item["backdrop_path"]
     else:
         fanart = ""
+    if tmdb_id:
+        url = "tmdb_imdb({0})".format(tmdb_id)
+        imdb = fetch_from_db(url)
+        if not imdb:
+            imdb = tmdbsimple.TV(tmdb_id).external_ids()['imdb_id']
+            save_to_db(imdb, url)
+    else:
+        imdb = "0"
+
     xml = "<dir>"\
           "<title>Season %s</title>"\
           "<meta>"\
+          "<imdb>%s</imdb>"\
           "<content>season</content>"\
           "<season>%s</season>"\
           "</meta>"\
           "<thumbnail>%s</thumbnail>"\
           "<fanart>%s</fanart>"\
           "<link>tmdb_season(%s,%s, %s, %s)</link>"\
-          "</dir>" % (season, season, thumbnail, fanart, tmdb_id, season, year,
-                      tvtitle)
+          "</dir>" % (season, imdb, season, thumbnail, fanart, tmdb_id,
+                      season, year, tvtitle)
     return xml
 
 
@@ -293,19 +444,27 @@ def get_episode_xml(item, tmdb_id, year, tvtitle):
     title = remove_non_ascii(item["name"])
     season = item["season_number"]
     episode = item["episode_number"]
+    if tmdb_id:
+        url = "tmdb_imdb({0})".format(tmdb_id)
+        imdb = fetch_from_db(url)
+        if not imdb:
+            imdb = tmdbsimple.TV(tmdb_id).external_ids()['imdb_id']
+            save_to_db(imdb, url)
+    else:
+        imdb = "0"
     premiered = item["air_date"]
     if item["still_path"]:
-        thumbnail = "https://image.tmdb.org/t/p/w342/" + item["still_path"]
+        thumbnail = "https://image.tmdb.org/t/p/w1280/" + item["still_path"]
     else:
         thumbnail = ""
     if item.get("backdrop_path", ""):
-        fanart = "https://image.tmdb.org/t/p/w342/" + item["backdrop_path"]
+        fanart = "https://image.tmdb.org/t/p/w1280/" + item["backdrop_path"]
     else:
         fanart = ""
-    summary = remove_non_ascii(item["overview"])
     xml = "<item>"\
           "<title>%s</title>"\
           "<meta>"\
+          "<imdb>%s</imdb>"\
           "<content>episode</content>"\
           "<tvshowtitle>%s</tvshowtitle>"\
           "<year>%s</year>"\
@@ -320,16 +479,18 @@ def get_episode_xml(item, tmdb_id, year, tvtitle):
           "</link>"\
           "<thumbnail>%s</thumbnail>"\
           "<fanart>%s</fanart>"\
-          "<summary>%s</summary>"\
-          "</item>" % (title, tvtitle, year, title,
-                       premiered, season, episode, thumbnail, fanart, summary)
+          "</item>" % (title, imdb, tvtitle, year, title,
+                       premiered, season, episode, thumbnail, fanart)
     return xml
 
 
 @route(mode='tmdb_tv_show', args=["url"])
 def tmdb_tv_show(url):
     response = fetch_from_db(url)
-    tmdb_id, year, tvtitle = url.replace("tmdb_id", "").split(",")
+    splitted = url.replace("tmdb_id", "").split(",")
+    tmdb_id = splitted[0]
+    year = splitted[1]
+    tvtitle = ",".join(splitted[2:])
     if not response:
         response = tmdbsimple.TV(tmdb_id).info()
         save_to_db(response, url)
@@ -344,7 +505,11 @@ def tmdb_tv_show(url):
 @route(mode='tmdb_season', args=["url"])
 def tmdb_season(url):
     response = fetch_from_db(url)
-    tmdb_id, season, year, tvtitle = url.replace("tmdb_id", "").split(",")
+    splitted = url.replace("tmdb_id", "").split(",")
+    tmdb_id = splitted[0]
+    season = splitted[1]
+    year = splitted[2]
+    tvtitle = ",".join(splitted[3:])
     if not response:
         response = tmdbsimple.TV_Seasons(tmdb_id, season).info()
         save_to_db(response, url)
