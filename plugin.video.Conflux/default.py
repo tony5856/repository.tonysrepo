@@ -28,6 +28,7 @@ __builtin__.trakt_client_id = "948c4e2514db4f2cca33e737f5e73ae213e537d344b991698
 __builtin__.trakt_client_secret = "140369c2c981732a7b183db2e9300065629b8b7417a149a0c4e098ebee8f692e"  # trakt client secret
 __builtin__.search_db_location = ""  # location of search db
 
+
 import os
 import sys
 
@@ -134,8 +135,9 @@ def all_episodes(url):
         if dialog.iscanceled():
             break
         percent = ((index + 1) * 100) / num_urls
-        dialog.update(percent, _("processing lists"), _("%s of %s") % (index + 1,
-                                                                 num_urls))
+        dialog.update(percent, _("processing lists"), _("%s of %s") % (
+            index + 1,
+            num_urls))
 
         jen_list = JenList(season_url)
         result_items.extend(jen_list.get_list(skip_dialog=True))
@@ -182,6 +184,7 @@ def clear_cache():
             xbmc.translatePath(xbmcaddon.Addon().getSetting("cache_folder")),
             "artcache")
         koding.Delete_Folders(dest_folder)
+    xbmc.log("running hook:", xbmc.LOGNOTICE)
     run_hook("clear_cache")
 
 
@@ -209,6 +212,9 @@ if foldername in ["", "plugin.program.super.favourites"]:
     __builtin__.JEN_WIDGET = True
 else:
     __builtin__.JEN_WIDGET = False
+
+xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_NONE)
+xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
 
 router.Run()
 

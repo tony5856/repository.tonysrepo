@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Conflux" name="Conflux Addon" version="2.0.6" provider-name="TonyH - midraal">
+<addon id="plugin.video.Conflux" name="Conflux Addon" version="2.0.7" provider-name="TonyH - Jen Template">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.nanscrapers" version="0.5.5" />
