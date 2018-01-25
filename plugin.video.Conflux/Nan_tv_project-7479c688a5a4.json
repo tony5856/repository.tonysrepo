@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "nan-tv-project",
+  "private_key_id": "7479c688a5a4be41a3d3a630087fe22074f2fc2d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCowcbNwUNOnELK\nBSL04UthVesf60ZfYnfPnB8g63Uf/2XWb96xWWHo5NezhvvrXgN517XlIOw/ZieI\nzrxhDgcP7vxqOrVd7Fvqu3pdNrWnq4Q/P1gXD0SLmfQ1q0CHM/mkGW4GSxAxUCN/\nXrbYHEg/wUdrQAnTzWFuKLj6foBvFcAUvMkHFL/tUZndKmW59gvTPDCniRcrn1KC\neR1qs5BZxxyWi1Wg9WndgwxBVAopqDYiaUyeLg7VgwX+2DHe7l0gOSAzPp70iR1R\neDgnMYFZLmFXonIppe2AuunCIna+z+trA3z9tvmWgKiZt6A4dH5na9EcHLzawKpl\nf6cZRoFzAgMBAAECggEAAxyjplqoe5QdFS2YEezvn2lerxV/FDY0IGNwHYLKA5+J\niLVCZYHQ8OL7aUeVcKcoqEAGjiWXxamEFB0/0whXr/8Hr4vKmWNI5KC1Zm+iVOew\nRhxMawxwhqR9oNm6FGQsd86yPTJ4J3ijVu9vrreCy44sW3lwVPQGFmpw0smvY5z6\n40LmsFK7SOHCVdl9KEZbkDBo/djihXBQUSk6eKjGzQsCgLbjKAGbswOkxy7eocSz\nbMG2YanNEQvq2Zy6vNX4KTKIG5ps8i3O3DbjLjV3Fccg6wbrMv0Hx05+oV6mygcp\nDNfWsTP3qL4i2oipP6CJb8hGkLIckYd07hfN4btvcQKBgQDa3SN5C56XECgt0fMT\n9VwuNfT06QpOMLMwT/g7FfsSukXiVh/z5l/yTipdaDYHQGKp+9mDPfbRNHQilVfE\nWuJySrdJsJvKonoqGx1y40YjNgkXRFv5t8PeRds65gqcsrubCVS5O4yMkiBrZq8n\nsU/YyswxZZaT3gJ4C9z+ZIiFIwKBgQDFZCDlYgFquEsp0rGmw1OtaZjAMOlCSrZh\nOQ+GhnLpe/T8B/1BjYNq7hGoNkrabAIJq6tmy0I1FQo/+g+NfR491lBPcDMTvgoR\n0UICJZiwznkiN76+Xo7ArK0RfyUOwWtBPBscFXz2xRTOX/BDFcCK2m8KYHuDMsFG\n4yvTfRGfcQKBgBIvD1RuP7XjVMNBz0VYPFlmiDyU5BNM/oZEDqayE9MhgM7mQu9b\ns5sJHYH3N43wroHa995sloYZKpD5AXrB5lCCnqnTr43tY+L9r7us4FXqlmTFfDLK\nLs7X1PgWxsjwHKAr7UsahHnlZiYmOOU+WRj0+HQeMZ2Fc4UPz0OfjKwrAoGAVWP2\ncyTNlhw5r9MMtSakiU04HlRKZDor4a0skTaSeXz9QxY1sekFI/nvO4SZJxo4W3Sf\nRm3Bq3L5pymHFt88eOXAgkz4W58HfiO3WXRoNHxtnKbe5j3DpYhNqlcFcfesbWES\nHTkSgTJKyOhp6Kt9StQp2yRX6i7Hu+HEcM4XFJECgYEAlArq1mA52PTQMkLy2hjT\nopVg00NzvqbzNeg3+g6eXSvsuU/LF/33+NpBefCIgzrdFfkNe7QBSpaoq1mrzrVq\nWJwWmAm7o2nT0mEovSgsFC6MBuZ7wkGpe0DPfaugNV1xDU5CTJFsOhBt3j8GCfb6\noOqRbqmz6cbsZHc1Ab0tMek=\n-----END PRIVATE KEY-----\n",
+  "client_email": "nantv-918@nan-tv-project.iam.gserviceaccount.com",
+  "client_id": "108791012927109420290",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nantv-918%40nan-tv-project.iam.gserviceaccount.com"
+}

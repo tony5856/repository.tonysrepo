@@ -187,6 +187,15 @@ def clear_cache():
     xbmc.log("running hook:", xbmc.LOGNOTICE)
     run_hook("clear_cache")
 
+@route(mode="RunScript", args=["url"])
+def run_script(url):
+    import xbmcgui
+    if url.startswith("special://"):
+        url = xbmc.translatePath(url)
+    hdr = xbmcaddon.Addon().getAddonInfo("name")
+    msg = "Are you sure?"
+    if xbmcgui.Dialog().yesno(hdr, msg):
+        xbmc.executebuiltin("RunScript({0})".format(url))
 
 def get_addon_url(mode, url=""):
     import urllib

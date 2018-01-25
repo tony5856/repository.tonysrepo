@@ -1,0 +1,2223 @@
+<plugin>
+	<title>A&E </title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/68952/A&E</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/clJ9AfI.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>ABC</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/abc.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/HbC7fAG.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>American Broadcasting Company</summary>
+</plugin>
+<plugin>
+	<title>ABC Family</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/abcfamily.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/DUj0lZM.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>ABC News</title>
+	<link>
+	<sublink>http://abclive.abcnews.com/i/abc_live4@136330/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/5boHXeQ.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>ABC News Alternate</title>
+	<link>
+	<sublink>http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/5boHXeQ.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Al Jazara</title>
+	<link>
+	<sublink>http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Al%20Jazeera.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>All Sports TV</title>
+	<link>
+	<sublink>http://173.236.10.10:1935/dgrau/dgrau/live.m3u8</sublink>
+	</link>
+	<thumbnail>http://www.allsportsselect.com/wp-content/uploads/2015/09/allsports-logo-JPEG3.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>AMC</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/amc.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/3e91B1y.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>AMC Alternate</title>
+	<link>
+	<sublink>https://videoserver1.org/live/711HG2goV3t4uPeEJMc1bQ/1516145139/c0371e35a2b3244f5edda7947172d954.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/3e91B1y.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Animal Planet</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/animalplanet.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/N6I8yUm.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>At The Races</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/attheraces.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ElNUQ37.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>BBC 1 HD</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/bbc_one_hd.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/BBC%20One.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 1 London</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_one_london.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/BBC%20One.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 1 N Ireland</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/bbc_one_northern_ireland_hd.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/BBC%20One%20Northern%20Ireland.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 1 Scotland</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/bbc_one_scotland_hd.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/BBC%20One%20Scotland.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 2 England</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/bbc_two_england.m3u8</sublink>
+	</link>
+	<thumbnail>http://www.dynamitepictures.co.uk/images/logos_grey/Broadcast_BBC2_left.gif</thumbnail>
+	<fanart>http://www.dynamitepictures.co.uk/images/logos_grey/Broadcast_BBC2_left.gif</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 2 HD</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/bbc_two_hd.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/BBC%20Two.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 2 N Ireland</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_two_northern_ireland_digital.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/BBC_Two_Northern_Ireland.svg/1280px-BBC_Two_Northern_Ireland.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 2 Scotland</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_two_scotland.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/BBC_Scotland_corporate_logo.svg/1200px-BBC_Scotland_corporate_logo.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 2 Wales</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_two_wales_digital.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/BBC_Two_Wales_logo.svg/1280px-BBC_Two_Wales_logo.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC 4 HD</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/bbc_four_hd.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/BBC%20Four.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC Alba</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_alba.m3u8</sublink>
+	</link>
+	<thumbnail>https://spfl.co.uk/docs/067_324__bbc_alba_logo_1383306186_standard.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC News</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/bbc_news24.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/BBC_News.svg/1280px-BBC_News.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC News Arabia</title>
+	<link>
+	<sublink>http://bbcwshdlive01-lh.akamaihd.net/i/atv_1@61433/master.m3u8</sublink>
+	</link>
+	<thumbnail>http://news.bbcimg.co.uk/media/images/73586000/jpg/_73586104_bbc_arabic_2_language_red.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>BBC Parliment</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_parliament.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/BBC%20Two.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>beIN Sports 1</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports1.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 2</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports2.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Bein Sports 3</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports3.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 4</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports4.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 5</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports5.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 6</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports6.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 7</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports7.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 8</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports8.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 9</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports9.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 10</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports10.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 11 English</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports11.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 12 English</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/beinsports12.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>beIN Sports 13 English</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/beinsports13.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/hXq2UNl.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>BET</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/50652/BET-(HD)</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/z8zv6IJ.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Big Pond Movies</title>
+	<link>
+	<sublink>mms://ken-cdn220-is-1.se.bptvlive.ngcdn.telstra.com/bp_online_movieextra_high</sublink>
+	</link>
+	<thumbnail>https://www.telstra.com.au/entertainment/download/image/entertainment-bigpond-logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Blaze TV</title>
+	<link>
+	<sublink>http://live.blaze.simplestreamcdn.com/live/blaze/bitrate1.isml/bitrate1-audio_track=64000-video=3500000.m3u8</sublink>
+	</link>
+	<thumbnail>http://static-cdn1.ustream.tv/i/channel/picture/1/0/0/9/100922/100922_blazetv_white_haze_e_1283621383,640x360,b:1.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Bloomberg</title>
+	<link>
+	<sublink>https://mediauseast.akamaized.net/us/us6_live.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/BrQgKfH.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Bloomberg UK</title>
+	<link>
+	<sublink>http://btvasia-i.akamaihd.net/hls/live/203322/btvasia_ios/P1/M24K.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/BrQgKfH.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Bloomberg US</title>
+	<link>
+	<sublink>http://cdn3.videos.bloomberg.com/btv/us/master.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/BrQgKfH.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Box Nation</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/boxnation.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/XKdB7dN.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Bravo </title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/52480/Bravo</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/dLjjgkb.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>BT Sport 1</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/btsport1.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ZFWtoa1.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>BT Sport 2</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/btsport2.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/RjSq8t2.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>BT Sport ESPN</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/btsportespn.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/gbz28mw.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>BT Sport Europe</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/btsporteurope.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/HPCiRoD.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>BT Sport Europe</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/btsport3.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/HPCiRoD.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>C-SPAN</title>
+	<link>
+	<sublink>http://cspan1-lh.akamaihd.net/i/cspan1_1@304727/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/quEsdYy.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>C-SPAN 2</title>
+	<link>
+	<sublink>http://cspan2-lh.akamaihd.net/i/cspan2_1@304728/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/quEsdYy.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>C-SPAN 3</title>
+	<link>
+	<sublink>http://cspan3-lh.akamaihd.net/i/cspan3_1@304729/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/quEsdYy.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Canal Eurosport TV</title>
+	<link>
+	<sublink>http://esioslive6-i.akamaihd.net/hls/live/202892/AL_P_ESP1_FR_FRA/playlist_1800.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Canal%20Sport.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Cartoon Network</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/cartoonnetwork.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/JaEipEe.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>CBBC</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/cbbc_hd.m3u8</sublink>
+	</link>
+	<thumbnail>http://downloads.bbc.co.uk/commissioning/site/CBBC_New_Logo_RGB.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>CBeebies</title>
+	<link>
+	<sublink>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/abr_hdtv/ak/cbeebies_hd.m3u8</sublink>
+	</link>
+	<thumbnail>http://andrewjamesspooner.com/wp-content/uploads/2014/09/CBeebies-logo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>CBN West</title>
+	<link>
+	<sublink>https://raw.githubusercontent.com/notanewbie/LegalStream/master/packages/news/world.m3u8</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>CBS</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/cbs.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/E7vniSC.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>CBSN</title>
+	<link>
+	<sublink>http://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/Dz5NDHR.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>CBSN II</title>
+	<link>
+	<sublink>http://cbsnews-linear.mdialog.com/video_assets/cbsnews.m3u8?api_key=563b80c1ae4ce359830f572d2496a947&iu=/8264/vaw-can/mobile_web/cbsnews_mobile</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/Dz5NDHR.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>CGTN America</title>
+	<link>
+	<sublink>http://api.new.livestream.com/accounts/7082210/events/7115682/live.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/CGTN-America_Logo.png/250px-CGTN-America_Logo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Chelsea TV</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/chelseatv.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ReA8sAY.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>CITV</title>
+	<link>
+	<sublink>http://citvliveios-i.akamaihd.net/hls/live/207267/itvlive/CITVMN/master_Main1800.m3u8</sublink>
+	</link>
+	<thumbnail>http://cdn.itv.com/uploads/show/show_branding_logo/42/WCRX85ZI3pOn7GiO_NZ0XZ8OnpnBNylotC_12DNRY8Y.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>City of Boston News Channel</title>
+	<link>
+	<sublink>rtmp://streaming.cityofboston.gov/live/cable</sublink>
+	</link>
+	<thumbnail>https://www.underconsideration.com/brandnew/archives/city_of_boston.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>CMT (down)</title>
+	<link>
+	<sublink>https://content.uplynk.com/channel/90c7d37f668d40889405454e93ba2543.m3u8?ct=c&ad.locationDesc=cmt_channel&ad.cust_params=_fw_ae%3Dc123b11aa670647408778a3b81a21d70%26_vmn_ar%3Dtrue&expand=simulcast_standard&ad.kv=_fw_ae,c123b11aa670647408778a3b81a21d70,_vmn_ar,true,_fw_vcid2,82125:cmt_d9fe21d672974dc79251d5f24726763c&euid=d9fe21d6-7297-4dc7-9251-d5f24726763c&exp=1516503543&rn=76423346&ad.euid=d9fe21d6-7297-4dc7-9251-d5f24726763c&cid=90c7d37f668d40889405454e93ba2543&tc=1&sig=5f5bfcc28ebf2d73d043614c34438745de7c38eff73753891450b926e08fea35|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/rXV7bnj.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>CNBC UK</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-Kingdom/CNBC-12</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/NyducTb.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>CNBC US</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/cnbc.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/NyducTb.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>CNN</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/cnn.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/F76H3YA.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Comedy Central</title>
+	<link>
+	<sublink>https://content.uplynk.com/channel/ceb8d6e35fca432f9f32f4f1f4a822b8.m3u8?ct=c&ad.locationDesc=comedy_central_channel&ad.cust_params=_fw_ae%3Dc123b11aa670647408778a3b81a21d70%26_vmn_ar%3Dtrue&expand=simulcast_standard&ad.kv=_fw_ae,c123b11aa670647408778a3b81a21d70,_vmn_ar,true,_fw_vcid2,82125:comedycentral_60237a06990e4fc78623f87c6c9d0296&euid=60237a06-990e-4fc7-8623-f87c6c9d0296&exp=1516506496&rn=-689725120&ad.euid=60237a06-990e-4fc7-8623-f87c6c9d0296&cid=ceb8d6e35fca432f9f32f4f1f4a822b8&tc=1&sig=8143ce5dd3e2e31baee02ed31878e7742eb308b57bcc4e9ed44504de42925ba0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ppPgpsR.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Comedy Central Alternate</title>
+	<link>
+	<sublink>http://kodi.uktvnow.net:1935/live/cc.stream/chunklist_w2072367552.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MS8yNC8yMDE4IDM6MDE6MDggUE0maGFzaF92YWx1ZT1GcjRBUngzL3hVTmQzVFJXR09QQmFnPT0mdmFsaWRtaW51dGVzPTIw</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ppPgpsR.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Comedy Central Alternate II</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/watch.php?title=Comedy%20Central&channel=comedycentral</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ppPgpsR.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Create and Craft</title>
+	<link>
+	<sublink>http://live.ccus.simplestreamcdn.com/live/isd_sdi4/bitrate1.isml/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>http://new.tvcatchup.info/channel-images/createandcraft.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>CTV Fishing</title>
+	<link>
+	<sublink>http://manifester.mediafoundry.com.au/stream/c31melbourne_fishing/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>CW</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/cwtv.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/UEjVaGq.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Discovery HD</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/discoveryhd.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/FfncZyr.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Discovery US</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/discovery.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/FfncZyr.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Disney</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/disneychannel.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ue1uOTX.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Disney Junior</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/disneyjunior.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/aoaTlRS.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Disney XD</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/disneyxd.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ieLeCfh.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>District of Columbia Network</title>
+	<link>
+	<sublink>http://video.oct.dc.gov/out/u/DCN.m3u8</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Dubai Racing</title>
+	<link>
+	<sublink>http://dmi.mangomolo.com:1935/dubairacing/smil:dubairacing.smil/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>http://www.mems-cg.com/Library/Images/Uploaded%20Images/Dxb_Racing_C.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Dubai Sports</title>
+	<link>
+	<sublink>http://dmi.mangomolo.com:1935/dubaisports/smil:dubaisports.smil/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Dubai%20Sports.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>ESPN </title>
+	<link>
+	<sublink>http://189.216.247.113/Content/HLS/Live/Channel(ESPN_HD)/index.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/ESPN.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>ESPN 2 </title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/57977/ESPN-2-(HD)</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/ESPN2.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>ESPN Alternate</title>
+	<link>
+	<sublink>https://edge2.liveonlinetv247.com/live/espnusa-hq/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MS8yMS8yMDE4IDM6Mjk6MDkgQU0maGFzaF92YWx1ZT11L3ZnK1p6NkIwK3I2ZzZSRUFrYzFnPT0mdmFsaWRtaW51dGVzPTEwJmlkPTIxMy4yMDIuMjMzLjIxNyZzdHJtX2xlbj0xNQ==|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/ESPN.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>ESPN News (down)</title>
+	<link>
+	<sublink>https://uk-20g.firstonetv.net:4434/hls/8fb21669880c15ec8020ca769e4c4def/1516534578/7b226970223a66616c73652c227561223a22416e64726f6964222c22726566223a22687474703a5c2f5c2f6d6f6264726f2e6d65227d/687474703a2f2f3138352d35392d3232322d3232392e6d6264722e63662f7032702f39643232343739383565376230383736363732306663623635383634633439632e6d3375383f73743d61536e5550586e345250567743776d567a4567694e4126653d31353136353438393738.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>http://www.ilovesatellitetv.com/images/espn-news-logo.gif</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Euro News</title>
+	<link>
+	<sublink>http://fr-par-iphone-2.cdn.hexaglobe.net/streaming/euronews_ewns/ipad_en.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/EuroNews%20English.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Euro Sport 1 EN 720</title>
+	<link>
+	<sublink>http://esioslive6-i.akamaihd.net/hls/live/202874/AL_P_ESP1_INTER_ENG/playlist_1000.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Eurosport.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Euro Sport 1 EN 1080</title>
+	<link>
+	<sublink>http://esioslive6-i.akamaihd.net/hls/live/202874/AL_P_ESP1_INTER_ENG/playlist_1800.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Eurosport.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Euro Sport France 720</title>
+	<link>
+	<sublink>http://esioslive6-i.akamaihd.net/hls/live/202892/AL_P_ESP1_FR_FRA/playlist_1000.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Eurosport.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Euro Sport France 1080</title>
+	<link>
+	<sublink>http://esioslive6-i.akamaihd.net/hls/live/202892/AL_P_ESP1_FR_FRA/playlist_1800.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Eurosport.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>EuroSport</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/watch.php?title=Eurosport&channel=eurosport</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Eurosport.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>EuroSport2</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/watch.php?title=Eurosport%202&channel=eurosport2</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Eurosport.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Food Network</title>
+	<link>
+	<sublink>http://sbslivefvstreaming.sbs.com.au/out/u/fdnet-mo-000-c3094-delpkg1-delpkg1-abr/index-root-ipad.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/CSq15B6.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Food Network Alternative</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/52506/Food-Network-(HD)</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/CSq15B6.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Football Fanatik TV</title>
+	<link>
+	<sublink>rtmp://live.fanatik.cubecdn.net/fanatiktv/stream_720</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Football%20Fanatics.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Fox</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/fox.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/dj6fLR4.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Fox 5 Washington</title>
+	<link>
+	<sublink>http://api.new.livestream.com/accounts/2363281/events/1763520/live.m3u8</sublink>
+	</link>
+	<thumbnail>https://mosquitosquad.files.wordpress.com/2012/05/mzi-aclnccqc.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Fox News</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/foxnews.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/0v8WZ5D.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Fox Sports 1 USA</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/foxsports1.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/bHPQ1Iq.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Fox Sports 2 USA</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/foxsports2.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/mhtZF8a.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Fox Sports News</title>
+	<link>
+	<sublink>http://foxsportshlsg01-lh.akamaihd.net/i/fsnewshls_0@301672/index_4628_av-p.m3u8</sublink>
+	</link>
+	<thumbnail>https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSN/fox-sports-news-hero.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>FX</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/fx.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/mkNXBg9.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>FXX (down)</title>
+	<link>
+	<sublink>https://uk-20g.firstonetv.net:4434/hls/49816b8032f608a69c689ba3d119a00b/1516534713/7b226970223a66616c73652c227561223a22416e64726f6964222c22726566223a22687474703a5c2f5c2f6d6f6264726f2e6d65227d/687474703a2f2f3139352d3138312d3137302d33362e6d6264722e63662f7032702f30653330616231383730336430356530613839333733633262666331643663332e6d3375383f73743d3676696e582d754c654548633676765f33612d536d6726653d31353136353439313133.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>http://i.ytimg.com/vi/jq2JmSpcars/maxresdefault.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Geo Super Sports</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/geosuper.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/gPGTUVC.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Global News BC</title>
+	<link>
+	<sublink>https://glblvestu-f.akamaihd.net/i/glblvPSTu_1@80128/master.m3u8?__b__=900&hdnea=ip=99.18.68.202~st=1434307348~exp=1434307948~acl=/i/*~id=5a91003f-0e87-4f31-b475-5beb4de69407~hmac=8011c2346009544656a3195d1e9e03e511efc6523dab9644debf3692f630fe77</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Golf Channel</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/watch.php?title=Golf%20Channel&channel=golfchannel</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Global%20BC%20News.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>HBO</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/hbo.php</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/HBO.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>HBO Comedy</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/38214/HBO-Comedy-movie</sublink>
+	</link>
+	<thumbnail>https://vignette3.wikia.nocookie.net/logopedia/images/8/84/HBO_Comedy_logo.png/revision/latest?cb=20160707203440</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>HBO HD</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/hbohd.php</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/HBO.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>HBO Signature (down)</title>
+	<link>
+	<sublink>https://uk-20g.firstonetv.net:4434/hls/cce85ca27d036f4b73e7e9e6ab09a782/1516535284/7b226970223a66616c73652c227561223a22416e64726f6964222c22726566223a22687474703a5c2f5c2f6d6f6264726f2e6d65227d/687474703a2f2f3139352d3138312d3137302d33372e6d6264722e63662f7032702f61343236373464636330656637636165366539633439313639353161613164332e6d3375383f73743d5569734862625a4a545f52674c306b5453705661524126653d31353136353439363834.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>http://www.ranklogos.com/wp-content/uploads/2014/12/HBO-Signature-Logo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>HGTV </title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/52053/HGTV-(HD)</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Home_%26_Garden_Television_original_logo.svg/1280px-Home_%26_Garden_Television_original_logo.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>History Channel US</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/history.php</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/History%20USA.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>HSN</title>
+	<link>
+	<sublink>rtmp://hsn.mpl.miisolutions.net:1935/hsn-live01/_definst_/mp4:420p500kB31 playpath=mp4:420p500kB31</sublink>
+	</link>
+	<thumbnail>https://fashionpluslifestyle.files.wordpress.com/2012/11/hsn-logo714-1y-1-1-1high-2.jpg?w=1200</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Ideal World</title>
+	<link>
+	<sublink>http://live.ccus.simplestreamcdn.com/live/isd_sdi3/bitrate1.isml/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>https://www.voucherbox.co.uk/images/shop/ideal-world/Ideal_World_Logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Investigation Discovery</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/69111/ID---Investigation-Discovery-(HD)</sublink>
+	</link>
+	<thumbnail>http://2.bp.blogspot.com/-g7kclnMAZPA/T3ClVDJR-vI/AAAAAAAAEsA/goncQjp63AI/s500/Investigation+Discovery+logo+2012.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Irish TV</title>
+	<link>
+	<sublink>http://cdn.fs-chf01-04-aa1a041f-8251-d66e-5678-d03fd8530fad.arqiva-ott-live.com/live-audio_track=96000-video=1900000.m3u8</sublink>
+	</link>
+	<thumbnail>https://app.mediahq.com/files/pr/smr78018_%5b2%5d_IrishTV%20Logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>ITV1</title>
+	<link>
+	<sublink>http://itv1liveios-i.akamaihd.net/hls/live/203437/itvlive/ITV1MN/master_Main1800.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/ITV1.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>ITV2</title>
+	<link>
+	<sublink>http://itv2liveios-i.akamaihd.net/hls/live/203495/itvlive/ITV2MN/master_Main1800.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/ITV2.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>ITV3</title>
+	<link>
+	<sublink>http://itv3liveios-i.akamaihd.net/hls/live/207262/itvlive/ITV3MN/master_Main1800.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/ITV3.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>ITV4</title>
+	<link>
+	<sublink>http://itv4liveios-i.akamaihd.net/hls/live/207266/itvlive/ITV4MN/master_Main1800.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/ITV4.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>ITVBE</title>
+	<link>
+	<sublink>http://itvbeliveios-i.akamaihd.net/hls/live/219078/itvlive/ITVBE/master_Main1800.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/ITVBe.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>KATV-News</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/KATV-News-(ABC-7)-17</sublink>
+	</link>
+	<thumbnail>https://jamessmith73.files.wordpress.com/2012/11/7hd.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>KOB5 News</title>
+	<link>
+	<sublink>http://api.new.livestream.com/accounts/10066184/events/3399986/live.m3u8</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Kwese</title>
+	<link>
+	<sublink>http://kwesefta-i.akamaihd.net/hls/live/255186/FTA1/FTA1.m3u8|X-Forwarded-For=197.232.46.33</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/kl5hxSJ.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>KXAN News</title>
+	<link>
+	<sublink>http://api.new.livestream.com/accounts/1506296/events/1569171/live.m3u8</sublink>
+	</link>
+	<thumbnail>http://anthonybarnum.com/wp-content/uploads/2013/12/KXAN_logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>LFCTV</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/lfctv.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/6OZWaRD.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>London Live</title>
+	<link>
+	<sublink>http://bcoveliveios-i.akamaihd.net/hls/live/217434-b/3083279840001/master.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Living%20History%20Channel.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Miracle Channel</title>
+	<link>
+	<sublink>https://d9ruw6nhj5a52.cloudfront.net/live/live/master.m3u8</sublink>
+	</link>
+	<thumbnail>https://miraclechannel.ca/wp-content/uploads/2016/08/MC_Logo_Homepage_V2@3x.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>MLB Network</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/MLB-Network-51</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/MLBNetworkLogo.svg/383px-MLBNetworkLogo.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Motor Sport</title>
+	<link>
+	<sublink>http://motorsport.hopto.org:8080/</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/en/9/95/Motorsport.tv_Logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>MSNBC</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/msnbc.php</sublink>
+	</link>
+	<thumbnail>http://logonoid.com/images/msnbc-logo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>MTV US</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/mtv.php</sublink>
+	</link>
+	<thumbnail>http://logonoid.com/images/msnbc-logo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>MUTV</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/mutv.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/ABl55ZL.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Nasa Television (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/NASA-TV-12</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/NASA%20HD.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Nasa Television Alternate</title>
+	<link>
+	<sublink>http://nasatv-lh.akamaihd.net/i/NASA_101@319270/master.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/NASA%20HD.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>National Geographic US</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/natgeo.php</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Nat%20Geo%20USA.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>NBA TV</title>
+	<link>
+	<sublink>http://208.92.36.158/ipad/live/nba_ipad_1240.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/NBA%20TV.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>NBA TV Alternate</title>
+	<link>
+	<sublink>http://lit-cove-15301.herokuapp.com/?sport=nba&uuid=sur8Yk&hst=qALEpvMo4YzBgBNY50wPn3x8&url=neunlds289.akamaized.net%2Fnlds%2Fnba%2Fbos%2Fas%2Flive%2Fnlncp%2Fbos_hd_ced.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/NBA%20TV.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>NBA TV Alternative II</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/nbatv.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/A2AoLU6.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>NBC</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/nbc.php</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/NBC.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>NBC 5</title>
+	<link>
+	<sublink>http://ad-playlistserver.aws.syncbak.com/playlist/898796/master.m3u8?access_token=eyJhbGciOiJIUzI1NiIsImtpZCI6IkdyYXkyMDE2MDgyOSIsInN1YiI6IioiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3OTAzNjY5MTksImlzcyI6IldMUyIsIm1kNSI6IjUxNjkxOGMwODc3NDYzYzFhMWRmYzMwNGI2MWRkMDM3IiwibWlkIjoiODk4Nzk2In0.Vx7F9dBhtYzKs8GIhWg2CcEIRLjVA5548AT9KqIhM2w</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>NBC Bay Area</title>
+	<link>
+	<sublink>http://kntvlive-f.akamaihd.net/i/kntvb2_1@15530/master.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/NBC.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>NBC NEW YORK</title>
+	<link>
+	<sublink>https://dcs-live2.apis.anvato.net/server/play/X09ZXWbI4ZDmLT5A/rendition.m3u8?track=video-6&anvsid=i177082304-n6acb85be-f399-4497-8a6a-32db12ff2952</sublink>
+	</link>
+	<thumbnail>https://www.advancedrestoration.com/hs-fs/hub/55289/file-1477598323-jpg/images/nbc4newyork-logo-blue1.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>NBC2 News</title>
+	<link>
+	<sublink>http://api.new.livestream.com/accounts/7987479/events/2929660/live.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/NBC.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>NBCSN </title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/watch.php?title=NBCSN&channel=nbcsn</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/NBC.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>News Channel 12</title>
+	<link>
+	<sublink>http://api.new.livestream.com/accounts/19128364/events/5285531/live.m3u8</sublink>
+	</link>
+	<thumbnail>https://tse1.mm.bing.net/th?id=OIP.vbvzvnQfBEje4VmsvziG8AEsCx&w=182&h=105&c=8&rs=1&qlt=90&pid=3.1&rm=2</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>News4</title>
+	<link>
+	<sublink>http://wrclive-f.akamaihd.net/i/wrcb1_1@46880/master.m3u8</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Newsmax (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/Newsmax-TV-3</sublink>
+	</link>
+	<thumbnail>https://tse1.mm.bing.net/th?id=OIP.XeIYBPY_-_bmW8iMW6euSgHaE8&w=147&h=100&c=8&rs=1&qlt=90&pid=3.1&rm=2</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>NFL</title>
+	<link>
+	<sublink>\nhttps://pcva2.manifest.auditude.com/auditude/live/30012020-2020-4e46-4c4e-4554574f524b/1626/b57dbc31-5bf5-4e30-a658-3368b38c84f4/aHR0cHM6Ly9uZmxobHNsaXZlMS1pLmFrYW1haWhkLm5ldC9obHMvbGl2ZS81MTcyOTkvbmZsbi8xNTk2ay9uZmxuLm0zdTg.m3u8?pttrackingversion=v1&u=20b08eb6ec1a4ea06d4f1ff0aa83a808&pttrackingmode=sstm&g=1000003&z=264057&k=iu=/4595/nfl.live/web;method=server;cust_params=slot%3Dvideo%26s1%3Dlive%26s2%3Dnfln_3rd%26s3%3D3rd_auth_web%26affiliate%3DNFLN&ptcueformat=turner</sublink>
+	</link>
+	<thumbnail>http://wallpapercave.com/wp/jXLRtK5.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>NFL Alternate </title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://svglive3-event.level3.nfl.com/nflent3/live/nfl_now/NFLNOW.m3u8</sublink>
+	</link>
+	<thumbnail>http://wallpapercave.com/wp/jXLRtK5.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>NFL Alternate II</title>
+	<link>
+	<sublink>\nhttps://www.liveonlinetv247.info/watch.php?title=NFL%20Network&channel=nflnetwork</sublink>
+	</link>
+	<thumbnail>http://wallpapercave.com/wp/jXLRtK5.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>NFL Now</title>
+	<link>
+	<sublink>https://svglive3-event.level3.nfl.com/nflent3/live/now/NFLNOW_1200k.m3u8</sublink>
+	</link>
+	<thumbnail>https://tse1.mm.bing.net/th?id=OIP.aZWSPP-iaUdVrNqv4py7pwHaFk&w=115&h=105&c=8&rs=1&qlt=90&pid=3.1&rm=2</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>NFL Now HD</title>
+	<link>
+	<sublink>https://svglive3-event.level3.nfl.com/nflent3/live/nfl_now/NFLNOW_4500k.m3u8</sublink>
+	</link>
+	<thumbnail>https://tse1.mm.bing.net/th?id=OIP.aZWSPP-iaUdVrNqv4py7pwHaFk&w=115&h=105&c=8&rs=1&qlt=90&pid=3.1&rm=2</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Nickelodeon</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/nick.php</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Nickelodeon%20UK.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Oireachtas TV</title>
+	<link>
+	<sublink>https://media.heanet.ie/transcode05/oireachtas/ngrp:oireachtas.stream_all/playlist.m3u8?</sublink>
+	</link>
+	<thumbnail>https://beta.oireachtas.ie/assets/Uploads/Images/In-Use-in-Modules/Oireachtas-TV-Logo-500x353.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/master.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel 2</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_0_256000.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel 3</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_1_464000.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel 4</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_2_664000.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel 5</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_3_964000.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel 6</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_4_1464000.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel 7</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_5_2264000.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel 8</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_6_3514000.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Olympic Channel 9</title>
+	<link>
+	<sublink>https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_7_6064000.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Olympic_Channel_Logo_2016.svg/2000px-The_Olympic_Channel_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>PAC 12 Arizona</title>
+	<link>
+	<sublink>http://xrxs.net/video/live-p12ariz-4728.m3u8?</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PAC-12%20Arizona.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>PAC 12 Bay Area</title>
+	<link>
+	<sublink>http://xrxs.net/video/live-p12baya-1164.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PAC-12%20Bay%20Area.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>PAC 12 L.A.</title>
+	<link>
+	<sublink>http://xrxs.net/video/live-p12losa-1164.m3u8?</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PAC-12%20Los%20Angeles.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>PAC 12 Mountain</title>
+	<link>
+	<sublink>http://xrxs.net/video/live-p12moun-1164.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PAC-12%20Mountain.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>PAC 12 National</title>
+	<link>
+	<sublink>http://xrxs.net/video/live-p12netw-1164.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PAC-12%20Network.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>PAC 12 Network (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/Pac-12-Network-97</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PAC-12%20Network.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>PAC 12 Oregon</title>
+	<link>
+	<sublink>http://xrxs.net/video/live-p12oreg-1164.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PAC-12%20Oregon.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>PAC 12 Washington</title>
+	<link>
+	<sublink>http://xrxs.net/video/live-p12wash-4728.m3u8?</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PAC-12%20Washington.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>PBS (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/PBS-81</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/PBS.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>PBS Kids</title>
+	<link>
+	<sublink>https://live-cdn.pbskids.org/out/u/est.m3u8</sublink>
+	</link>
+	<thumbnail>http://naturalmommie.com/wp-content/uploads/2010/07/PBS-Kids-logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Poker Central</title>
+	<link>
+	<sublink>http://ooyalahd2-f.akamaihd.net/i/crtv01_delivery@329705/index_1164_av-b.m3u8</sublink>
+	</link>
+	<thumbnail>https://pokerground.com/en/wp-content/uploads/2015/10/PC-poker-central-tv.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Premier Sports</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/premiersports.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/w3H6P0G.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>QVC (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/QVC-82</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/4CvfM8q.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>QVC Beauty</title>
+	<link>
+	<sublink>http://llnw.live.qvc.simplestream.com/hera/remote/qvcuk_primary_sdi6/1/prog_index.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/4CvfM8q.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>QVC II</title>
+	<link>
+	<sublink>http://llnw.live.qvc.simplestream.com/hera/remote/qvcuk_primary_sdi5/1/prog_index.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/4CvfM8q.png\n</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>QVC UK</title>
+	<link>
+	<sublink>http://llnw.live.qvc.simplestream.com/hera/remote/qvcuk_primary_sdi8/3/prog_index.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/4CvfM8q.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Racing UK</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/racinguk.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/Ut2qiFT.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Racing.com</title>
+	<link>
+	<sublink>https://melbourneseven-i.akamaihd.net/hls/live/263815/RAC/master.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Racing%20UK.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>RT American (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/RT-America-59</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/5mRoEtj.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>RT UK Russia Today</title>
+	<link>
+	<sublink>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>http://logonoid.com/images/rt-logo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>RT US Russia Today Alternate</title>
+	<link>
+	<sublink>http://rt.api.visionip.tv/live/ASHTTP/RT_America-HD/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>http://logonoid.com/images/rt-logo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>RTE News</title>
+	<link>
+	<sublink>http://wmsrtsp1.rte.ie/live/android.sdp/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/RTE%20News%20Now.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Setanta Sports</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/setantasports.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/7rNlAIp.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Showtime </title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/44126/Showtime-(HD)</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/GnI6LLa.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Showtime 2 (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/Showtime-2-102</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/kFBR1LX.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Calcio</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/skycalcio.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/c1dhmnX.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Sky Racing 1</title>
+	<link>
+	<sublink>http://kitdigitaioslive-i.akamaihd.net/hls/live/219669/skyracing_live_mobil/sky1.m3u8</sublink>
+	</link>
+	<thumbnail>https://i2.wp.com/harnessnews.com.au/wp-content/uploads/2016/04/Sky-Racing1-3.jpg?fit=1049%2C742</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Sky Racing 2</title>
+	<link>
+	<sublink>http://kitdigitaioslive-i.akamaihd.net/hls/live/219669/skyracing_live_mobil/sky2.m3u8</sublink>
+	</link>
+	<thumbnail>https://i2.wp.com/harnessnews.com.au/wp-content/uploads/2016/04/Sky-Racing1-3.jpg?fit=1049%2C742</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Sky Sport 1 Italy</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/skysport1italia.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/c1dhmnX.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sport 2 Italy</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/skysport2italia.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/c1dhmnX.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sport 3 Italy</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/skysport3italia.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/c1dhmnX.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sports Action</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/skysportsaction.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/gXOK2rK.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sports Cricket</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/skysportscricket.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/KO1s0lE.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sports F1</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/skysportsf1.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/qPj8Y0f.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sports Golf</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/skysportsgolf.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/UCBE1OI.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sports Main Event</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/skysports1.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/aR33kqd.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sports News</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/embed/skysportsnews.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/TlVyaY9.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sky Sports Premier League</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://liveonlinetv247.info/skysportspremierleague.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/CGNeotr.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Sky TG24</title>
+	<link>
+	<sublink>http://skyianywhere2-i.akamaihd.net/hls/live/200275/tg24/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sky_TG24_-_Logo_2016.svg/1280px-Sky_TG24_-_Logo_2016.svg.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Spike TV US </title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/52479/Spike-TV-(HD)</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/uBRHMWD.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Sports Night</title>
+	<link>
+	<sublink>rtmp://freeview.fms.visionip.tv/live/sports_tonight-sports_tonight-live-25f-16x9-SD</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Star Cricket</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/starcricket.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/iavhK1y.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Star Movies</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/starmovies.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/WlsuGdt.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Star Sports</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/starsports.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/iavhK1y.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>StarZ (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/Starz-Encore-106</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/QMjzmt4.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>StarZ Edge (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/Starz-Edge-105</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/QMjzmt4.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>Sundance (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/SundanceTV-104</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/mF6WoM4.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Super Sport 1</title>
+	<link>
+	<sublink>http://81.7.13.162/hls/ss1/index.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Super%20Sport%201.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Super Sport 2</title>
+	<link>
+	<sublink>http://81.7.13.162/hls/ss2/index.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Super%20Sport%202.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Super Sport 3</title>
+	<link>
+	<sublink>http://81.7.13.162/hls/ss3/index.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Super%20Sport%203.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>Super Sport 4</title>
+	<link>
+	<sublink>http://81.7.13.162/hls/ss4/index.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/Super%20Sport%204.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Syfy</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/syfy.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/mW5LVXV.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>TBN</title>
+	<link>
+	<sublink>http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/master.m3u8</sublink>
+	</link>
+	<thumbnail>http://logonoid.com/images/tbn-logo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>TEN 1 Sports</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/ten1.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/uEih1ya.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>TEST</title>
+	<link>
+	<sublink>https://freeuscache1.streamlive.to/edge/kjgkefh6la1di6g/chunks.m3u8?nimblesessionid=1793241&wmsAuthSign=c2VydmVyX3RpbWU9MS8yMi8yMDE4IDY6NDg6MTAgUE0maGFzaF92YWx1ZT1QVmRtaXVaUEowazRselBTYXNtMHdBPT0mdmFsaWRtaW51dGVzPTMwJnN0cm1fbGVuPTIw</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>TEST2</title>
+	<link>
+	<sublink>http://putchannel.com/live-television/live-nbc-hd-todays-take/</sublink>
+	</link>
+	<thumbnail>-</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>TG4</title>
+	<link>
+	<sublink>http://csm-e.cds1.yospace.com/csm/live/74246540.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/TG4.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>The Florida Channel</title>
+	<link>
+	<sublink>rtmp://webcasting.thefloridachannel.org/live/tvweb1</sublink>
+	</link>
+	<thumbnail>https://primary.telestream.net/vidchecker/images/logos/floridachannellogo.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>The Shopping Channel</title>
+	<link>
+	<sublink>http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-p.m3u8</sublink>
+	</link>
+	<thumbnail>http://cdn.iphoneincanada.ca/wp-content/uploads/2015/07/the-shopping-channel-logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>The Weather Channel (down)</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.firstonetv.net/Live/United-States-(USA)/The-Weather-Channel-111</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/6wwvWTc.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Thoroughbred Central</title>
+	<link>
+	<sublink>http://kitdigitaioslive-i.akamaihd.net/hls/live/219670/skyr_ios_unblocked/skyrnsw_extreme@219670.m3u8</sublink>
+	</link>
+	<thumbnail>https://resource2.s3-accelerate.amazonaws.com/RSImages/logo-sky-thoroughbred-central.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>TLC</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/tlc.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/B1ZA8Ne.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>TruTV</title>
+	<link>
+	<sublink>http://dwun498y9o8lf.cloudfront.net:80/coder5/coder.channels.channel2/hls/5/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/pDlakPw.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>TSN1</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/embed/tsn.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/IIDQ7VM.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>TSN2</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/embed/tsn2.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/IIDQ7VM.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>TV Land</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.streamlive.to/view/49252/TVLand</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/RjloL8N.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>TWIT News</title>
+	<link>
+	<sublink>http://iphone-streaming.ustream.tv/ustreamVideo/1524/streams/live/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/TLC.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>University of California Channel</title>
+	<link>
+	<sublink>rtmp://ucsdtv-wowza.ucsd.edu:1935/live/live_800</sublink>
+	</link>
+	<thumbnail>https://d12dc99qm3izfr.cloudfront.net/uploads/badge/asset/180/cal_state_ci_logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>USA Network</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/usanetwork.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/K2UsqIK.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Versus HD</title>
+	<link>
+	<sublink>http://208.92.36.158/ipad/live/nba_ipad_1240.m3u8</sublink>
+	</link>
+	<thumbnail>http://vignette4.wikia.nocookie.net/logopedia/images/7/71/Versus_HD.png/revision/latest?cb=20110408205402</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>VH1</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=https://www.liveonlinetv247.info/vh1.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/y2Ta1j6.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>Weather Nation</title>
+	<link>
+	<sublink>http://klive-a.akamaihd.net/dc-1/m/ny-live-publish2/live/legacy/p/931702/e/1_oorxcge2/sd/10000/t/iGSG6YFdfYAkkxgpSSmwSQ/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/KtrOQRs.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>WGN Chicago</title>
+	<link>
+	<sublink>http://wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/master.m3u8</sublink>
+	</link>
+	<thumbnail>https://4vector.com/i/free-vector-wgn-chicago_061402_wgn-chicago.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>WGN TV</title>
+	<link>
+	<sublink>http://wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/aBskR5m.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>Willow</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/embed/willowtv.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/enNHmH4.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<item>
+	<title>WLBZ 2</title>
+	<link>
+	<sublink>http://wlbz-lh.akamaihd.net/i/WLBZ_Live_1@27474/master.m3u8</sublink>
+	</link>
+	<thumbnail>http://content.tegna-media.com/theme/images/wlbz/footer-logo@2x.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>WTV</title>
+	<link>
+	<sublink>http://manifester-wtvperth.mediafoundry.com.au/stream/wtvperth/playlist.m3u8</sublink>
+	</link>
+	<thumbnail>http://ausitconference.org/images/wtv_logo.jpg</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<item>
+	<title>WWE Network</title>
+	<link>
+	<sublink>http://hlslive-akc.med2.net.wwe.com/ls01/wwe/LINEAR/master_wired.m3u8?|Cookie= mediaAuth_v2=e3a8cff5910f220164a55042ac35b339b24eed30da31ce6771d298b82b6b9aa375346093d3aa0681d463623fa76ece30045e441724e2173aa6590fd94126d431dac35dcb5032f66c2c26e958d0b4b25cc38599b4a3bfa489fc9137233882839845609ed401c786260a73fd3b30dc2d51b273de6aab6f38351db0a059ecede9b223c1081deb64fc5c3b5b06ec12b96eb094d5a400ed7e3d8b0850a4a78df4025e453941d13f5da63e02272497833422fff784873c5a00daa13021ff3e32b837d5b5d1da90d1c19cf73828de2067b717de7b0d844bafe15b8c90ad5d4928d8a2d7887dc1728e1e33edfa483f102ddc0546b8f04e5a462f91f5ecccb5f0bc30d9f4d18e47ee6041aa144ef2bca83a7115a7c5b9b62c862aa30f4054300a5a6ac3d403ed88a9486925403e91cacf1087c1eae9ada4c55d1fc61890626cfe7f7a5f2d3794fa082869505f00f782461284dcc096100aa26ccdae6ff884d5639faffbfab5975714d210ac2e6b46a5e29b30de4a93c656541deb059609e2b7074827a3328f5f9d97398101727c34c425cc96ccd1084a64b1d6d33b2886bb27523a27d83a7492c8662b41dadf202d5a10be3c4d6b9658d09250482f47bd0382d89789653b8973f54e0bb0cb1205d1d0c68c90fb1ec320b14d9d49442b5970029e1a5e78eacd482e5c9559bac49336c8a51fddd6b9721cf106209a7bea</</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/WWE%20Network.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</item>
+<plugin>
+	<title>WWE Network Alternative II</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/wwenetwork.php</sublink>
+	</link>
+	<thumbnail>https://archive.org/download/tvlogos/WWE%20Network.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
+<plugin>
+	<title>WWE TV</title>
+	<link>
+	<sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.liveonlinetv247.info/wwetv.php</sublink>
+	</link>
+	<thumbnail>https://i.imgur.com/qnz28T5.png</thumbnail>
+	<fanart>-</fanart>
+	<summary>-</summary>
+</plugin>
