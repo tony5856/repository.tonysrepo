@@ -55,7 +55,7 @@ class Sources(object):
                     episode,
                     tvshowtitle,
                     premiered,
-                    timeout=90,
+                    timeout=30,
                     preset="search",
                     dialog=None,
                     exclude=None,

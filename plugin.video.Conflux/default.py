@@ -28,7 +28,6 @@ __builtin__.trakt_client_id = "948c4e2514db4f2cca33e737f5e73ae213e537d344b991698
 __builtin__.trakt_client_secret = "140369c2c981732a7b183db2e9300065629b8b7417a149a0c4e098ebee8f692e"  # trakt client secret
 __builtin__.search_db_location = ""  # location of search db
 
-
 import os
 import sys
 
