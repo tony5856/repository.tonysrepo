@@ -15,26 +15,32 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+    -------------------------------------------------------------
 
     Usage Examples:
 
 
-    Directory to run the script
+    Directory to run the script, put this in your main xml.
+    Replace "---YOUR ADDON---" with the name of your addon.
 
     <dir>
     <title>Update Channel List</title>
-    <link>plugin://plugin.video."YOUR ADDON"/?mode=RunScript&url=special://home/addons/plugin.video."YOUR ADDON"/resources/lib/plugins/live_tv/air_channels.py</link>
+    <link>plugin://plugin.video."---YOUR ADDON---"/?mode=RunScript&url=special://home/addons/plugin.video."---YOUR ADDON---"/resources/lib/plugins/AirTable/air_channels.py</link>
     <summary>Updates the Nan tv channels list</summary>
     </dir>
 
 
-    Directory to display the generated xml
+    Directory to display the generated xml, put this in your main xml
 
     <dir>
     <name>Nan Tv Channels</name>
     <link>file://nan_tv.xml</link>
     <summary></summary>
     </dir>
+
+    The nan_tv.xml that is generated is located in the kodi/addons/plugin.video."YOUR ADDON"/xml folder
+
+    --------------------------------------------------------------
 """
 
 
