@@ -151,12 +151,12 @@ def settings():
 
 @route(mode="ScraperSettings")
 def scraper_settings():
-    xbmcaddon.Addon('script.module.nanscrapers').openSettings()
+    xbmcaddon.Addon('script.module.universalscrapers').openSettings()
 
 
 @route(mode="ResolverSettings")
 def resolver_settings():
-    xbmcaddon.Addon('script.module.urlresolver').openSettings()
+    xbmcaddon.Addon('script.module.resolveurl').openSettings()
 
 
 @route(mode="ClearTraktAccount")
