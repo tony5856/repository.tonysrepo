@@ -1,5 +1,0 @@
-Changed addon code to jen template 2.0.0
-Added new documentaries 1.0.3
-Added new documentaries 1.0.1
-Release 1.0.0 initial release
-

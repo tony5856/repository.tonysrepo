@@ -1,5 +1,0 @@
-
-Version 1.0.2 removed archive.org, added cartoonson
-Version 1.0.1 Fixed archive.org
-Release 1.0.0 initial release
-
