@@ -28,7 +28,7 @@ from koding import route
 import sys
 import xbmcplugin
 
-import resolveurl
+#import resolveurl
 
 from resources.lib.util.xml import JenItem, JenList
 from resources.lib.util.messages import get_link_message, get_searching_message
