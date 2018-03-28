@@ -18,7 +18,7 @@
 """
 import random
 
-import universalscrapers
+#import universalscrapers
 import requests
 import xbmcaddon
 import xbmcgui
