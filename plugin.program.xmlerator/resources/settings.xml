@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <setting id= "TMDB_api" type="text" label="TMDB Api key" default="TMDB" visible="true"/>
+    <setting id= "Trakt_user" type="text" label="Trakt User Name" default="user name" visible="true"/>
+	<setting id= "Trakt_api" type="text" label="Trakt Client key" default="api" visible="true"/>
+</settings>

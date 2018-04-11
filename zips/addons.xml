@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.Conflux" name="Conflux Addon" version="3.0.0" provider-name=" - ">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">All in one addon</summary>
-        <description lang="en">Movies, TV Shows, Documentaries, Cartoons, ect...</description>
-        <platform>all</platform>
-        <website></website>
-        <video_guide></video_guide>
-    </extension>
+<addon id="plugin.program.xmlerator" name="XMLerator" version="5.0.0" provider-name="TonyH">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Generate xml's from online lists</summary>
+		<description lang="en">Generate xml's from user made lists using list numbers from tmdb, imdb, and trakt</description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+		<news></news>
+		<genre>uk,usa</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
 </addon>
 
 <addon id="repository.tonysrepo" name="Tonys Repo" version="1.0.3" provider-name="TonyH">
