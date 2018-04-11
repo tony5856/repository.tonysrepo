@@ -22,6 +22,7 @@
 
 import os
 import urlparse
+import time
 import xbmc
 import xbmcaddon
 import xbmcgui
@@ -115,7 +116,8 @@ def trakt_info(url):
                 name = info['title']
                 icon = ""
                 fanart = ""
-                try:            
+                try:
+                    time.sleep(.2)            
                     tmdb_url = 'http://api.themoviedb.org/3/find/' +imdb+ '?api_key=' +tmdb_api_key+ '&external_source=imdb_id'
                     headers = {'User-Agent':User_Agent}
                     tmdbhtml = requests.get(tmdb_url,headers=headers,timeout=20).content
@@ -246,9 +248,11 @@ def Pull_info(html,list_name,url,folder_name):
     for name, imdb, year in match:
         icon = ""
         fanart = ""
-        try:            
+        try:
+            time.sleep(.2)           
             tmdb_url = 'http://api.themoviedb.org/3/find/' +imdb+ '?api_key=' +tmdb_api_key+ '&external_source=imdb_id'
             name = clean_search(name)
+            name = remove_non_ascii(name)
             headers = {'User-Agent':User_Agent}
             tmdbhtml = requests.get(tmdb_url,headers=headers,timeout=20).content
             match = json.loads(tmdbhtml)
@@ -264,6 +268,7 @@ def Pull_info(html,list_name,url,folder_name):
                 if media == 'movie':
                     icon = results['poster_path']
                     if not icon:
+                        icon = ""
                         key = "thumbnail"
                         show_name = ""
                         missing_art(show_name,name,key,folder_name)
@@ -271,6 +276,7 @@ def Pull_info(html,list_name,url,folder_name):
                     year = date.split("-")[0]
                     fanart = results['backdrop_path']
                     if not fanart:
+                        fanrt = ""
                         key = "fanart"
                         show_name = ""
                         missing_art(show_name,name,key,folder_name)
@@ -280,6 +286,7 @@ def Pull_info(html,list_name,url,folder_name):
                 elif media == 'tv':
                     icon = results['poster_path']
                     if not icon:
+                        icon = ""
                         key = "thumbnail"
                         show_name = ""
                         missing_art(show_name,name,key,folder_name)                    
@@ -287,6 +294,7 @@ def Pull_info(html,list_name,url,folder_name):
                     year = date.split("-")[0]
                     fanart = results['backdrop_path']
                     if not fanart:
+                        fanart = ""
                         key = "fanart"
                         show_name = ""
                         missing_art(show_name,name,key,folder_name)                    
@@ -295,7 +303,8 @@ def Pull_info(html,list_name,url,folder_name):
                         tmdb = "none"
                     get_tv_seasons(tmdb,fanart,imdb,folder_name)                                   
         except:
-            pass
+            icon = ""
+            fanart = ""
 
         print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
 
