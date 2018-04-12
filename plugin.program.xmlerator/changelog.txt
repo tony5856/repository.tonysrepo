@@ -1,0 +1,1 @@
+v5.0.4 Added text color and text bold to settings options

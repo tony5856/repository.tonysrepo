@@ -44,6 +44,8 @@ debug        = koding.Addon_Setting('debug')
 tmdb_api_key = koding.Addon_Setting(setting='TMDB_api',addon_id=addon_id)
 trakt_client_id = koding.Addon_Setting(setting='Trakt_api',addon_id=addon_id)
 trakt_user_name = koding.Addon_Setting(setting='Trakt_user',addon_id=addon_id)
+Text_color = koding.Addon_Setting(setting='Text_color',addon_id=addon_id)
+bold_value = koding.Addon_Setting(setting='bold_type',addon_id=addon_id)
 User_Agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
 
 @route(mode="main")
@@ -395,11 +397,14 @@ def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
             File = File.replace(" ","_")      
             f = open('%s.xml'%(File),'a')
             f.write('<item>\n')
-            f.write('\t<title>%s</title>\n' % name)
+            if bold_value == "true":
+                f.write('\t<title>[B][COLOR=%s]%s[/COLOR][/B]</title>\n' % (Text_color,name))
+            else:    
+                f.write('\t<title>[COLOR=%s]%s[/COLOR]</title>\n' % (Text_color,name))
             f.write('\t<meta>\n')
             f.write('\t<imdb>%s</imdb>\n' % imdb)
             f.write('\t<content>%s</content>\n' % media)
-            f.write('\t<title>%s</title>\n' % name)
+            f.write('\t<title>[COLOR=%s]%s[/COLOR]</title>\n' % (Text_color,name))
             f.write('\t<year>%s</year>\n' % year)
             f.write('\t</meta>\n')
             f.write('\t<link>\n')
@@ -417,11 +422,17 @@ def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
             File = File.replace(" ","_")
             f = open('%s.xml'%(File),'a')
             f.write('<dir>\n')
-            f.write('\t<title>%s</title>\n' % name)
+            if bold_value == "true":
+                f.write('\t<title>[B][COLOR=%s]%s[/COLOR][/B]</title>\n' % (Text_color,name))
+            else:
+                f.write('\t<title>[COLOR=%s]%s[/COLOR]</title>\n' % (Text_color,name))
             f.write('\t<meta>\n')
             f.write('\t<imdb>%s</imdb>\n' % imdb)
             f.write('\t<content>%s</content>\n' % media)
-            f.write('\t<title>%s</title>\n' % name)
+            if bold_value == "true":
+                f.write('\t<title>[B][COLOR=%s]%s[/COLOR][/B]</title>\n' % (Text_color,name))
+            else:
+                f.write('\t<title>[COLOR=%s]%s[/COLOR]</title>\n' % (Text_color,name))
             f.write('\t<year>%s</year>\n' % year)
             f.write('\t</meta>\n')
             f.write('\t<link></link>\n')
@@ -472,11 +483,17 @@ def print_seasons_xml(show_name,sea_name,year,fanart,icon,imdb,sea_num,folder_na
         File_show = os.path.join(xml_folder,show_name)
         f = open('%s.xml'%(File_show),'a')
         f.write('<dir>\n')
-        f.write('\t<title>%s</title>\n' % sea_name)
+        if bold_value == "true":
+            f.write('\t<title>[B][COLOR=%s]%s[/COLOR][/B]</title>\n' % (Text_color,sea_name))
+        else:
+            f.write('\t<title>[COLOR=%s]%s[/COLOR]</title>\n' % (Text_color,sea_name))
         f.write('\t<meta>\n')
         f.write('\t<imdb>%s</imdb>\n' % imdb)
         f.write('\t<content>season</content>\n')
-        f.write('\t<season>%s</season>\n' % sea_num)
+        if bold_value == "true":
+            f.write('\t<season>[B][COLOR=%s]%s[/COLOR][/B]</season>\n' % (Text_color,sea_num))
+        else:
+            f.write('\t<season>[COLOR=%s]%s[/COLOR]</season>\n' % (Text_color,sea_num))
         f.write('\t<year>%s</year>\n' % year)
         f.write('\t</meta>\n')
         f.write('\t<link></link>\n')
@@ -523,14 +540,24 @@ def print_episodes_xml(show_name,sea_name,fanart,name,season_num,episode_num,ico
         File_episode = os.path.join(xml_folder,Episodes)
         f = open('%s.xml'%(File_episode),'a')
         f.write('<item>\n')
-        f.write('\t<title>%s</title>\n' % name)
+        if bold_value == "true":
+            f.write('\t<title>[B][COLOR=%s]%s[/COLOR][/B]</title>\n' % (Text_color,name))
+        else:
+            f.write('\t<title>[COLOR=%s]%s[/COLOR]</title>\n' % (Text_color,name))
         f.write('\t<meta>\n')
         f.write('\t<imdb>%s</imdb>\n' % imdb)
         f.write('\t<content>episode</content>\n')
-        f.write('\t<tvshowtitle>%s</tvshowtitle>\n' % show_name)
+        if bold_value == "true":
+            f.write('\t<tvshowtitle>[B][COLOR=%s]%s[/COLOR][/B]</tvshowtitle>\n' % (Text_color,show_name))
+        else:
+            f.write('\t<tvshowtitle>[COLOR=%s]%s[/COLOR]</tvshowtitle>\n' % (Text_color,show_name))
         f.write('\t<year>%s</year>\n' % year)
-        f.write('\t<season>%s</season>\n' % season_num)
-        f.write('\t<episode>%s</episode>\n' % episode_num)
+        if bold_value == "true":
+            f.write('\t<season>[B][COLOR=%s]%s[/COLOR][/B]</season>\n' % (Text_color,season_num))
+            f.write('\t<episode>[B][COLOR=%s]%s[/COLOR][/B]</episode>\n' % (Text_color,episode_num))
+        else:
+            f.write('\t<season>[COLOR=%s]%s[/COLOR]</season>\n' % (Text_color,season_num))
+            f.write('\t<episode>[COLOR=%s]%s[/COLOR]</episode>\n' % (Text_color,episode_num))
         f.write('\t</meta>\n')
         f.write('\t<link>\n')
         f.write('\t<sublink>search</sublink>\n')

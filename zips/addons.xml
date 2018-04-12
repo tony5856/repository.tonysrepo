@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.xmlerator" name="XMLerator" version="5.0.3" provider-name="TonyH">
+<addon id="plugin.program.xmlerator" name="XMLerator" version="5.0.4" provider-name="TonyH">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+        <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>executable</provides>
