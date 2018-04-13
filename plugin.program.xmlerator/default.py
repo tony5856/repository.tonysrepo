@@ -171,7 +171,8 @@ def imdb_info(url):
         folder_name = folder_name.replace(" ","_")
         xml_folder = os.path.join(xml_path,folder_name)
         os.mkdir( xml_folder, 0755 )
-        list_number2 = koding.Keyboard(heading='IMDB List Number',kb_type='numeric')
+        list_number2 = koding.Keyboard(heading='IMDB List Number')
+        list_number2 = list_number2.replace("ls","")
         url = "http://www.imdb.com/list/ls%s/" % int(list_number2)
         html = requests.get(url).content
         match2 = re.compile('<h1 class="header list-name">(.+?)</h1>',re.DOTALL).findall(html)       
@@ -318,7 +319,7 @@ def Tmdb_info(url):
     folder_name = folder_name.replace(" ","_")
     xml_folder = os.path.join(xml_path,folder_name)
     os.mkdir( xml_folder, 0755 )
-    list_number = koding.Keyboard(heading='TMDB List Number',kb_type='numeric')
+    list_number = koding.Keyboard(heading='TMDB List Number')
     start_url = "https://api.themoviedb.org/3/list/%s?api_key=%s&language=en-US"% (int(list_number) ,tmdb_api_key)
     html = requests.get(start_url).content
     match = json.loads(html)
@@ -404,7 +405,7 @@ def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
             f.write('\t<meta>\n')
             f.write('\t<imdb>%s</imdb>\n' % imdb)
             f.write('\t<content>%s</content>\n' % media)
-            f.write('\t<title>[COLOR=%s]%s[/COLOR]</title>\n' % (Text_color,name))
+            f.write('\t<title>%s</title>\n' % (name))
             f.write('\t<year>%s</year>\n' % year)
             f.write('\t</meta>\n')
             f.write('\t<link>\n')
@@ -429,10 +430,7 @@ def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
             f.write('\t<meta>\n')
             f.write('\t<imdb>%s</imdb>\n' % imdb)
             f.write('\t<content>%s</content>\n' % media)
-            if bold_value == "true":
-                f.write('\t<title>[B][COLOR=%s]%s[/COLOR][/B]</title>\n' % (Text_color,name))
-            else:
-                f.write('\t<title>[COLOR=%s]%s[/COLOR]</title>\n' % (Text_color,name))
+            f.write('\t<title>%s</title>\n' % (name))
             f.write('\t<year>%s</year>\n' % year)
             f.write('\t</meta>\n')
             f.write('\t<link></link>\n')
@@ -452,9 +450,9 @@ def get_tv_seasons(tmdb,fanart,imdb,folder_name):
         show_name = match['original_name']
         show_name = show_name.replace(":","")
         show_name = clean_search(show_name)
-        show_name = show_name.replace(" ", "_")
         xml_folder = os.path.join(xml_path,folder_name)
         File_show = os.path.join(xml_folder,show_name)
+        File_show = File_show.replace(" ","_")
         open('%s.xml'%(File_show),'w')
         for seasons in seas:   
             sea_name = seasons['name']
@@ -481,6 +479,7 @@ def print_seasons_xml(show_name,sea_name,year,fanart,icon,imdb,sea_num,folder_na
     try:
         xml_folder = os.path.join(xml_path,folder_name)
         File_show = os.path.join(xml_folder,show_name)
+        File_show = File_show.replace(" ","_")
         f = open('%s.xml'%(File_show),'a')
         f.write('<dir>\n')
         if bold_value == "true":
@@ -490,10 +489,7 @@ def print_seasons_xml(show_name,sea_name,year,fanart,icon,imdb,sea_num,folder_na
         f.write('\t<meta>\n')
         f.write('\t<imdb>%s</imdb>\n' % imdb)
         f.write('\t<content>season</content>\n')
-        if bold_value == "true":
-            f.write('\t<season>[B][COLOR=%s]%s[/COLOR][/B]</season>\n' % (Text_color,sea_num))
-        else:
-            f.write('\t<season>[COLOR=%s]%s[/COLOR]</season>\n' % (Text_color,sea_num))
+        f.write('\t<season>%s</season>\n' % (sea_num))
         f.write('\t<year>%s</year>\n' % year)
         f.write('\t</meta>\n')
         f.write('\t<link></link>\n')
@@ -514,6 +510,7 @@ def get_episodes(tmdb,sea_num,fanart,sea_name,show_name,imdb,folder_name):
         Episodes = show_name+"_"+sea_name
         xml_folder = os.path.join(xml_path,folder_name)
         File_episode = os.path.join(xml_folder,Episodes)
+        File_episode= File_episode.replace(" ","_")
         f = open('%s.xml'%(File_episode),'w')
         for epi in episodes:
             name = epi['name']
@@ -538,6 +535,7 @@ def print_episodes_xml(show_name,sea_name,fanart,name,season_num,episode_num,ico
         Episodes = show_name+"_"+sea_name
         xml_folder = os.path.join(xml_path,folder_name)
         File_episode = os.path.join(xml_folder,Episodes)
+        File_episode= File_episode.replace(" ","_")
         f = open('%s.xml'%(File_episode),'a')
         f.write('<item>\n')
         if bold_value == "true":
@@ -547,17 +545,10 @@ def print_episodes_xml(show_name,sea_name,fanart,name,season_num,episode_num,ico
         f.write('\t<meta>\n')
         f.write('\t<imdb>%s</imdb>\n' % imdb)
         f.write('\t<content>episode</content>\n')
-        if bold_value == "true":
-            f.write('\t<tvshowtitle>[B][COLOR=%s]%s[/COLOR][/B]</tvshowtitle>\n' % (Text_color,show_name))
-        else:
-            f.write('\t<tvshowtitle>[COLOR=%s]%s[/COLOR]</tvshowtitle>\n' % (Text_color,show_name))
+        f.write('\t<tvshowtitle>%s</tvshowtitle>\n' % (show_name))
         f.write('\t<year>%s</year>\n' % year)
-        if bold_value == "true":
-            f.write('\t<season>[B][COLOR=%s]%s[/COLOR][/B]</season>\n' % (Text_color,season_num))
-            f.write('\t<episode>[B][COLOR=%s]%s[/COLOR][/B]</episode>\n' % (Text_color,episode_num))
-        else:
-            f.write('\t<season>[COLOR=%s]%s[/COLOR]</season>\n' % (Text_color,season_num))
-            f.write('\t<episode>[COLOR=%s]%s[/COLOR]</episode>\n' % (Text_color,episode_num))
+        f.write('\t<season>%s</season>\n' % (season_num))
+        f.write('\t<episode>%s</episode>\n' % (episode_num))
         f.write('\t</meta>\n')
         f.write('\t<link>\n')
         f.write('\t<sublink>search</sublink>\n')
