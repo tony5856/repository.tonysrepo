@@ -245,6 +245,7 @@ def imdb_info(url):
 def Pull_info(html,list_name,url,folder_name):
     xml_folder = os.path.join(xml_path,folder_name)
     File = os.path.join(xml_folder,list_name)
+    File = File.replace(" ", "_")
     open('%s.xml'%(File),'a')   
     block = re.compile('<div class="lister-list">(.+?)<div class="row text-center lister-working hidden"></div>',re.DOTALL).findall(html)
     match = re.compile('<img alt="(.+?)".+?data-tconst="(.+?)".+?<span class="lister-item-year text-muted unbold">(.+?)</span>',re.DOTALL).findall(str(block))
@@ -332,7 +333,8 @@ def Tmdb_info(url):
     res = match['items']
     if not res:
         res = match['results']   
-    File = os.path.join(xml_folder,list_name)        
+    File = os.path.join(xml_folder,list_name)
+    File = File.replace(" ", "_")        
     open('%s.xml'%(File),'w')
     for results in res:
         media = results['media_type']
