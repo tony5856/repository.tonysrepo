@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.xmlerator" name="XMLerator" version="5.0.6" provider-name="TonyH">
+<addon id="plugin.program.xmlerator" name="XMLerator" version="5.0.7" provider-name="TonyH">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.python.koding.aio" version="0.9.6.6"/>

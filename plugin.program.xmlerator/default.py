@@ -245,7 +245,7 @@ def imdb_info(url):
 def Pull_info(html,list_name,url,folder_name):
     xml_folder = os.path.join(xml_path,folder_name)
     File = os.path.join(xml_folder,list_name)
-    File = File.replace(" ", "_")
+    #File = File.replace(" ", "_")
     open('%s.xml'%(File),'a')   
     block = re.compile('<div class="lister-list">(.+?)<div class="row text-center lister-working hidden"></div>',re.DOTALL).findall(html)
     match = re.compile('<img alt="(.+?)".+?data-tconst="(.+?)".+?<span class="lister-item-year text-muted unbold">(.+?)</span>',re.DOTALL).findall(str(block))
@@ -334,7 +334,7 @@ def Tmdb_info(url):
     if not res:
         res = match['results']   
     File = os.path.join(xml_folder,list_name)
-    File = File.replace(" ", "_")        
+    #File = File.replace(" ", "_")        
     open('%s.xml'%(File),'w')
     for results in res:
         media = results['media_type']
@@ -397,7 +397,7 @@ def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
             name = remove_non_ascii(name)
             xml_folder = os.path.join(xml_path,folder_name)
             File = os.path.join(xml_folder,list_name)
-            File = File.replace(" ","_")      
+            #File = File.replace(" ","_")      
             f = open('%s.xml'%(File),'a')
             f.write('<item>\n')
             if bold_value == "true":
@@ -422,7 +422,7 @@ def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
             name = remove_non_ascii(name)
             xml_folder = os.path.join(xml_path,folder_name)
             File = os.path.join(xml_folder,list_name)
-            File = File.replace(" ","_")
+            #File = File.replace(" ","_")
             f = open('%s.xml'%(File),'a')
             f.write('<dir>\n')
             if bold_value == "true":
@@ -454,7 +454,7 @@ def get_tv_seasons(tmdb,fanart,imdb,folder_name):
         show_name = clean_search(show_name)
         xml_folder = os.path.join(xml_path,folder_name)
         File_show = os.path.join(xml_folder,show_name)
-        File_show = File_show.replace(" ","_")
+        #File_show = File_show.replace(" ","_")
         open('%s.xml'%(File_show),'w')
         for seasons in seas:   
             sea_name = seasons['name']
@@ -481,7 +481,7 @@ def print_seasons_xml(show_name,sea_name,year,fanart,icon,imdb,sea_num,folder_na
     try:
         xml_folder = os.path.join(xml_path,folder_name)
         File_show = os.path.join(xml_folder,show_name)
-        File_show = File_show.replace(" ","_")
+        #File_show = File_show.replace(" ","_")
         f = open('%s.xml'%(File_show),'a')
         f.write('<dir>\n')
         if bold_value == "true":
@@ -512,7 +512,7 @@ def get_episodes(tmdb,sea_num,fanart,sea_name,show_name,imdb,folder_name):
         Episodes = show_name+"_"+sea_name
         xml_folder = os.path.join(xml_path,folder_name)
         File_episode = os.path.join(xml_folder,Episodes)
-        File_episode= File_episode.replace(" ","_")
+        #File_episode= File_episode.replace(" ","_")
         f = open('%s.xml'%(File_episode),'w')
         for epi in episodes:
             name = epi['name']
@@ -537,7 +537,7 @@ def print_episodes_xml(show_name,sea_name,fanart,name,season_num,episode_num,ico
         Episodes = show_name+"_"+sea_name
         xml_folder = os.path.join(xml_path,folder_name)
         File_episode = os.path.join(xml_folder,Episodes)
-        File_episode= File_episode.replace(" ","_")
+        #File_episode= File_episode.replace(" ","_")
         f = open('%s.xml'%(File_episode),'a')
         f.write('<item>\n')
         if bold_value == "true":
