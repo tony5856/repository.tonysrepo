@@ -1,0 +1,16 @@
+1. Open the settings and enter your TMDB api key and, Trakt user name and Client key.
+	The TMDB api key is needed for ALL lists.
+2. Click on TMDB, IMDB, or Trakt Lists and you will be promted for a folder name.
+	This will create a folder in the addons/xmls/ folder with the name that you chose.
+	The xmls will be created in this folder.
+3. Enter your list number or list name in the dialog box.
+	Trakt lists require a user name with a matching list name.
+	Both are in the url, example: https://trakt.tv/users/tony5856/lists/test-movies.
+	The user name goes in the settings, and the list name in the popup dialog box.
+4. The xmls will be created in your specified folder along with a txt file
+	called missing_art. This is a list of the movies, tv shows, or episodes that
+	did not return any artwork.
+5. Put the xmls on your host or locally and link to them from your main.xml
+6. Tv shows in the generated xml will need a link to the location of
+	the seasons xml for that show. The seasons xml will need a link to the location'
+	of the episodes xml.
