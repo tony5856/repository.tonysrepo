@@ -83,17 +83,6 @@ def open_settings():
 def trakt_info(url):
     try:
         folder_name = output_folder()
-        # folder_name = koding.Keyboard(heading='Output Folder Name')
-        # folder_name = folder_name.replace(" ","_")
-        #xml_folder = os.path.join(xml_path,folder_name)
-        # if os.path.exists(xml_folder):
-        #      koding.Notify(title='Folder Already Exists', message='Choose a different folder', duration=5000)
-        #      xml_folder = output_folder()
-            # folder_name = koding.Keyboard(heading='Output Folder Name')
-            # folder_name = folder_name.replace(" ","_")
-            # xml_folder = os.path.join(xml_path,folder_name)
-
-        #os.mkdir( xml_folder, 0755 )
         list_number3 = koding.Keyboard(heading='Trakt List Name')
         list_name = list_number3.replace(" ","-")
         user = trakt_user_name.replace(" ","-")
@@ -102,12 +91,18 @@ def trakt_info(url):
             'trakt-api-version': '2',
             'trakt-api-key': trakt_client_id}
         url = "https://api.trakt.tv/users/%s/lists/%s/items/" % (user,list_name)
+        count = 0
+        dp = xbmcgui.DialogProgress()
+        dp.create("[COLOR ghostwhite]Writing XML's....  [/COLOR]")        
         if user == "user-name":
             print "no"
         else:      
             html = requests.get(url,headers=headers).json()
             for res in html:   
                 media = res['type']
+                length = len(media)
+                count = count + 1
+                progress(length,count,dp)                 
                 if media == 'movie':
                     info = res['movie']
                 elif media == 'show':
@@ -132,7 +127,7 @@ def trakt_info(url):
                     headers = {'User-Agent':User_Agent}
                     tmdbhtml = requests.get(tmdb_url,headers=headers,timeout=20).content
                     match = json.loads(tmdbhtml)
-                    koding.Show_Busy(status=True)
+                    #koding.Show_Busy(status=True)
                     movie_results = match['movie_results']
                     tv_results = match['tv_results']
                     if movie_results:
@@ -168,7 +163,7 @@ def trakt_info(url):
                     fanart = "none"
                 print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
 
-        koding.Show_Busy(status=False)                                     
+        #koding.Show_Busy(status=False)                                     
     except:
         pass
 
@@ -188,7 +183,7 @@ def imdb_info(url):
         list_name = match2[0]
         list_name = clean_search(list_name)
         list_name = list_name.replace(" ", "_")
-        koding.Show_Busy(status=True)
+        #koding.Show_Busy(status=True)
         (url,html) = Pull_info(html,list_name,url,folder_name)
         print "pass1"
     except:
@@ -249,7 +244,7 @@ def imdb_info(url):
         print "pass8"
     except:
         pass
-    koding.Show_Busy(status=False)
+    #koding.Show_Busy(status=False)
 
 def Pull_info(html,list_name,url,folder_name):
     xml_folder = os.path.join(xml_path,folder_name)
@@ -258,9 +253,15 @@ def Pull_info(html,list_name,url,folder_name):
     open('%s.xml'%(File),'a')   
     block = re.compile('<div class="lister-list">(.+?)<div class="row text-center lister-working hidden"></div>',re.DOTALL).findall(html)
     match = re.compile('<img alt="(.+?)".+?data-tconst="(.+?)".+?<span class="lister-item-year text-muted unbold">(.+?)</span>',re.DOTALL).findall(str(block))
+    length = len(match)
+    count = 0
+    dp = xbmcgui.DialogProgress()
+    dp.create("[COLOR ghostwhite]Writing XML's....  [/COLOR]")    
     for name, imdb, year in match:
         icon = ""
         fanart = ""
+        count = count + 1
+        progress(length,count,dp)        
         try:
             time.sleep(.2)           
             tmdb_url = 'http://api.themoviedb.org/3/find/' +imdb+ '?api_key=' +tmdb_api_key+ '&external_source=imdb_id'
@@ -326,10 +327,7 @@ def Pull_info(html,list_name,url,folder_name):
 @route(mode="tmdb",args=["url"])
 def Tmdb_info(url):
     folder_name = output_folder()
-    #folder_name = koding.Keyboard(heading='Output Folder Name')
-    #folder_name = folder_name.replace(" ","_")
     xml_folder = os.path.join(xml_path,folder_name)
-    #os.mkdir( xml_folder, 0755 )
     list_number = koding.Keyboard(heading='TMDB List Number')
     start_url = "https://api.themoviedb.org/3/list/%s?api_key=%s&language=en-US"% (int(list_number) ,tmdb_api_key)
     html = requests.get(start_url).content
@@ -337,7 +335,7 @@ def Tmdb_info(url):
     list_name = match['name']
     list_name = list_name.replace(" ", "_")
     list_name = clean_search(list_name)
-    koding.Show_Busy(status=True)
+    #koding.Show_Busy(status=True)
     if not list_name:
         list_name = match['description']
     res = match['items']
@@ -345,9 +343,14 @@ def Tmdb_info(url):
         res = match['results']
     xml_folder = os.path.join(xml_path,folder_name)       
     File = os.path.join(xml_folder,list_name)
-    #File = File.replace(" ", "_")        
+    length = len(res)
+    count = 0
+    dp = xbmcgui.DialogProgress()
+    dp.create("[COLOR ghostwhite]Writing XML's....  [/COLOR]")       
     open('%s.xml'%(File),'w')
     for results in res:
+        count = count + 1
+        progress(length,count,dp)         
         media = results['media_type']
         if media == 'movie':
             icon = results['poster_path']
@@ -400,7 +403,7 @@ def Tmdb_info(url):
                 imdb = "none"       
             get_tv_seasons(tmdb,fanart,imdb,folder_name)
         print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
-    koding.Show_Busy(status=False)
+    #koding.Show_Busy(status=False)
  
 def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name):
     try:       
@@ -611,6 +614,21 @@ def output_folder():
     else:
         os.mkdir( xml_folder, 0755 )
         return folder_name    
+
+def progress(length,count,dp):
+    try:
+        percent = (count * 100) / length
+        if dp.iscanceled():
+            raise Exception("Cancelled")
+            dp.close()
+        else:
+            dp.update(percent,"%s of %s written"% (count,length))
+    except:
+        percent = 100
+        dp.update(percent)
+    if dp.iscanceled():
+        raise Exception("Canceled")
+        dp.close() 
 
 if __name__ == "__main__":
     Run(default='main')
