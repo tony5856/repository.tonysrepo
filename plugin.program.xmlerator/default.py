@@ -90,6 +90,10 @@ def trakt_info(url):
             'Content-Type': 'application/json',
             'trakt-api-version': '2',
             'trakt-api-key': trakt_client_id}
+        url1 = "https://api.trakt.tv/users/%s/lists/%s/" % (user,list_name)
+        html1 = requests.get(url1,headers=headers).content
+        match1 = json.loads(html1)
+        length = match1['item_count']
         url = "https://api.trakt.tv/users/%s/lists/%s/items/" % (user,list_name)
         count = 0
         dp = xbmcgui.DialogProgress()
@@ -100,7 +104,6 @@ def trakt_info(url):
             html = requests.get(url,headers=headers).json()
             for res in html:   
                 media = res['type']
-                length = len(media)
                 count = count + 1
                 progress(length,count,dp)                 
                 if media == 'movie':
@@ -127,7 +130,6 @@ def trakt_info(url):
                     headers = {'User-Agent':User_Agent}
                     tmdbhtml = requests.get(tmdb_url,headers=headers,timeout=20).content
                     match = json.loads(tmdbhtml)
-                    #koding.Show_Busy(status=True)
                     movie_results = match['movie_results']
                     tv_results = match['tv_results']
                     if movie_results:
@@ -162,8 +164,7 @@ def trakt_info(url):
                     icon = "none"
                     fanart = "none"
                 print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
-
-        #koding.Show_Busy(status=False)                                     
+                                    
     except:
         pass
 
@@ -171,28 +172,24 @@ def trakt_info(url):
 def imdb_info(url):
     try:
         folder_name = output_folder()    
-        # folder_name = koding.Keyboard(heading='Output Folder Name')
-        # folder_name = folder_name.replace(" ","_")
-        #xml_folder = os.path.join(xml_path,folder_name)
-        # os.mkdir( xml_folder, 0755 )
         list_number2 = koding.Keyboard(heading='IMDB List Number')
         list_number2 = list_number2.replace("ls","")
         url = "http://www.imdb.com/list/ls%s/" % int(list_number2)
         html = requests.get(url).content
-        match2 = re.compile('<h1 class="header list-name">(.+?)</h1>',re.DOTALL).findall(html)       
-        list_name = match2[0]
-        list_name = clean_search(list_name)
-        list_name = list_name.replace(" ", "_")
-        #koding.Show_Busy(status=True)
-        (url,html) = Pull_info(html,list_name,url,folder_name)
-        print "pass1"
+        match2 = re.compile('<h1 class="header list-name">(.+?)</h1>.+?<div class="desc lister-total-num-results">(.+?)</div>',re.DOTALL).findall(html)       
+        for list_name, total_list in match2:
+            list_name = clean_search(list_name)
+            list_name = list_name.replace(" ", "_")
+            total_list = total_list.replace("titles","").replace(" ","")        
+            (url,html) = Pull_info(html,list_name,url,folder_name,total_list)
+            print "pass1"
     except:
         pass
     try:
         match3 = re.compile('<a class="flat-button lister-page-next next-page" href="(.+?)"',re.DOTALL).findall(html)
         url = "http://www.imdb.com"+match3[0]
         html = requests.get(url).content
-        (url,html) = Pull_info(html,list_name,url,folder_name)
+        (url,html) = Pull_info(html,list_name,url,folder_name,total_list)
         print "pass2"
     except:
         pass
@@ -244,16 +241,14 @@ def imdb_info(url):
         print "pass8"
     except:
         pass
-    #koding.Show_Busy(status=False)
 
-def Pull_info(html,list_name,url,folder_name):
+def Pull_info(html,list_name,url,folder_name,total_list):
     xml_folder = os.path.join(xml_path,folder_name)
     File = os.path.join(xml_folder,list_name)
-    #File = File.replace(" ", "_")
     open('%s.xml'%(File),'a')   
     block = re.compile('<div class="lister-list">(.+?)<div class="row text-center lister-working hidden"></div>',re.DOTALL).findall(html)
     match = re.compile('<img alt="(.+?)".+?data-tconst="(.+?)".+?<span class="lister-item-year text-muted unbold">(.+?)</span>',re.DOTALL).findall(str(block))
-    length = len(match)
+    length = int(total_list)
     count = 0
     dp = xbmcgui.DialogProgress()
     dp.create("[COLOR ghostwhite]Writing XML's....  [/COLOR]")    
@@ -335,7 +330,6 @@ def Tmdb_info(url):
     list_name = match['name']
     list_name = list_name.replace(" ", "_")
     list_name = clean_search(list_name)
-    #koding.Show_Busy(status=True)
     if not list_name:
         list_name = match['description']
     res = match['items']
@@ -403,15 +397,13 @@ def Tmdb_info(url):
                 imdb = "none"       
             get_tv_seasons(tmdb,fanart,imdb,folder_name)
         print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
-    #koding.Show_Busy(status=False)
  
 def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name):
     try:       
         if media == "movie":
             name = remove_non_ascii(name)
             xml_folder = os.path.join(xml_path,folder_name)
-            File = os.path.join(xml_folder,list_name)
-            #File = File.replace(" ","_")      
+            File = os.path.join(xml_folder,list_name)      
             f = open('%s.xml'%(File),'a')
             f.write('<item>\n')
             if bold_value == "true":
@@ -436,7 +428,6 @@ def print_movie_xml(list_name,media,name,year,imdb,tmdb,icon,fanart,folder_name)
             name = remove_non_ascii(name)
             xml_folder = os.path.join(xml_path,folder_name)
             File = os.path.join(xml_folder,list_name)
-            #File = File.replace(" ","_")
             f = open('%s.xml'%(File),'a')
             f.write('<dir>\n')
             if bold_value == "true":
@@ -468,7 +459,6 @@ def get_tv_seasons(tmdb,fanart,imdb,folder_name):
         show_name = clean_search(show_name)
         xml_folder = os.path.join(xml_path,folder_name)
         File_show = os.path.join(xml_folder,show_name)
-        #File_show = File_show.replace(" ","_")
         open('%s.xml'%(File_show),'w')
         for seasons in seas:   
             sea_name = seasons['name']
@@ -495,7 +485,6 @@ def print_seasons_xml(show_name,sea_name,year,fanart,icon,imdb,sea_num,folder_na
     try:
         xml_folder = os.path.join(xml_path,folder_name)
         File_show = os.path.join(xml_folder,show_name)
-        #File_show = File_show.replace(" ","_")
         f = open('%s.xml'%(File_show),'a')
         f.write('<dir>\n')
         if bold_value == "true":
@@ -526,7 +515,6 @@ def get_episodes(tmdb,sea_num,fanart,sea_name,show_name,imdb,folder_name):
         Episodes = show_name+"_"+sea_name
         xml_folder = os.path.join(xml_path,folder_name)
         File_episode = os.path.join(xml_folder,Episodes)
-        #File_episode= File_episode.replace(" ","_")
         f = open('%s.xml'%(File_episode),'w')
         for epi in episodes:
             name = epi['name']
@@ -551,7 +539,6 @@ def print_episodes_xml(show_name,sea_name,fanart,name,season_num,episode_num,ico
         Episodes = show_name+"_"+sea_name
         xml_folder = os.path.join(xml_path,folder_name)
         File_episode = os.path.join(xml_folder,Episodes)
-        #File_episode= File_episode.replace(" ","_")
         f = open('%s.xml'%(File_episode),'a')
         f.write('<item>\n')
         if bold_value == "true":
