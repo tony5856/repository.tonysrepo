@@ -594,7 +594,7 @@ def sort_xml(url):
             ret = dg.select(head1, [head2, head3])
             if ret == -1:
                 return
-            elif ret == head2:
+            elif ret == 0:
                 rev = True
                 xml_name = '_newtoold_year.xml'
             else:
